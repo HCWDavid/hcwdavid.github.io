@@ -7,26 +7,31 @@ Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 
 
+**Database Management System:**
 
+[Database Management System](./database-management-system.html): undergrad course project equivalent to graduate level course on end-to-end implementation of a database at UC Irvine. 
+
+_Categories_: AngularCLI TypeScript Node.js 
 
 
 **Single Sign On:**
 
-[Single Sign On](./SSO.html).
+[Single Sign On](./SSO.html): internship At St. Jude Research Hospital, worked as Information Services
 
-_categories_: AngularCLI TypeScript Node.js 
+_Categories_: AngularCLI TypeScript Node.js 
+
 
 **Online Movies Store Web Application:**
 
-[Online Movies Store Web Application Project](./Online-Movies-Store-Web-Application.html).
+[Online Movies Store Web Application Project](./Online-Movies-Store-Web-Application.html): undergrad course project at the University of California, Irvine. It is a 10-week project class that heavily targets the implementation of an application.
 
-_categories_: Java MySQL HTML CSS Maven
+_Categories_: Java MySQL HTML CSS Maven
 
 **Stay Together:**
 
-[Stay Together Project](./stay-together.html).
+[Stay Together Project](./stay-together.html): my second year first hackathon working related to healthcare on how we can treat opioid-addicted patient better.
 
-_categories_: Swift Storyboard
+_Categories_: Swift Storyboard
 
 
 

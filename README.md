@@ -2,36 +2,39 @@
 Welcome! My name is David. I am currently a PhD student at Vanderbilt University working with Prof. [Meiyi Ma](https://meiyima.github.io) on healthcare and deep learning related research. 
 <!-- Text can be **bold**, _italic_, or ~~strikethrough~~. -->
 
+## Research Experience: 
+**Effects of Emotion Regulation on Creativity:** _(Sep. 2020 - Jun. 2021)_
 
-## Project Experience: 
+**Emotionality Analytics:**
 
 
+## Project Experience (Explain in Details): 
 
-**Database Management System:**
+**Database Management System:** _(Fall 2020)_
 
 [Database Management System](./database-management-system.html): undergrad course project equivalent to graduate level course on end-to-end implementation of a database at UC Irvine. 
 
-_Categories_: AngularCLI TypeScript Node.js 
+_Categories_: C/Cpp, Git
 
 
-**Single Sign On:**
+**Single Sign On:** _(Winter 2020)_
 
 [Single Sign On](./SSO.html): internship At St. Jude Research Hospital, worked as Information Services
 
-_Categories_: AngularCLI TypeScript Node.js 
+_Categories_: AngularCLI, TypeScript, Node.js 
 
 
-**Online Movies Store Web Application:**
+**Online Movies Store Web Application:** _(Jun. 2019 – Aug. 2019)_
 
 [Online Movies Store Web Application Project](./Online-Movies-Store-Web-Application.html): undergrad course project at the University of California, Irvine. It is a 10-week project class that heavily targets the implementation of an application.
 
-_Categories_: Java MySQL HTML CSS Maven
+_Categories_: Java, MySQL, HTML, CSS, Maven
 
-**Stay Together:**
+**Stay Together:** _(Fall 2018)_
 
 [Stay Together Project](./stay-together.html): my second year first hackathon working related to healthcare on how we can treat opioid-addicted patient better.
 
-_Categories_: Swift Storyboard
+_Categories_: Swift, Storyboard
 
 
 

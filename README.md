@@ -8,6 +8,8 @@ Welcome! My name is David. I am currently a PhD student at Vanderbilt University
 Supervised by Professor Meiyi Ma @Vanderbilt
 
 1. Currently the project is under review and will share more detail soon! :)
+   
+   
 <!-- 
 1. Used deep learning methods (RNN, CNN, attention) to analyze the signals of accelerameter and gyroscope data. 
 2. Built a Siamese Neural Network to similarity comparison between two signals data: signal and anchor reference.

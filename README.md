@@ -3,6 +3,15 @@ Welcome! My name is David. I am currently a PhD student at Vanderbilt University
 <!-- Text can be **bold**, _italic_, or ~~strikethrough~~. -->
 
 ## Research Experience: 
+**Quality of Exercises in Portable Device:** _(Sep. 2021 - Now)_
+
+Supervised by Professor Meiyi Ma @Vanderbilt
+
+1. Used deep learning methods (RNN, CNN, attention) to analyze the signals of accelerameter and gyroscope data. 
+2. Built a Siamese Neural Network to similarity comparison between two signals data: signal and anchor reference.
+
+_Categories_: Python (PyTorch, sklearn, matplotlib)
+
 **Effects of Emotion Regulation on Creativity:** _(Sep. 2020 - Jun. 2021)_
 
 Supervised by Professor Christopher Bauman @UCIrvine
@@ -25,6 +34,8 @@ _Categories_: Python, Excel
 
 **Cloudberry/Big Data Visualization** _(Apr. 2019 – Jun. 2019)_
 Python, Excel
+
+Supervised by Professor Chen Li @UCIrvine
 
 1. Implemented the web application to generate the TwitterAPI-referenced data using graph visualization andrestructured the backend and frontend connectivity.
 2. Analyzed the underlying algorithm designs and ranked drawbacks and advantages of various data structures.

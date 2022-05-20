@@ -80,25 +80,19 @@ _Categories_: Swift, Storyboard
 ## WORK EXPERIENCE:
 
 **Teaching Assistant** _(Aug. 2021 - May 2022)_
-
 @Vanderbilt University
-
 1. Graded homeworks weekly for the students bodies and hosted weekly office hours to help students with the concepts, homework instructions, and debuggings.
 2. Drew on the whiteboard to demonstrate many concepts including how operating system utilizes fork and the relationship between parent and child in processes.
 3. Hosted additionally meeting with students to confront coding challenges and brainstormed with them to resolve problems in C programming
 
 **Undergraduate Grader** _(Sep. 2019 – Dec. 2019, Mar. 2020 – June 2020)_
-
 @UC Irvine
-
 1. Designed and developed extensive test cases for command-line programs, Bash-like shell, dynamic memory allocator, and client/server network programming in C.
 2. Collaborated with the professor and team of 2 graders to design C programming assignments which could be programmatically tested with the auto-grader.
 3. Assisted students 1-on-1 with debugging programs and understanding test case failures.
 
 **Information Services Intern** _(Jun. 2019 – Aug. 2019)_
-
 @ St. Jude Research Hospital
-
 1. Developed Single Sign-On project using Agile & Waterfall development cycles and researched Active Directory Federation Service applications for authentication.
 2. Implemented idP-initiated SSO with Angular framework as frontend and Node.js as backend server to process SAML assertion from ADFS. Deployed application on Tomcat to test the Active Directory by using SecureAuth.
 3. Optimized the application with MIT-Licensed NPM plugin for SAML 2.0, samlify, to establish connectivity with Active Directory over the Node.js.

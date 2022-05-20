@@ -5,8 +5,16 @@ Welcome! My name is David. I am currently a PhD student at Vanderbilt University
 ## Research Experience: 
 **Effects of Emotion Regulation on Creativity:** _(Sep. 2020 - Jun. 2021)_
 
-**Emotionality Analytics:**
+Supervised by Professor Christopher Bauman @UCIrvine
 
+1.  Organized the data collection of judges ‘rating sheets for 50+ new entrepreneurs from the New Venture Competition at the Paul Merage School of Business.
+2.  Restructured the data with a new template for analysis to provide an accurate and clean dataset.
+3.  Examined the usefulness and consistency of the dataset and re-categorized the data into new structures.
+
+
+**Emotionality Analytics:** _(Jun. 2020 – Jun. 2021)_
+
+Supervised by Professor Christopher Bauman @UCIrvine
 
 ## Project Experience (Explain in Details): 
 

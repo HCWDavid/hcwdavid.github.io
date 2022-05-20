@@ -6,8 +6,9 @@ layout: default
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Link to another page](./another-page.html).
-
+[Stay Together Project](./another-page.html).
+[Stay Together Project](./stay-together.html).
+[Online Movies Store Web Application Project](./Online-Movies-Store-Web-Application.html).
 There should be whitespace between paragraphs.
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.

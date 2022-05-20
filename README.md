@@ -1,15 +1,40 @@
-This is just to quickly test my new website!
-
----
-layout: default
----
+# Hanchen David Wang
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Stay Together Project](./another-page.html).
-[Stay Together Project](./stay-together.html).
+
+## Project Experience: 
+
+
+
+
+
+
+**Single Sign On:**
+
+[Single Sign On](./SSO.html).
+
+_categories_: AngularCLI TypeScript Node.js 
+
+**Online Movies Store Web Application:**
+
 [Online Movies Store Web Application Project](./Online-Movies-Store-Web-Application.html).
-There should be whitespace between paragraphs.
+
+_categories_: Java MySQL HTML CSS Maven
+
+**Stay Together:**
+
+[Stay Together Project](./stay-together.html).
+
+_categories_: Swift Storyboard
+
+
+
+
+
+<!-- [Online Movies Store Web Application Project](./Online-Movies-Store-Web-Application.html). -->
+
+<!-- There should be whitespace between paragraphs.
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
@@ -123,4 +148,4 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 
 ```
 The final element.
-```
+``` -->

@@ -4,3 +4,14 @@ plugins:
 title: David's Cubicle
 description: Let's talk, chitchat, and grab coffee :)
 logo: ./assets/portfolio.png
+
+social-network-links:
+  rss: true  # remove this line if you don't want to show an RSS link at the bottom
+  # github:  HCWDavid
+  linkedIn: in/hanchen-david-wang
+  # facebook: hdavidwang
+share-links-active:
+twitter: false
+facebook: false
+linkedin: true
+vk: false

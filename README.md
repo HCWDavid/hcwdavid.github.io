@@ -3,12 +3,13 @@ Welcome! My name is David. I am currently a PhD student at Vanderbilt University
 <!-- Text can be **bold**, _italic_, or ~~strikethrough~~. -->
 
 ## RESEARCH EXPERIENCE: 
-**Quality of Exercises in Portable Device:** _(Sep. 2021 - Now)_
+**Healthcare and Physical Therapy:** _(Sep. 2021 - Now)_
 
 Supervised by Professor Meiyi Ma @Vanderbilt
-
+<!-- 
 1. Used deep learning methods (RNN, CNN, attention) to analyze the signals of accelerameter and gyroscope data. 
 2. Built a Siamese Neural Network to similarity comparison between two signals data: signal and anchor reference.
+3. Designed a framework -->
 
 _Categories_: Python (PyTorch, sklearn, matplotlib)
 

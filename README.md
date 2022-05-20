@@ -1,6 +1,6 @@
 # Hanchen David Wang
-
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+Welcome! My name is David. I am currently a PhD student at Vanderbilt working with Prof. [Meiyi Ma](https://meiyima.github.io) on healthcare and deep learning related research. 
+<!-- Text can be **bold**, _italic_, or ~~strikethrough~~. -->
 
 
 ## Project Experience: 

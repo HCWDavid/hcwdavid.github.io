@@ -1,5 +1,7 @@
 # Hanchen David Wang
 Welcome! My name is David. I am currently a PhD student at Vanderbilt University working with Prof. [Meiyi Ma](https://meiyima.github.io) on healthcare and deep learning related research. 
+
+[LinkedIn](https://www.linkedin.com/in/hanchendavidwang/)
 <!-- Text can be **bold**, _italic_, or ~~strikethrough~~. -->
 
 ## RESEARCH EXPERIENCE: 

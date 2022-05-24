@@ -105,13 +105,13 @@ Now, it is important to have the database ready; however, it is not enough to do
   - a number of bytes that are free (short freeBytes).
   - a number of keys/slots that are being used (short slotNums)
   - an offset for nextLeaf and will not be used for Internal Node, allocated for leaf Node
-  - [L|key(RID)|R] [L|key(RID)|R].....[nodeType][freeBytes][slotNum][nextLeaf (UNUSED)]
+  - [L|key(RID)|R\] [L|key(RID)|R\].....[nodeType\][freeBytes\][slotNum\][nextLeaf (UNUSED)\]
 - Leaf-page (leaf node) design.
     - a flag to show this node's type (int nodeType).
     - a number of bytes that are free (short freeBytes).
     - a number of keys/slots that are being used (short slotNums)
     - an offset for nextLeaf, basically a page number used to find the next page number
-    - [L|key(RID)|R] [L|key(RID)|R].....[nodeType][freeBytes][slotNum][nextLeaf (USED)]
+    - [L|key(RID)|R\] [L|key(RID)|R\].....[nodeType\][freeBytes\][slotNum\][nextLeaf (USED)\]
 
 ##### a quick look over split on B+ tree (again, I will not provide any code because it is a on-going class but I am happy to share my logic and to discuss if there is any optimization or better choice toward this design):
 - will describe as a pseudo-code:

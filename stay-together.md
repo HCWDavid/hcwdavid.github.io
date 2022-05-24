@@ -19,3 +19,5 @@ Here is our prototype (Storyboard):
 <img src="/assets/StayTogether/p6.JPG" alt="drawing" width="400">
 
 <img src="/assets/StayTogether/p7.JPG" alt="drawing" width="400">
+
+[back](./)

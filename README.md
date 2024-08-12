@@ -6,7 +6,7 @@ Welcome! My name is David. I am currently a PhD student at Vanderbilt University
 
 ## RESEARCH EXPERIENCE: 
 
-**Formal Verification and eXplainable AI:** _(May. 2022 - May 2023)_
+**Formal Verification and eXplainable AI:** _(May. 2023 - Now)_
 
 Supervised by Professor Meiyi Ma @Vanderbilt and co-authored with Professor Taylor Johnson and Ipek Oguz @Vanderbilt
 

@@ -5,11 +5,30 @@ Welcome! My name is David. I am currently a PhD student at Vanderbilt University
 <!-- Text can be **bold**, _italic_, or ~~strikethrough~~. -->
 
 ## RESEARCH EXPERIENCE: 
-**Healthcare and Physical Therapy:** _(Sep. 2021 - Now)_
+
+**Formal Verification and eXplainable AI:** _(May. 2022 - May 2023)_
+
+Supervised by Professor Meiyi Ma @Vanderbilt and co-authored with Professor Taylor Johnson and Ipek Oguz @Vanderbilt
+
+[Reachability XAI method paper], Under Review
+
+<!-- **Steganography and Learning Representation:** _(May. 2022 - May 2023)_
+
+Supervised by Professor Meiyi Ma @Vanderbilt and co-authored with Presiton K. Robinette @Vanderbilt
+
+SUDS: Sanitizing Universal and Dependent Steganograph \[[paper](http://arxiv.org/abs/2309.13467)\] -->
+   
+**Healthcare and Physical Therapy in Explainability:** _(May. 2022 - May 2023)_
+
+Supervised by Professor Meiyi Ma @Vanderbilt and co-authored with Professor Pamela Wisniewski @Vanderbilt
+
+MicroXercise: A Micro-Level Comparative and Explainable System for Remote Physical Therapy \[[paper](https://doi.org/10.1109/CHASE60773.2024.00017)\]
+   
+**Healthcare and Physical Therapy:** _(Sep. 2021 - May 2022)_
 
 Supervised by Professor Meiyi Ma @Vanderbilt
 
-1. Currently the project is under review and will share more detail soon! :)
+PhysiQ: Off-Site Quality Assessment of Exercise in Physical Therapy \[[paper](https://doi.org/10.1145/3570349)\]
    
    
 <!-- 

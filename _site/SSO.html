@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>David’s Cubicle | Let’s talk, chitchat, and grab coffee :)</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="David’s Cubicle" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Let’s talk, chitchat, and grab coffee :)" />
+<meta property="og:description" content="Let’s talk, chitchat, and grab coffee :)" />
+<link rel="canonical" href="http://localhost:4000/SSO.html" />
+<meta property="og:url" content="http://localhost:4000/SSO.html" />
+<meta property="og:site_name" content="David’s Cubicle" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="David’s Cubicle" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Let’s talk, chitchat, and grab coffee :)","headline":"David’s Cubicle","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/portfolio.png"}},"url":"http://localhost:4000/SSO.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=515565967f4694da52dca2d7faaa661d52cc1f1a">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="http://localhost:4000/">David's Cubicle</a></h1>
+
+        
+          <img src="/assets/portfolio.png" alt="Logo" />
+        
+
+        <p>Let's talk, chitchat, and grab coffee :)</p>
+
+        
+        <p class="view"><a href="https://github.com/HCWDavid/hcwdavid.github.io">View the Project on GitHub <small>HCWDavid/hcwdavid.github.io</small></a></p>
+        
+
+        
+
+        
+      </header>
+      <section>
+
+      <p>Single Sign-On, aka SSO, is a session and user authentication service that permits a user to use one set of login credentials to access multiple applications. A great example is Google; Google has many services, such as Google Play, Gmail, and YouTube. Once a user has successfully login into one of the applications via Google Account, it would seamlessly go into the application. The benefits of that are greater security and compliance, improvement of usability, and lower IT costs.</p>
+
+<p>SSO is mostly managed by Active Directory Federation Service, aka AD FS. First of all, before explaining AD FS, let’s talk about Active Directory. It is a hierarchical structure that stores information about objects on the network. It provides the methods for storing directory data and making data to administrators and users via the network. Nextly, AD FS is the service provided by Microsoft for SSO solution using Active Directory. It provides users with authenticated access to applications.</p>
+
+<p>idP-initiated SSO:</p>
+
+<!-- ![idP-initiated SSO](/assets/SSO/Picture2.png =250x250) -->
+<p><img src="/assets/SSO/Picture2.png" alt="drawing" width="400" /></p>
+
+<p>SP-initiated SSO:</p>
+
+<p><img src="/assets/SSO/Picture3.png" alt="drawing" width="400" /></p>
+
+<p>Note: the big gray/blue rectangles on both of the pictures can be interpreted as VM or on-premise. Tomcat, Pentaho, and Node.js is pre-installed in the machine and Angular application is deployed in the Tomcat. LOGIN (SecureAuth) is one identity provider that used in this senerio.</p>
+
+<p>I implemented prototype idP-initiated SSO using Node.js ; more specifically I optimized parsing the SAML Assertion data by using “<a href="https://www.npmjs.com/package/samlify">samlify</a>”.</p>
+
+<p>Because this project was aimed to use AngularCLI with an implementation of single web application, it was a steep learning curve in the beginning. It took me quite sometimes to understand how to use Angular as well as get familiar with TypeScript.</p>
+
+<p>Pro:</p>
+<ul>
+  <li>Reduce password fatigue</li>
+  <li>increases speed where it needed</li>
+  <li>simplifies user management</li>
+</ul>
+
+<p>Con:</p>
+<ul>
+  <li>Might need extra-strong password (because only one username and passwrod will be needed)</li>
+  <li>If SSO is down, all connection is down</li>
+  <li>Takes longer time to set it up</li>
+</ul>
+
+<p>Reference:</p>
+<ul>
+  <li><a href="https://www.npmjs.com/package/samlify">Samlify</a></li>
+  <li><a href="https://www.onelogin.com/learn/how-single-sign-on-works">Single Sign-On onelogin</a></li>
+</ul>
+
+<p><a href="./">back</a></p>
+
+
+      </section>
+      <footer>
+        
+        <p>This project is maintained by <a href="https://github.com/HCWDavid">HCWDavid</a></p>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/assets/js/scale.fix.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title | default: site.github.repository_name }}</title>
+    <meta name="description" content="{{ page.description | default: site.description | default: site.github.project_tagline }}"/>
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="{{ "/" | relative_url }}" {% if page.url == "/" %}class="active"{% endif %}>Home</a></li>
+        <li><a href="{{ "/about.html" | relative_url }}" {% if page.url contains "about" %}class="active"{% endif %}>About Me</a></li>
+        <li><a href="{{ "/publications.html" | relative_url }}" {% if page.url contains "publications" %}class="active"{% endif %}>Publications</a></li>
+        <li><a href="{{ "/projects.html" | relative_url }}" {% if page.url contains "project" %}class="active"{% endif %}>Projects</a></li>
+        <li class="search-container">
+          <input type="text" id="search-input" placeholder="Search...">
+          <button id="search-button">🔍</button>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="main-content">
+      {{ content }}
+    </div>
+
+    <footer>
+      <!-- Visitor Map -->
+      <div class="visitor-map">
+        <h3>Visitor Map</h3>
+        <div class="map-container">
+          <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=WLa_wUS-htil8NdYmqUuJnwdcjS90t7jc5fTz22NaL0&cl=ffffff&w=a"></script>
+        </div>
+      </div>
+      
+      {% if site.github.is_project_page %}
+      <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+      {% endif %}
+      <p><small>Hosted on GitHub Pages</small></p>
+    </footer>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/search.js" | relative_url }}"></script>
+  </body>
+</html>

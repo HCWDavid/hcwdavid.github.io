@@ -4,12 +4,12 @@
 set -e
 
 # Default template
-TEMPLATE="${1:-t2}"
+TEMPLATE="${1:-t1}"
 
 if [[ "$TEMPLATE" != "t1" && "$TEMPLATE" != "t2" ]]; then
     echo "❌ Invalid template. Use: ./run.sh [t1|t2]"
-    echo "   t1 = Simple clean template"
-    echo "   t2 = ModernCV template (default)"
+    echo "   t1 = Simple clean template (default)"
+    echo "   t2 = ModernCV template"
     exit 1
 fi
 

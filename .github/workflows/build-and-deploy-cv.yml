@@ -28,10 +28,15 @@ jobs:
       
       - name: Generate content from JSON
         run: |
-          echo "Generating LaTeX and website content from JSON..."
-          python3 scripts/generate-latex.py
+          echo "Generating website content from JSON..."
           python3 scripts/generate-website.py
-          echo "Content generation complete!"
+          echo "Website content generation complete!"
+      
+      - name: Generate LaTeX from JSON
+        run: |
+          echo "Generating LaTeX content from JSON..."
+          python3 scripts/generate-latex.py
+          echo "LaTeX generation complete!"
       
       - name: Build CV with Docker
         working-directory: ./cv_template-main

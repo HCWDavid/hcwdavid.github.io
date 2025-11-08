@@ -1,5 +1,18 @@
 [
   {
+    "title": "PhysiQ",
+    "date": "December 2022",
+    "organization": "Vanderbilt University",
+    "description": "Off-site quality assessment framework for physical therapy exercises using smartwatch and multi-task spatiotemporal Siamese Neural Network",
+    "technologies": ["Deep Learning", "Wearable Sensors", "Python", "Siamese Networks"],
+    "links": [
+      {
+        "text": "Project Page",
+        "url": "./projects/PhysiQ.html"
+      }
+    ]
+  },
+  {
     "title": "Database Management System",
     "date": "Fall 2020",
     "organization": "UC Irvine",
@@ -8,7 +21,7 @@
     "links": [
       {
         "text": "Project Page",
-        "url": "./database-management-system.html"
+        "url": "./projects/database-management-system.html"
       }
     ]
   },
@@ -21,7 +34,7 @@
     "links": [
       {
         "text": "Project Page",
-        "url": "./SSO.html"
+        "url": "./projects/SSO.html"
       }
     ]
   },
@@ -34,7 +47,7 @@
     "links": [
       {
         "text": "Project Page",
-        "url": "./Online-Movies-Store-Web-Application.html"
+        "url": "./projects/Online-Movies-Store-Web-Application.html"
       }
     ]
   },
@@ -47,7 +60,7 @@
     "links": [
       {
         "text": "Project Page",
-        "url": "./stay-together.html"
+        "url": "./projects/stay-together.html"
       }
     ]
   }

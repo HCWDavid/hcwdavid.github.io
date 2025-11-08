@@ -1,36 +1,67 @@
-# **Publications**
+---
+layout: default
+title: Publications
+---
 
-1. **Wang, Hanchen David**, Bae, Siwoo, Sun, Xutong, Thatigotla, Yashvitha, and Ma, Meiyi.  
-   *EXACT: A Meta-Learning Framework for Precise Exercise Segmentation in Physical Therapy.*  
-   International Conference on Cyber-Physical Systems (ICCPS), Nov. 2024, Under Review.
+# Publications
 
-2. **Wang, Hanchen David**, Bae, Siwoo, Chen, Zirong, and Ma, Meiyi.  
-   *Learning with Preserving for Continual Multitask Learning.*  
-   International Conference on Learning Representations (ICLR), Oct. 2024, Under Review.
+A comprehensive list of my research publications in artificial intelligence, machine learning, and healthcare applications.
 
-3. Cohn, Clayton, Davalos, Eduardo, Vatral, Caleb, Fonteles, Joyce, **Wang, Hanchen David**, Ma, Meiyi, and Biswas, Gautam.  
-   *Multimodal Methods for Analyzing Learning and Training Environments: A Systematic Literature Review.*  
-   ACM Computing Surveys, Aug. 2024, Under Review.
+---
 
-4. Lopez, Diego Manzanas, Liu, Han, **Wang, Hanchen David**, Moyer, Daniel, Ma, Meiyi, Johnson, Taylor T., and Oguz, Ipek.  
-   *Robustness Certification of Semantic Segmentation of Multiple Sclerosis Lesions.*  
-   SPIE, Aug. 2024, Under Review.
+1. <span style='font-size: 1.1em;'>**SmartSeg: A Non-Parametric Approach for Smart Glass Video Segmentation**</span>  
+   **Wang, Hanchen David**, Liu, Yilin, Fu, Haowei, Mason, Madison Lee, Li, Fanjie, Wise, Alyssa, Levin, Daniel T, Biswas, Gautam, Ma, Meiyi  
+   Pervasive and Mobile Computing, Under Review.  
 
-5. **Wang, Hanchen David**, Robinette, Preston K., Lopez, Diego Manzanas, Oguz, Ipek, Johnson, Taylor T., and Ma, Meiyi.  
-   *ReachX: Abstraction-based Reachability Verification for Targeted and Robust eXplainable AI.*  
-   Aug. 2024, Under Revision.
+2. <span style='font-size: 1.1em;'>**Decoding Human Motion: A Scoping Review of Explainable AI Methods in Movement Analysis**</span>  
+   **Wang, Hanchen David**, Khan, Nibraas, Ghosh, Ritam, Tauseef, Mahrukh, Mion, Lorraine, Ma, Meiyi, Sarkar, Nilanjan  
+   Pervasive and Mobile Computing, Under Review.  
 
-6. **Wang, Hanchen David**, Khan, Nibraas, Chen, Anna, Sarkar, Nilanjan, Wisniewski, Pamela, and Ma, Meiyi.  
-   *MicroXercise: A Micro-Level Comparative and Explainable System for Remote Physical Therapy.*  
-   Connected Health: Applications, Systems and Engineering Technologies (CHASE), Mar. 2024.  
-   [DOI](https://doi.org/10.1109/CHASE60773.2024.00017)
+3. <span style='font-size: 1.1em;'>**Towards Verified and Targeted Explanations through Formal Methods**</span>  
+   **Wang, Hanchen David**, Robinette, Preston K., Lopez, Diego Manzanas, Oguz, Ipek, Johnson, Taylor T., Ma, Meiyi  
+   JAIR, Major Revision.  
 
-7. Robinette, Preston K., **Wang, Hanchen David**, Shehadeh, Nishan, Moyer, Daniel, and Johnson, Taylor T.  
-   *SUDS: Sanitizing Universal and Dependent Steganography.*  
-   Proceedings of the 26th European Conference on Artificial Intelligence, Sept. 2023.  
-   [arXiv](https://arxiv.org/abs/2309.13467)
+4. <span style='font-size: 1.1em;'>**Learning with Preserving for Continual Multitask Learning**</span>  
+   **Wang, Hanchen David**, Bae, Siwoo, Chen, Zirong, Ma, Meiyi  
+   AAAI, Accepted (Oral).  
 
-8. **Wang, Hanchen David** and Ma, Meiyi.  
-   *PhysiQ: Off-Site Quality Assessment of Exercise in Physical Therapy.*  
-   Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT), vol. 6, no. 4, Dec. 2022.  
-   [DOI](https://doi.org/10.1145/3570349)
+5. <span style='font-size: 1.1em;'>**Multimodal Methods for Analyzing Learning and Training Environments: A Systematic Literature Review**</span>  
+   Cohn, Clayton, Davalos, Eduardo, Vatral, Caleb, Fonteles, Joyce, **Wang, Hanchen David**, Ma, Meiyi, Biswas, Gautam  
+   ACM Computing Surveys, Under Review.  
+   [DOI](https://doi.org/10.48550/arXiv.2408.14491)  
+
+6. <span style='font-size: 1.1em;'>**EXACT: A Meta-Learning Framework for Precise Exercise Segmentation in Physical Therapy**</span>  
+   **Wang, Hanchen David**, Bae, Siwoo, Sun, Xutong, Thatigotla, Yashvitha, Ma, Meiyi  
+   International Conference on Cyber-Physical Systems (ICCPS), Published.  
+   [DOI](https://doi.org/10.1145/3716550.3722027)  
+
+7. <span style='font-size: 1.1em;'>**Robustness Certification of Semantic Segmentation of Multiple Sclerosis Lesions**</span>  
+   Lopez, Diego Manzanas, Liu, Han, **Wang, Hanchen David**, Moyer, Daniel, Ma, Meiyi, Johnson, Taylor T., Oguz, Ipek  
+   Medical Imaging, Under Revision.  
+
+8. <span style='font-size: 1.1em;'>**Robustness Certification of Semantic Segmentation of Multiple Sclerosis Lesions**</span>  
+   Lopez, Diego Manzanas, Liu, Han, **Wang, Hanchen David**, Moyer, Daniel, Ma, Meiyi, Johnson, Taylor T., Oguz, Ipek  
+   Medical Imaging, Under Revision.  
+
+9. <span style='font-size: 1.1em;'>**MicroXercise: A Micro-Level Comparative and Explainable System for Remote Physical Therapy**</span>  
+   **Wang, Hanchen David**, Khan, Nibraas, Chen, Anna, Sarkar, Nilanjan, Wisniewski, Pamela, Ma, Meiyi  
+   Connected Health: Applications, Systems and Engineering Technologies (CHASE), Published.  
+   [DOI](https://doi.org/10.1109/CHASE60773.2024.00017)  
+
+10. <span style='font-size: 1.1em;'>**SUDS: Sanitizing Universal and Dependent Steganography**</span>  
+   Robinette, Preston K., **Wang, Hanchen David**, Shehadeh, Nishan, Moyer, Daniel, Johnson, Taylor T.  
+   Proceedings of the 26th European Conference on Artificial Intelligence (ECAI), Published.  
+   [DOI](https://doi.org/10.48550/arXiv.2309.13467)  
+
+11. <span style='font-size: 1.1em;'>**PhysiQ: Off-Site Quality Assessment of Exercise in Physical Therapy**</span>  
+   **Wang, Hanchen David**, Ma, Meiyi  
+   Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Published.  
+   [DOI](https://doi.org/10.1145/3570349)  
+
+---
+
+<div style="text-align: center; margin-top: 30px; padding: 20px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 8px; border: 1px solid #dee2e6;">
+  <p style="color: #495057; margin: 0;">
+    For the most up-to-date list, visit my <a href="https://scholar.google.com/citations?user=ZAi6VHsAAAAJ&hl=en" target="_blank" style="color: #212529; font-weight: 600;">Google Scholar profile</a>
+  </p>
+</div>

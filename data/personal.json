@@ -11,7 +11,8 @@
   "social": {
     "linkedin": "hanchendavidwang",
     "github": "HCWDavid",
-    "website": "https://hcwdavid.github.io"
+    "website": "https://hcwdavid.github.io",
+    "google_scholar": "https://scholar.google.com/citations?user=ZAi6VHsAAAAJ&hl=en"
   },
   "bio": "I am passionate about advancing the fields of eXplainable AI (XAI), healthcare, and machine learning. My work focuses on leveraging cutting-edge machine learning techniques to improve physical therapy, nursing simulations, and formal verification in AI."
 }

@@ -2,30 +2,30 @@
   {
     "authors": ["Wang, Hanchen David", "Liu, Yilin", "Fu, Haowei", "Mason, Madison Lee", "Li, Fanjie", "Wise, Alyssa", "Levin, Daniel T", "Biswas, Gautam", "Ma, Meiyi"],
     "title": "SmartSeg: A Non-Parametric Approach for Smart Glass Video Segmentation",
-    "venue": "MobiSys",
+    "venue": "Pervasive and Mobile Computing",
     "year": 2025,
-    "month": "March",
-    "status": "Prepare for Submission",
-    "type": "conference",
+    "month": "June",
+    "status": "Under Review",
+    "type": "journal",
     "tags": ["Video Segmentation", "Smart Glasses", "Computer Vision"]
   },
   {
     "authors": ["Wang, Hanchen David", "Khan, Nibraas", "Ghosh, Ritam", "Tauseef, Mahrukh", "Mion, Lorraine", "Ma, Meiyi", "Sarkar, Nilanjan"],
     "title": "Decoding Human Motion: A Scoping Review of Explainable AI Methods in Movement Analysis",
-    "venue": "IMWUT",
+    "venue": "Pervasive and Mobile Computing",
     "year": 2025,
-    "month": "May",
+    "month": "October",
     "status": "Under Review",
     "type": "journal",
     "tags": ["XAI", "Human Motion", "Survey"]
   },
   {
     "authors": ["Wang, Hanchen David", "Robinette, Preston K.", "Lopez, Diego Manzanas", "Oguz, Ipek", "Johnson, Taylor T.", "Ma, Meiyi"],
-    "title": "ReachX: Abstraction-based Reachability Verification for Targeted and Robust eXplainable AI",
+    "title": "Towards Verified and Targeted Explanations through Formal Methods",
     "venue": "JAIR",
-    "year": 2025,
-    "month": "May",
-    "status": "Under Review",
+    "year": 2024,
+    "month": "August",
+    "status": "Major Revision",
     "type": "journal",
     "tags": ["XAI", "Neural Network Verification", "Formal Methods"]
   },
@@ -34,8 +34,8 @@
     "title": "Learning with Preserving for Continual Multitask Learning",
     "venue": "AAAI",
     "year": 2025,
-    "month": "July",
-    "status": "Prepared for Submission",
+    "month": "August",
+    "status": "Accepted (Oral)",
     "type": "conference",
     "tags": ["Continual Learning", "Multitask Learning"]
   },
@@ -56,10 +56,20 @@
     "venue": "International Conference on Cyber-Physical Systems (ICCPS)",
     "year": 2024,
     "month": "November",
-    "status": "Accepted",
+    "status": "Published",
     "type": "conference",
     "doi": "10.1145/3716550.3722027",
     "tags": ["Physical Therapy", "Time Series", "Deep Learning"]
+  },
+  {
+    "authors": ["Lopez, Diego Manzanas", "Liu, Han", "Wang, Hanchen David", "Moyer, Daniel", "Ma, Meiyi", "Johnson, Taylor T.", "Oguz, Ipek"],
+    "title": "Robustness Certification of Semantic Segmentation of Multiple Sclerosis Lesions",
+    "venue": "Medical Imaging",
+    "year": 2024,
+    "month": "August",
+    "status": "Under Revision",
+    "type": "journal",
+    "tags": ["Medical Imaging", "Robustness", "Semantic Segmentation"]
   },
   {
     "authors": ["Lopez, Diego Manzanas", "Liu, Han", "Wang, Hanchen David", "Moyer, Daniel", "Ma, Meiyi", "Johnson, Taylor T.", "Oguz, Ipek"],

@@ -1,167 +1,322 @@
 #!/usr/bin/env python3
 """
-Generate README.md (website content) from JSON data
+Generate all website pages from JSON data:
+- Homepage (index.md)
+- Publications page (publications.md)
+- Projects page (projects.md)
 """
+
 import json
+from datetime import datetime
 from pathlib import Path
 
 
-def format_date_range(start, end):
-    """Format date range for display"""
-    if end.lower() == "present":
-        return f"{start[:7]} – Present"
-    return f"{start[:7]} – {end[:7]}"
+def load_json(filename):
+    """Load JSON data from the data directory."""
+    data_dir = Path(__file__).parent.parent / 'data'
+    with open(data_dir / filename, 'r') as f:
+        return json.load(f)
 
 
-def format_month_year(year, month):
-    """Format month and year"""
-    return f"{month} {year}"
+def format_date(date_str):
+    """Format date from YYYY-MM to Month YYYY."""
+    if date_str.lower() == 'present':
+        return 'Present'
+    try:
+        date_obj = datetime.strptime(date_str, '%Y-%m')
+        return date_obj.strftime('%b %Y')
+    except Exception:
+        return date_str
 
 
-def generate_readme(data):
-    """Generate complete README.md"""
-    personal = data["personal"]
+def make_author_bold(authors, name_to_bold):
+    """Make the specified author name bold."""
+    # If authors is a list, convert to string
+    if isinstance(authors, list):
+        authors_str = ', '.join(authors)
+    else:
+        authors_str = authors
+    
+    # Handle different name formats
+    name_variations = [
+        name_to_bold,
+        name_to_bold.replace(',', ''),
+        ' '.join(reversed(name_to_bold.split(', '))),
+    ]
+    
+    for variation in name_variations:
+        if variation in authors_str:
+            authors_str = authors_str.replace(variation, f"**{variation}**")
+            break
+    
+    return authors_str
 
-    # Header
-    content = f"""# {personal["firstName"]} {personal["lastName"]}
-Welcome! My name is David. I am currently a PhD student at Vanderbilt University working with Prof. [Meiyi Ma](https://meiyima.github.io) on eXplainable AI in Healthcare and Deep Learning research.
 
-[LinkedIn](https://www.linkedin.com/in/{personal["social"]["linkedin"]}/) | [C.V.](./Resume.pdf) | [GitHub](https://github.com/{personal["social"]["github"]})
+def generate_homepage():
+    """Generate the homepage (index.md)."""
+    research_data = load_json('research.json')
+    publications_data = load_json('publications.json')
+    employment_data = load_json('employment.json')
+    
+    # Get latest items
+    latest_research = research_data[0] if research_data else None
+    latest_publication = publications_data[0] if publications_data else None
+    latest_position = employment_data[0] if employment_data else None
+    
+    content = """---
+layout: default
+---
+
+# Welcome to David's Cubicle ☕
+
+I'm Hanchen David Wang, a PhD student at Vanderbilt University working on **eXplainable AI** and **Healthcare applications**. This is my digital space where I share my research, projects, and thoughts.
 
 ---
 
-## **About Me**
-{personal["bio"]}
+## Quick Links
+
+- [Download my CV](./Resume.pdf)
+- [View my Publications](./publications.html)
+- [Check out my Projects](./projects.html)
+- [Learn more About Me](./about.html)
 
 ---
 
-## **Research Experience**
+## Recent Highlights
 
 """
-
-    # Research projects
-    for research in data["research"]:
-        date_str = f"**{format_date_range(research['startDate'], research['endDate'])}**"
-        collabs = ", ".join(research["collaborators"]
-                            ) if research["collaborators"] else ""
-        advisor_str = f"advised by {research['advisor']}" if research.get(
-            "advisor"
-        ) else ""
-
-        if collabs and advisor_str:
-            collab_line = f"Collaborators: {collabs}, {advisor_str}"
-        elif collabs:
-            collab_line = f"Collaborators: {collabs}"
-        elif advisor_str:
-            collab_line = advisor_str
-        else:
-            collab_line = ""
-
-        content += f"""### **{research["title"]}**
-{date_str}  
-{collab_line}  
+    
+    # Add latest research
+    if latest_research:
+        start = format_date(latest_research.get('startDate', ''))
+        end = format_date(latest_research.get('endDate', 'Present'))
+        title = latest_research.get('title', '')
+        description = latest_research.get('description', [''])[0] if latest_research.get('description') else ''
+        
+        content += f"""**Latest Research**  
+{title} ({start} - {end})  
+{description}
 
 """
-        for desc in research["description"]:
-            content += f"- {desc}\n"
-
-        content += "\n---\n\n"
-
-    # Publications
-    content += """## **Publications**
-
-"""
-
-    for i, pub in enumerate(data["publications"], 1):
-        authors = ", ".join(pub["authors"])
-        # Bold the main author (you)
-        authors = authors.replace(
-            "Wang, Hanchen David", "**Wang, Hanchen David**"
-        )
-
-        status = f", {pub['status']}" if pub.get("status") else ""
-
-        content += f"""{i}. {authors}  
-   *{pub["title"]}.*  
-   {pub["venue"]}, {format_month_year(pub["year"], pub["month"])}{status}.
+    
+    # Add recent publication
+    if latest_publication:
+        title = latest_publication.get('title', '')
+        venue = latest_publication.get('venue', '')
+        status = latest_publication.get('status', '')
+        
+        status_text = f" - {status}" if status else ""
+        content += f"""**Recent Publication**  
+{title}  
+{venue}{status_text}
 
 """
+    
+    # Add current position
+    if latest_position:
+        start = format_date(latest_position.get('startDate', ''))
+        end = format_date(latest_position.get('endDate', 'Present'))
+        org = latest_position.get('organization', '')
+        position_title = latest_position.get('title', '')
+        highlights = latest_position.get('highlights', [])
+        description = highlights[0] if highlights else ''
+        
+        content += f"""**Current Position**  
+{position_title} @ {org} ({start} - {end})  
+{description}
 
-    content += """**More on [Publications](./publications.md)**
+"""
+    
+    content += """---
+
+<div style="text-align: center; margin-top: 30px; padding: 20px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 8px; border: 1px solid #dee2e6;">
+  <p style="font-size: 16px; color: #495057; margin: 0;">
+    <strong>Let's connect!</strong> Feel free to reach out for collaborations or discussions about AI and healthcare.
+  </p>
+</div>
+"""
+    
+    return content
+
+
+def generate_publications():
+    """Generate the publications page."""
+    publications_data = load_json('publications.json')
+    personal_data = load_json('personal.json')
+    
+    # Get Google Scholar link from personal data
+    google_scholar_url = personal_data.get('social', {}).get('google_scholar', 'https://scholar.google.com')
+    
+    content = """---
+layout: default
+title: Publications
+---
+
+# Publications
+
+A comprehensive list of my research publications in artificial intelligence, machine learning, and healthcare applications.
 
 ---
 
-## PROJECT EXPERIENCE (Explain in Details): 
-
 """
-
-    # Projects
-    for project in data["projects"]:
-        tech_str = ", ".join(project["technologies"])
-        content += f"""**{project["title"]}:** _({project["date"]})_
-
-[{project["title"]}]({project["links"][0]["url"]}): {project["description"]}
-
-_Categories_: {tech_str}
-
-"""
-        if project != data["projects"][-1]:
-            content += "\n"
-
-    # Work Experience
-    content += """
-## WORK EXPERIENCE:
-
-"""
-
-    for exp in data["experience"]:
-        if exp["type"] == "research":
-            continue  # Skip research positions, they're in research section
-
-        date_str = f"_({format_date_range(exp['startDate'], exp['endDate'])})_"
-        content += f"""**{exp["title"]}** {date_str}
-
-@{exp["organization"]}
-"""
-        for i, highlight in enumerate(exp["highlights"], 1):
-            content += f"{i}. {highlight}\n"
-
+    
+    for i, pub in enumerate(publications_data, 1):
+        title = pub.get('title', '')
+        authors = pub.get('authors', '')
+        venue = pub.get('venue', '')
+        date = pub.get('date', '')
+        status = pub.get('status', '')
+        doi = pub.get('doi', '')
+        arxiv = pub.get('arxiv', '')
+        
+        # Bold the user's name in authors
+        authors = make_author_bold(authors, 'Wang, Hanchen David')
+        authors = make_author_bold(authors, 'Hanchen David Wang')
+        
+        # Format the entry with title first (larger font) then authors
+        content += f"{i}. <span style='font-size: 1.1em;'>**{title}**</span>  \n"
+        content += f"   {authors}  \n"
+        
+        if venue:
+            content += f"   {venue}"
+            if date:
+                content += f", {date}"
+            if status:
+                content += f", {status}"
+            content += ".  \n"
+        
+        # Add links if available
+        links = []
+        if doi:
+            # Add https://doi.org/ prefix if not already present
+            doi_url = doi if doi.startswith('http') else f"https://doi.org/{doi}"
+            links.append(f"[DOI]({doi_url})")
+        if arxiv:
+            # Add https://arxiv.org/abs/ prefix if not already present
+            arxiv_url = arxiv if arxiv.startswith('http') else f"https://arxiv.org/abs/{arxiv}"
+            links.append(f"[arXiv]({arxiv_url})")
+        
+        if links:
+            content += f"   {' | '.join(links)}  \n"
+        
         content += "\n"
+    
+    content += """---
 
+<div style="text-align: center; margin-top: 30px; padding: 20px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 8px; border: 1px solid #dee2e6;">
+  <p style="color: #495057; margin: 0;">
+    For the most up-to-date list, visit my <a href="{}" target="_blank" style="color: #212529; font-weight: 600;">Google Scholar profile</a>
+  </p>
+</div>
+""".format(google_scholar_url)
+    
+    return content
+
+
+def generate_projects():
+    """Generate the projects page."""
+    projects_data = load_json('projects.json')
+    
+    # Get the path to the projects folder
+    docs_dir = Path(__file__).parent.parent / 'docs' / 'projects'
+    
+    content = """---
+layout: default
+title: Projects
+---
+
+# Projects
+
+A collection of my software engineering and development projects, showcasing work across various technologies and domains.
+
+---
+
+"""
+    
+    for project in projects_data:
+        title = project.get('title', '')
+        date = project.get('date', '')
+        description = project.get('description', '')
+        technologies = ', '.join(project.get('technologies', []))
+        links = project.get('links', [])
+        
+        # Check if a project page exists in the /projects folder
+        # Convert title to filename format (e.g., "Database Management System" -> "database-management-system.md")
+        # Or check if the link points to an existing file
+        has_detail_page = False
+        link_url = '#'
+        
+        if links:
+            link_url = links[0].get('url', '#')
+            # Extract filename from URL (e.g., "./projects/PhysiQ.html" -> "PhysiQ.md")
+            if './projects/' in link_url:
+                filename = link_url.replace('./projects/', '').replace('.html', '.md')
+                project_file = docs_dir / filename
+                has_detail_page = project_file.exists()
+        
+        # If detail page exists, make title clickable; otherwise, just show as text
+        if has_detail_page:
+            content += f"""## [{title}]({link_url})
+**{date}**
+
+{description}
+
+**Technologies:** {technologies}
+
+---
+
+"""
+        else:
+            content += f"""## {title}
+**{date}**
+
+{description}
+
+**Technologies:** {technologies}
+
+---
+
+"""
+    
+    content += """
+<div style="text-align: center; margin-top: 30px; padding: 20px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 8px; border: 1px solid #dee2e6;">
+  <p style="color: #495057; margin: 0;">
+    More projects and code samples available on <a href="https://github.com/HCWDavid" target="_blank" style="color: #212529; font-weight: 600;">GitHub</a>
+  </p>
+</div>
+"""
+    
     return content
 
 
 def main():
-    # Load JSON data from separate files
-    data_dir = Path(__file__).parent.parent / "data"
-
-    with open(data_dir / "personal.json") as f:
-        data = {
-            "personal": json.load(f)
-        }
-    with open(data_dir / "employment.json") as f:
-        data["experience"] = json.load(f)
-    with open(data_dir / "research.json") as f:
-        data["research"] = json.load(f)
-    with open(data_dir / "publications.json") as f:
-        data["publications"] = json.load(f)
-    with open(data_dir / "projects.json") as f:
-        data["projects"] = json.load(f)
-
-    # Generate README
-    content = generate_readme(data)
-
-    # Write to docs/index.md (for GitHub Pages)
-    docs_path = Path(__file__).parent.parent / "docs"
-    docs_path.mkdir(exist_ok=True)
-
-    index_path = docs_path / "index.md"
-    with open(index_path, "w") as f:
-        f.write(content)
-
-    print(f"✅ Generated: {index_path}")
-    print("🎉 Website content updated!")
+    """Generate all website pages."""
+    docs_dir = Path(__file__).parent.parent / 'docs'
+    docs_dir.mkdir(exist_ok=True)
+    
+    # Generate homepage
+    homepage_content = generate_homepage()
+    homepage_path = docs_dir / 'index.md'
+    with open(homepage_path, 'w') as f:
+        f.write(homepage_content)
+    print(f"✅ Homepage generated: {homepage_path}")
+    
+    # Generate publications page
+    publications_content = generate_publications()
+    publications_path = docs_dir / 'publications.md'
+    with open(publications_path, 'w') as f:
+        f.write(publications_content)
+    print(f"✅ Publications page generated: {publications_path}")
+    
+    # Generate projects page
+    projects_content = generate_projects()
+    projects_path = docs_dir / 'projects.md'
+    with open(projects_path, 'w') as f:
+        f.write(projects_content)
+    print(f"✅ Projects page generated: {projects_path}")
+    
+    print("\n🎉 All website pages generated successfully!")
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

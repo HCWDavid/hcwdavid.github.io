@@ -591,6 +591,19 @@ pre {
   color: #000;
 }
 
+/* Publication title links - override inline styles */
+.main-content span a {
+  color: #333 !important;
+  text-decoration: underline !important;
+  font-weight: 600 !important;
+  border-bottom: none !important;
+}
+
+.main-content span a:hover {
+  color: #000 !important;
+  text-decoration: underline !important;
+}
+
 /* Horizontal rules */
 hr {
   border: 0;
@@ -750,6 +763,17 @@ footer p {
   
   .main-nav a::after {
     display: none;
+  }
+  
+  /* Active tab in mobile menu */
+  .main-nav a.active {
+    background: rgba(255, 255, 255, 0.2);
+    border-left: 4px solid white;
+    font-weight: 600;
+  }
+  
+  .main-nav a:hover {
+    background: rgba(255, 255, 255, 0.15);
   }
   
   .search-container {

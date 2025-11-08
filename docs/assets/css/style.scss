@@ -710,15 +710,15 @@ footer p {
   .mobile-menu-toggle {
     display: block;
     left: 10px;
-    top: 12px;
-    transform: none;
+    top: 50%;
+    transform: translateY(-50%);
     padding: 8px;
   }
   
   .mobile-menu-toggle.active {
     left: 10px;
-    top: 12px;
-    transform: none;
+    top: 50%;
+    transform: translateY(-50%);
   }
   
   /* Ensure nav has enough height for hamburger */

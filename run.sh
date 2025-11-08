@@ -20,9 +20,9 @@ echo ""
 echo "📝 Generating content from JSON..."
 
 if [ "$TEMPLATE" = "t1" ]; then
-    python3 scripts/generate-simple.py
+    python3 scripts/generate-t1.py
 else
-    python3 scripts/generate-latex.py
+    python3 scripts/generate-t2.py
 fi
 
 echo ""
@@ -30,7 +30,11 @@ echo "🌐 Generating website..."
 python3 scripts/generate-website.py
 
 echo ""
-echo "📄 Building PDF..."
+echo "� Generating search index..."
+python3 scripts/generate-search-index.py
+
+echo ""
+echo "�📄 Building PDF..."
 
 if [ "$TEMPLATE" = "t1" ]; then
     # Build simple template with xelatex

@@ -16,7 +16,7 @@
     "title": "Database Management System",
     "date": "Fall 2020",
     "organization": "UC Irvine",
-    "description": "End-to-end implementation of a database management system equivalent to graduate level coursework",
+    "description": "Implemented paged file (PF) and record-based file (RBF) management systems in C/C++. Upgraded relation manager (RM) designs to store catalog information by columns with hidden metadata",
     "technologies": ["C/C++", "Git"],
     "links": [
       {
@@ -24,6 +24,41 @@
         "url": "./projects/database-management-system.html"
       }
     ]
+  },
+  {
+    "title": "B+ Tree for Database Management",
+    "date": "2020",
+    "organization": "Personal Project",
+    "description": "Developed a B+ tree data structure for efficient database management with optimized insertion, deletion, and search operations, significantly improving database performance",
+    "technologies": ["C/C++", "Data Structures", "Algorithm Optimization"]
+  },
+  {
+    "title": "Process and Resource Manager",
+    "date": "2020",
+    "organization": "UC Irvine",
+    "description": "Implemented Python data structures to manage processes and resources, optimizing process states and supporting multi-unit resource usage",
+    "technologies": ["Python", "Operating Systems"]
+  },
+  {
+    "title": "File System",
+    "date": "2020",
+    "organization": "UC Irvine",
+    "description": "Designed a Java file system using an emulated disk, optimized with a directory using fixed index structures as file descriptors",
+    "technologies": ["Java", "File Systems"]
+  },
+  {
+    "title": "Simple Bash-like Shell",
+    "date": "2020",
+    "organization": "UC Irvine",
+    "description": "Created a C-based shell capable of handling simple and complex commands, with multi-piping, redirection, background process, and signal handling functionalities",
+    "technologies": ["C", "Unix/Linux", "System Programming"]
+  },
+  {
+    "title": "Search Engine",
+    "date": "2020",
+    "organization": "UC Irvine",
+    "description": "Implemented a search engine in Python that ranks HTML data's importance using term frequency-inverse document frequency (tf-idf) and cosine similarity for search functionality",
+    "technologies": ["Python", "Information Retrieval", "NLP"]
   },
   {
     "title": "Single Sign On",
@@ -42,8 +77,8 @@
     "title": "Online Movies Store Web Application",
     "date": "Summer 2019",
     "organization": "UC Irvine",
-    "description": "10-week project implementing full-stack web application for online movie store",
-    "technologies": ["Java", "MySQL", "HTML", "CSS", "Maven"],
+    "description": "Collaborated on building a cloud-based server and web application using Java, MySQL, HTML, CSS, and Maven. Optimized usability with Tomcat and MySQL replication, connection pooling, and micro-services architecture",
+    "technologies": ["Java", "MySQL", "HTML", "CSS", "Maven", "Tomcat"],
     "links": [
       {
         "text": "Project Page",
@@ -52,11 +87,18 @@
     ]
   },
   {
-    "title": "Stay Together",
+    "title": "AI Stock Watch Bot",
+    "date": "2019",
+    "organization": "Personal Project",
+    "description": "Built an AI bot for monitoring stock market trends and making data-driven predictions using machine learning techniques to analyze historical stock data. Implemented machine learning algorithms, data preprocessing, and financial data APIs",
+    "technologies": ["Python", "Machine Learning", "Financial APIs"]
+  },
+  {
+    "title": "Stay Together (Opioid Hackathon - Final Nominee)",
     "date": "Fall 2018",
     "organization": "Hackathon",
-    "description": "Healthcare application focused on improving treatment for opioid-addicted patients",
-    "technologies": ["Swift", "Storyboard"],
+    "description": "Worked as iOS developer on a Swift-based social media application designed to treat opioid-addicted patients through a supportive community with strong interaction among patients, family members, and specialists",
+    "technologies": ["Swift", "iOS Development", "Social Media"],
     "links": [
       {
         "text": "Project Page",

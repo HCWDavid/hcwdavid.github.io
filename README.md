@@ -13,11 +13,15 @@ This repository contains my personal website and CV automation system.
 │   ├── research.json       # Research projects
 │   ├── publications.json   # Papers and publications
 │   ├── projects.json       # Course projects
+│   ├── service.json        # Leadership and service activities
 │   └── skills.json         # Technical skills
 ├── templates/
 │   ├── simple/             # t1: Clean, simple template
 │   └── moderncv/           # t2: ModernCV template (in cv_template-main/)
 ├── scripts/                # Generation scripts
+│   ├── generate-t1.py      # Generate simple template CV
+│   ├── generate-t2.py      # Generate ModernCV template CV
+│   └── generate-website.py # Generate website pages
 └── run.sh                  # Main build script
 ```
 

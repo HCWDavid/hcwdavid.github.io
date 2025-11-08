@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generate CV for simple template (t1)
+Generate CV for template t1 (Simple clean template)
 """
 import json
 import sys

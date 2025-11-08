@@ -13,6 +13,7 @@ I'm Hanchen David Wang, a PhD student at Vanderbilt University working on **eXpl
 - [Download my CV](./Resume.pdf)
 - [View my Publications](./publications.html)
 - [Check out my Projects](./projects.html)
+- [Leadership & Service](./service.html)
 - [Learn more About Me](./about.html)
 
 ---

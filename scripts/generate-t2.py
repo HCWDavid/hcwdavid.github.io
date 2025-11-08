@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """
+Generate CV for template t2 (ModernCV template)
 Generate LaTeX CV sections from JSON data
 """
 import json
@@ -183,11 +184,36 @@ def generate_skills(data):
     return content
 
 
+def generate_service(data):
+    """Generate leadership and service section"""
+    content = "\\section{Leadership and Service}\n\n"
+
+    for service in data["service"]:
+        date_range = format_date_range(service["startDate"], service["endDate"])
+
+        # Format highlights
+        highlights = ""
+        if service["highlights"]:
+            highlights = "\\begin{itemize}\n"
+            for highlight in service["highlights"]:
+                highlights += f"  \\item {escape_latex(highlight)}\n"
+            highlights += "\\end{itemize}"
+
+        content += f"""\\cventry{{{date_range}}}{{{escape_latex(service["title"])}}}{{{escape_latex(service["organization"])}}}{{{escape_latex(service["location"])}}}{{}}{{
+{highlights}
+}}
+
+"""
+    return content
+
+
 def generate_miscellaneous(data):
-    """Generate 30_miscellaneous.tex with research, publications, and skills"""
+    """Generate 30_miscellaneous.tex with research, publications, skills, and service"""
     content = generate_research(data)
     content += "\n"
     content += generate_publications(data)
+    content += "\n"
+    content += generate_service(data)
     content += "\n"
     content += generate_skills(data)
 
@@ -212,6 +238,8 @@ def main():
         data["publications"] = json.load(f)
     with open(data_dir / "skills.json") as f:
         data["skills"] = json.load(f)
+    with open(data_dir / "service.json") as f:
+        data["service"] = json.load(f)
 
     # Output directory
     output_dir = Path(__file__).parent.parent / "cv_template-main" / "src"

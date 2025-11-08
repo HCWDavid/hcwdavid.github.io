@@ -4,6 +4,7 @@ Generate all website pages from JSON data:
 - Homepage (index.md)
 - Publications page (publications.md)
 - Projects page (projects.md)
+- Leadership & Service page (service.md)
 """
 
 import json
@@ -289,6 +290,59 @@ A collection of my software engineering and development projects, showcasing wor
     return content
 
 
+def generate_service():
+    """Generate the leadership and service page."""
+    service_data = load_json('service.json')
+    
+    content = """---
+layout: default
+title: Leadership & Service
+---
+
+# Leadership & Service
+
+My contributions to the academic community through mentoring, volunteering, and service activities.
+
+---
+
+"""
+    
+    for i, service in enumerate(service_data, 1):
+        title = service.get('title', '')
+        organization = service.get('organization', '')
+        location = service.get('location', '')
+        start = format_date(service.get('startDate', ''))
+        end = format_date(service.get('endDate', ''))
+        highlights = service.get('highlights', [])
+        
+        # Format date range
+        date_range = f"{start} - {end}" if start != end else start
+        
+        content += f"""## {title}
+**{organization}** | {location}  
+**{date_range}**
+
+"""
+        
+        # Add highlights as bullet points
+        if highlights:
+            for highlight in highlights:
+                content += f"- {highlight}\n"
+            content += "\n"
+        
+        content += "---\n\n"
+    
+    content += """
+<div style="text-align: center; margin-top: 30px; padding: 20px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 8px; border: 1px solid #dee2e6;">
+  <p style="color: #495057; margin: 0;">
+    Interested in collaboration or mentorship opportunities? <a href="./about.html" style="color: #212529; font-weight: 600;">Get in touch!</a>
+  </p>
+</div>
+"""
+    
+    return content
+
+
 def main():
     """Generate all website pages."""
     docs_dir = Path(__file__).parent.parent / 'docs'
@@ -314,6 +368,13 @@ def main():
     with open(projects_path, 'w') as f:
         f.write(projects_content)
     print(f"✅ Projects page generated: {projects_path}")
+    
+    # Generate service page
+    service_content = generate_service()
+    service_path = docs_dir / 'service.md'
+    with open(service_path, 'w') as f:
+        f.write(service_content)
+    print(f"✅ Leadership & Service page generated: {service_path}")
     
     print("\n🎉 All website pages generated successfully!")
 

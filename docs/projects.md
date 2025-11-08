@@ -21,9 +21,54 @@ Off-site quality assessment framework for physical therapy exercises using smart
 ## [Database Management System](./projects/database-management-system.html)
 **Fall 2020**
 
-End-to-end implementation of a database management system equivalent to graduate level coursework
+Implemented paged file (PF) and record-based file (RBF) management systems in C/C++. Upgraded relation manager (RM) designs to store catalog information by columns with hidden metadata
 
 **Technologies:** C/C++, Git
+
+---
+
+## B+ Tree for Database Management
+**2020**
+
+Developed a B+ tree data structure for efficient database management with optimized insertion, deletion, and search operations, significantly improving database performance
+
+**Technologies:** C/C++, Data Structures, Algorithm Optimization
+
+---
+
+## Process and Resource Manager
+**2020**
+
+Implemented Python data structures to manage processes and resources, optimizing process states and supporting multi-unit resource usage
+
+**Technologies:** Python, Operating Systems
+
+---
+
+## File System
+**2020**
+
+Designed a Java file system using an emulated disk, optimized with a directory using fixed index structures as file descriptors
+
+**Technologies:** Java, File Systems
+
+---
+
+## Simple Bash-like Shell
+**2020**
+
+Created a C-based shell capable of handling simple and complex commands, with multi-piping, redirection, background process, and signal handling functionalities
+
+**Technologies:** C, Unix/Linux, System Programming
+
+---
+
+## Search Engine
+**2020**
+
+Implemented a search engine in Python that ranks HTML data's importance using term frequency-inverse document frequency (tf-idf) and cosine similarity for search functionality
+
+**Technologies:** Python, Information Retrieval, NLP
 
 ---
 
@@ -39,18 +84,27 @@ Developed SSO authentication system during Information Services internship
 ## [Online Movies Store Web Application](./projects/Online-Movies-Store-Web-Application.html)
 **Summer 2019**
 
-10-week project implementing full-stack web application for online movie store
+Collaborated on building a cloud-based server and web application using Java, MySQL, HTML, CSS, and Maven. Optimized usability with Tomcat and MySQL replication, connection pooling, and micro-services architecture
 
-**Technologies:** Java, MySQL, HTML, CSS, Maven
+**Technologies:** Java, MySQL, HTML, CSS, Maven, Tomcat
 
 ---
 
-## [Stay Together](./projects/stay-together.html)
+## AI Stock Watch Bot
+**2019**
+
+Built an AI bot for monitoring stock market trends and making data-driven predictions using machine learning techniques to analyze historical stock data. Implemented machine learning algorithms, data preprocessing, and financial data APIs
+
+**Technologies:** Python, Machine Learning, Financial APIs
+
+---
+
+## [Stay Together (Opioid Hackathon - Final Nominee)](./projects/stay-together.html)
 **Fall 2018**
 
-Healthcare application focused on improving treatment for opioid-addicted patients
+Worked as iOS developer on a Swift-based social media application designed to treat opioid-addicted patients through a supportive community with strong interaction among patients, family members, and specialists
 
-**Technologies:** Swift, Storyboard
+**Technologies:** Swift, iOS Development, Social Media
 
 ---
 

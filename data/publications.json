@@ -81,16 +81,6 @@
     "tags": ["Medical Imaging", "Robustness", "Semantic Segmentation"]
   },
   {
-    "authors": ["Lopez, Diego Manzanas", "Liu, Han", "Wang, Hanchen David", "Moyer, Daniel", "Ma, Meiyi", "Johnson, Taylor T.", "Oguz, Ipek"],
-    "title": "Robustness Certification of Semantic Segmentation of Multiple Sclerosis Lesions",
-    "venue": "Medical Imaging",
-    "year": 2024,
-    "month": "August",
-    "status": "Under Revision",
-    "type": "journal",
-    "tags": ["Medical Imaging", "Robustness", "Semantic Segmentation"]
-  },
-  {
     "authors": ["Wang, Hanchen David", "Khan, Nibraas", "Chen, Anna", "Sarkar, Nilanjan", "Wisniewski, Pamela", "Ma, Meiyi"],
     "title": "MicroXercise: A Micro-Level Comparative and Explainable System for Remote Physical Therapy",
     "venue": "Connected Health: Applications, Systems and Engineering Technologies (CHASE)",

@@ -174,8 +174,15 @@ A comprehensive list of my research publications in artificial intelligence, mac
         authors = make_author_bold(authors, 'Wang, Hanchen David')
         authors = make_author_bold(authors, 'Hanchen David Wang')
         
-        # Format the entry with title first (larger font) then authors
-        content += f"{i}. <span style='font-size: 1.1em;'>**{title}**</span>  \n"
+        # Format the entry with title first (larger font, clickable if DOI available) then authors
+        doi = pub.get('doi', '')
+        if doi:
+            # Add https://doi.org/ prefix if not already present
+            doi_url = doi if doi.startswith('http') else f"https://doi.org/{doi}"
+            content += f"{i}. <span style='font-size: 1.1em;'><a href='{doi_url}' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600;'>**{title}**</a></span>  \n"
+        else:
+            content += f"{i}. <span style='font-size: 1.1em;'>**{title}**</span>  \n"
+        
         content += f"   {authors}  \n"
         
         if venue:
@@ -186,19 +193,12 @@ A comprehensive list of my research publications in artificial intelligence, mac
                 content += f", {status}"
             content += ".  \n"
         
-        # Add links if available
-        links = []
-        if doi:
-            # Add https://doi.org/ prefix if not already present
-            doi_url = doi if doi.startswith('http') else f"https://doi.org/{doi}"
-            links.append(f"[DOI]({doi_url})")
+        # Add arXiv link if available (but not DOI since it's in the title now)
+        arxiv = pub.get('arxiv', '')
         if arxiv:
             # Add https://arxiv.org/abs/ prefix if not already present
             arxiv_url = arxiv if arxiv.startswith('http') else f"https://arxiv.org/abs/{arxiv}"
-            links.append(f"[arXiv]({arxiv_url})")
-        
-        if links:
-            content += f"   {' | '.join(links)}  \n"
+            content += f"   [arXiv]({arxiv_url})  \n"
         
         content += "\n"
     

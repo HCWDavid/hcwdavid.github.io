@@ -29,38 +29,29 @@ A comprehensive list of my research publications in artificial intelligence, mac
    **Wang, Hanchen David**, Bae, Siwoo, Chen, Zirong, Ma, Meiyi  
    AAAI, Accepted (Oral).  
 
-6. <span style='font-size: 1.1em;'>**Multimodal Methods for Analyzing Learning and Training Environments: A Systematic Literature Review**</span>  
+6. <span style='font-size: 1.1em;'><a href='https://doi.org/10.48550/arXiv.2408.14491' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600;'>**Multimodal Methods for Analyzing Learning and Training Environments: A Systematic Literature Review**</a></span>  
    Cohn, Clayton, Davalos, Eduardo, Vatral, Caleb, Fonteles, Joyce, **Wang, Hanchen David**, Ma, Meiyi, Biswas, Gautam  
    ACM Computing Surveys, Under Review.  
-   [DOI](https://doi.org/10.48550/arXiv.2408.14491)  
 
-7. <span style='font-size: 1.1em;'>**EXACT: A Meta-Learning Framework for Precise Exercise Segmentation in Physical Therapy**</span>  
+7. <span style='font-size: 1.1em;'><a href='https://doi.org/10.1145/3716550.3722027' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600;'>**EXACT: A Meta-Learning Framework for Precise Exercise Segmentation in Physical Therapy**</a></span>  
    **Wang, Hanchen David**, Bae, Siwoo, Sun, Xutong, Thatigotla, Yashvitha, Ma, Meiyi  
    International Conference on Cyber-Physical Systems (ICCPS), Published.  
-   [DOI](https://doi.org/10.1145/3716550.3722027)  
 
 8. <span style='font-size: 1.1em;'>**Robustness Certification of Semantic Segmentation of Multiple Sclerosis Lesions**</span>  
    Lopez, Diego Manzanas, Liu, Han, **Wang, Hanchen David**, Moyer, Daniel, Ma, Meiyi, Johnson, Taylor T., Oguz, Ipek  
    Medical Imaging, Under Revision.  
 
-9. <span style='font-size: 1.1em;'>**Robustness Certification of Semantic Segmentation of Multiple Sclerosis Lesions**</span>  
-   Lopez, Diego Manzanas, Liu, Han, **Wang, Hanchen David**, Moyer, Daniel, Ma, Meiyi, Johnson, Taylor T., Oguz, Ipek  
-   Medical Imaging, Under Revision.  
-
-10. <span style='font-size: 1.1em;'>**MicroXercise: A Micro-Level Comparative and Explainable System for Remote Physical Therapy**</span>  
+9. <span style='font-size: 1.1em;'><a href='https://doi.org/10.1109/CHASE60773.2024.00017' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600;'>**MicroXercise: A Micro-Level Comparative and Explainable System for Remote Physical Therapy**</a></span>  
    **Wang, Hanchen David**, Khan, Nibraas, Chen, Anna, Sarkar, Nilanjan, Wisniewski, Pamela, Ma, Meiyi  
    Connected Health: Applications, Systems and Engineering Technologies (CHASE), Published.  
-   [DOI](https://doi.org/10.1109/CHASE60773.2024.00017)  
 
-11. <span style='font-size: 1.1em;'>**SUDS: Sanitizing Universal and Dependent Steganography**</span>  
+10. <span style='font-size: 1.1em;'><a href='https://doi.org/10.48550/arXiv.2309.13467' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600;'>**SUDS: Sanitizing Universal and Dependent Steganography**</a></span>  
    Robinette, Preston K., **Wang, Hanchen David**, Shehadeh, Nishan, Moyer, Daniel, Johnson, Taylor T.  
    Proceedings of the 26th European Conference on Artificial Intelligence (ECAI), Published.  
-   [DOI](https://doi.org/10.48550/arXiv.2309.13467)  
 
-12. <span style='font-size: 1.1em;'>**PhysiQ: Off-Site Quality Assessment of Exercise in Physical Therapy**</span>  
+11. <span style='font-size: 1.1em;'><a href='https://doi.org/10.1145/3570349' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600;'>**PhysiQ: Off-Site Quality Assessment of Exercise in Physical Therapy**</a></span>  
    **Wang, Hanchen David**, Ma, Meiyi  
    Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Published.  
-   [DOI](https://doi.org/10.1145/3570349)  
 
 ---
 

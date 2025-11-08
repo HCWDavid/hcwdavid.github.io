@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  cv:
+    image: "ghcr.io/chujimmy/moderncv:1.12.0"
+    container_name: cv
+    volumes:
+      - ./src/:/data/cv/src/
+      - ./entrypoint.sh/:/data/cv/entrypoint.sh
+    tty: true
+    entrypoint: /bin/sh -c
+    command: "/data/cv/entrypoint.sh"
+    working_dir: /data/cv/
+    environment:
+      CV_OUTPUT_FILE_PATTERN: "cv"
+      LETTER_OUTPUT_FILE_PATTERN: "letter"
+      FIRST_NAME: "hanchen"
+      LAST_NAME: "wang"
+      OUTPUT_FOLDER: "output"

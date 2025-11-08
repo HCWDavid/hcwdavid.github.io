@@ -1,0 +1,58 @@
+% xpatchcmd allows to temporarily patch a command. It works the following way:
+% \xpatchcmd{<command to patch>}{<find>}{<replace>}{<success>}{<failure>}
+
+% Remove italic for company name for cventry
+\xpatchcmd{\cventry}{\slshape#4}{#4}{}{}
+
+% Remove dot and the end of the first line for cventry
+\xpatchcmd{\cventry}{.}{}{}{}
+
+% Align on the right #5 (used for contract type) with a smaller font and grey color for cventry
+\xpatchcmd{\cventry}{, #6}{\small{\hfill{\textcolor{grey25}{#6}}}}{}{}
+
+% Remove unecessary space when quote is not used
+\xpatchcmd{\makecvhead}{\usebox{\makecvheadnamebox}\fi \\[2.5em]}{\usebox{\makecvheadnamebox}\fi\\[-2em]}{}{}
+
+% Override name box: 
+% - ensure name is aligned with top 
+% - ensure position aligned with bottom 
+% - use normal text for position
+\xpatchcmd{\makecvhead}{\usebox{\makecvheadnamebox}}{
+    \begin{minipage}[b]{\makecvheadnamewidth}
+        \newsavebox{\nameBox}
+        \savebox{\nameBox}{\namestyle{\@firstname\ \@lastname}}
+
+        \if@left\raggedright\fi%
+        \if@right\raggedleft\fi%
+        \namestyle{\@firstname\ \@lastname}
+        \ifthenelse{\equal{\@title}{}}
+            {}
+            {{\\[ 2em ] \newline} \titlestyle{\textnormal{\@title}} \\ \small{ }}
+    \end{minipage}
+}{}{}
+
+% Inline all social links
+\xpatchcmd{\makecvhead}{\makenewline\csname\collectionloopkey socialsymbol\endcsname}{
+    \ifthenelse{\collectionloopid>0}{~·~}{\makenewline} \csname\collectionloopkey socialsymbol\endcsname
+}{}{}
+
+% Add extra line after extrainfo so height calculation is correct for details box with 2 liners extra info
+\xpatchcmd{\makecvhead}{\makenewline\@extrainfo}{\makenewline\textnormal{\@extrainfo}\makenewline}{}{}
+
+% Remove address text format
+\xpatchcmd{\makecvhead}{\makenewline\addresssymbol\@addressstreet}{\ifthenelse{\isundefined{\@addressstreet}}{}{\makenewline\addresssymbol\textnormal{\@addressstreet}}}{}{}
+\xpatchcmd{\makecvhead}{\makenewline\@addresscity}{\ifthenelse{\equal{\@addresscity}{}}{}{\makenewline\textnormal{\@addresscity}}}{}{}
+\xpatchcmd{\makecvhead}{\makenewline\@addresscountry}{\ifthenelse{\equal{\@addresscountry}{}}{}{\makenewline\textnormal{\@addresscountry}}}{}{}
+
+% Remove phone text format
+\xpatchcmd{\makecvhead}{\csname\collectionloopkey phonesymbol\endcsname\collectionloopitem}{\csname\collectionloopkey phonesymbol\endcsname \textnormal{\collectionloopitem}}{}{}
+
+% New command to have 2 columns of title / value on a single line
+\renewcommand{\cvcomputer}[4]{\cvdoubleitem{\textbf{#1}}{\small#2}{\textbf{#3}}{\small#4}}
+
+% Ensure position duration is just below the start and end date and centered with the company summary
+\newcommand*{\cventrydate}[2]{#1 \\ \negativeMarginTiny \textcolor{grey25}{\footnotesize#2}}
+% Display the position start and end date to be displayed on 2 lines
+\newcommand*{\cventrydatetwolines}[3]{#1 \ifnotempty{#2}{\\#2}{\\~} \\ \negativeMarginSmall \negativeMarginExtraSmall ~ \\ \textcolor{grey25}{\footnotesize#3}}
+% Allow linking company website
+\newcommand*{\cventryposition}[2]{\ifnotempty{#2}{\href{https://#2}{#1}}{#1}}

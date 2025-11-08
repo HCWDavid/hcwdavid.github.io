@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+
+# Jekyll
+docs/_site/
+.jekyll-cache/
+.jekyll-metadata
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Resume PDF in root (only keep in docs/)
+/Resume.pdf

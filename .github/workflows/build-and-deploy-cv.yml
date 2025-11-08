@@ -1,0 +1,101 @@
+name: Build and Deploy CV to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'data/cv-content.json'
+      - 'scripts/**'
+      - 'cv_template-main/**'
+      - '.github/workflows/build-and-deploy-cv.yml'
+  workflow_dispatch:  # Allow manual triggering
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      
+      - name: Generate content from JSON
+        run: |
+          echo "Generating LaTeX and website content from JSON..."
+          python3 scripts/generate-latex.py
+          python3 scripts/generate-website.py
+          echo "Content generation complete!"
+      
+      - name: Build CV with Docker
+        working-directory: ./cv_template-main
+        run: |
+          echo "Starting Docker container to build CV..."
+          docker-compose up -d --force-recreate
+          
+          # Wait for PDF generation
+          cv_counter=0
+          while [[ $(find . -regextype sed -regex ".*/cv/lang/[a-z]\{2\}/cv.tex" | wc -l) -gt $(find . -name "cv.pdf" | wc -l) && $cv_counter -le 90 ]]; do
+            echo "Waiting for CV PDF to be generated... ($cv_counter/90)"
+            ((cv_counter++))
+            sleep 2
+          done
+          
+          if [[ $cv_counter -ge 90 ]]; then
+            echo "Timeout while waiting for PDF generation. Checking what we have..."
+            find . -name "*.pdf"
+            exit 1
+          fi
+          
+          echo "PDF generated successfully!"
+          find . -name "cv.pdf"
+      
+      - name: Copy CV to website root
+        run: |
+          # Find the generated CV PDF (should be in cv_template-main/src/cv/lang/en/)
+          CV_PDF=$(find ./cv_template-main -name "cv.pdf" | grep "/en/cv.pdf" | head -n 1)
+          
+          if [ -z "$CV_PDF" ]; then
+            echo "Error: CV PDF not found!"
+            exit 1
+          fi
+          
+          echo "Found CV at: $CV_PDF"
+          
+          # Copy to docs/ folder for GitHub Pages
+          mkdir -p docs
+          cp "$CV_PDF" ./docs/Resume.pdf
+          
+          echo "CV copied to docs/Resume.pdf"
+          ls -lh docs/Resume.pdf
+      
+      - name: Configure Git
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+      
+      - name: Commit and push if changed
+        run: |
+          git add docs/
+          
+          # Check if there are changes
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            echo "Changes detected, committing..."
+            git commit -m "Auto-update CV and website from JSON [skip ci]"
+            git push
+            echo "Content updated and pushed!"
+          fi
+      
+      - name: Cleanup Docker
+        if: always()
+        working-directory: ./cv_template-main
+        run: |
+          docker-compose down

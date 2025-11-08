@@ -1,0 +1,38 @@
+repository:
+  name: cv_template
+  description: Template for LaTeX with moderncv Docker container, to build and create seamlessly CVs and cover letters 
+  topics: docker, template, latex, moderncv
+
+  has_projects: false
+  has_wiki: false
+
+  default_branch: main
+
+  allow_merge_commit: false
+  allow_rebase_merge: true
+  allow_squash_merge: true
+  delete_branch_on_merge: true
+  use_squash_pr_title_as_default: true
+
+labels:
+  - name: bug
+    color: "#cc0000"
+    description: Issue in the application
+  - name: stale
+    color: "#ff7f00"
+    description: Stale Pull Request
+
+
+branches:
+  - name: main
+    protection:
+      enforce_admins: false
+      required_conversation_resolution: true
+      required_pull_request_reviews:
+        required_approving_review_count: 1
+        dismiss_stale_reviews: true
+      required_status_checks:
+        strict: true
+        contexts: ["cv"]
+      required_linear_history: true
+      restrictions: null

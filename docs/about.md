@@ -48,11 +48,17 @@ title: About Me
   <section class="education">
     <h2>🎓 Education</h2>
     <div class="education-item">
-      <h3>Ph.D. in Computer Science</h3>
+      <h3>Dual Program of Master's and Ph.D. in Computer Science (Ongoing)</h3>
       <p class="institution">Vanderbilt University</p>
-      <p class="date">2021 - Present</p>
+      <p class="date">Aug 2021 - 2026-05 (Expected)</p>
       <p>Advisor: Prof. Meiyi Ma</p>
-      <p>Focus: Explainable AI, Healthcare Applications, Deep Learning</p>
+      <p>Focus: Representation Learning in DL, Open Source Imaging, HCI, Internet of Medical Things</p>
+    </div>
+    <div class="education-item">
+      <h3>Bachelor of Science in Computer Science, Magna cum Laude (top 6%) GPA: 3.89</h3>
+      <p class="institution">University of California, Irvine</p>
+      <p class="date">Aug 2017 - Jun 2021</p>
     </div>
   </section>
 </div>
+

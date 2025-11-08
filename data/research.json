@@ -1,10 +1,25 @@
 [
   {
+    "title": "BEAGLE: Behavioral Explanation via Agent Graph Learning",
+    "collaborators": ["Meiyi Ma"],
+    "advisor": "Meiyi Ma",
+    "startDate": "2025-08",
+    "endDate": "Present",
+    "description": [
+      "Developing a novel framework to make AI tutors both interpretable and verifiable through behavioral explanation",
+      "Created a synthetic dataset with ground truth knowledge states and action labels for educational AI agent evaluation",
+      "Implementing LTL-based Verification for formal checking of pedagogical properties using Linear Temporal Logic",
+      "Constructing temporal graphs from educational dialogues and employing Graph Attention Networks to predict and explain tutor actions",
+      "Verifying whether action sequences satisfy formal pedagogical specifications to ensure responsible deployment in learning environments"
+    ],
+    "tags": ["XAI", "Educational AI", "Graph Learning", "Formal Verification", "LLM"]
+  },
+  {
     "title": "Explainable AI for First-Person Video Segmentation in Nursing Simulations",
     "collaborators": ["Daniel Levin", "Gautam Biswas", "Alyssa White"],
     "advisor": "Meiyi Ma",
     "startDate": "2024-07",
-    "endDate": "Present",
+    "endDate": "2025-03",
     "description": [
       "Developing explainable AI methods to analyze video segments from Tobii Glasses' first-person perspective during nursing simulation training sessions",
       "Designed an unsupervised segmentation method optimized for processing long videos efficiently",
@@ -17,7 +32,7 @@
     "collaborators": ["Meiyi Ma"],
     "advisor": "Meiyi Ma",
     "startDate": "2024-02",
-    "endDate": "Present",
+    "endDate": "2024-12",
     "description": [
       "Creating an IMU-guided method to enhance classification accuracy and efficiency in multimodal data",
       "Improved Temporal Segment Networks by incorporating motion-based insights for better frame selection"
@@ -25,7 +40,7 @@
     "tags": ["Multimodal Learning", "Video Classification", "IMU"]
   },
   {
-    "title": "Continual Multitask Learning",
+    "title": "Learning with Preserving for Continual Multitask Learning",
     "collaborators": ["Meiyi Ma"],
     "advisor": "Meiyi Ma",
     "startDate": "2024-01",
@@ -36,7 +51,7 @@
     "tags": ["Continual Learning", "Multitask Learning", "Deep Learning"]
   },
   {
-    "title": "Star-based Reachability Verification for Targeted and Robust XAI",
+    "title": "Towards Verified and Targeted Explanations through Formal Methods",
     "collaborators": ["Meiyi Ma", "Taylor Johnson", "Diego Manzanas Lopez"],
     "advisor": "Meiyi Ma",
     "startDate": "2023-09",

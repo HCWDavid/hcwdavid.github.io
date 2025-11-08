@@ -11,7 +11,12 @@
   <body>
     <!-- Navigation Bar -->
     <nav class="main-nav">
-      <ul>
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul id="main-nav-list">
         <li><a href="{{ "/" | relative_url }}" {% if page.url == "/" %}class="active"{% endif %}>Home</a></li>
         <li><a href="{{ "/about.html" | relative_url }}" {% if page.url contains "about" %}class="active"{% endif %}>About Me</a></li>
         <li><a href="{{ "/publications.html" | relative_url }}" {% if page.url contains "publications" %}class="active"{% endif %}>Publications</a></li>
@@ -44,5 +49,36 @@
     </footer>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     <script src="{{ "/assets/js/search.js" | relative_url }}"></script>
+    <script>
+      // Mobile menu toggle
+      document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.getElementById('mobile-menu-toggle');
+        const navList = document.getElementById('main-nav-list');
+        
+        if (menuToggle && navList) {
+          menuToggle.addEventListener('click', function() {
+            menuToggle.classList.toggle('active');
+            navList.classList.toggle('active');
+          });
+          
+          // Close menu when clicking a link
+          const navLinks = navList.querySelectorAll('a');
+          navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+              menuToggle.classList.remove('active');
+              navList.classList.remove('active');
+            });
+          });
+          
+          // Close menu when clicking outside
+          document.addEventListener('click', function(event) {
+            if (!menuToggle.contains(event.target) && !navList.contains(event.target)) {
+              menuToggle.classList.remove('active');
+              navList.classList.remove('active');
+            }
+          });
+        }
+      });
+    </script>
   </body>
 </html>

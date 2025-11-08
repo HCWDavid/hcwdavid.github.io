@@ -20,12 +20,12 @@ I'm Hanchen David Wang, a PhD student at Vanderbilt University working on **eXpl
 ## Recent Highlights
 
 **Latest Research**  
-Explainable AI for First-Person Video Segmentation in Nursing Simulations (Jul 2024 - Present)  
-Developing explainable AI methods to analyze video segments from Tobii Glasses' first-person perspective during nursing simulation training sessions
+BEAGLE: Behavioral Explanation via Agent Graph Learning (Aug 2025 - Present)  
+Developing a novel framework to make AI tutors both interpretable and verifiable through behavioral explanation
 
 **Recent Publication**  
-SmartSeg: A Non-Parametric Approach for Smart Glass Video Segmentation  
-Pervasive and Mobile Computing - Under Review
+BEAGLE: Behavioral Explanation via Agent Graph Learning  
+TBD - In Preparation
 
 **Current Position**  
 PhD Software Engineering Intern @ Google (May 2025 - Aug 2025)  

@@ -10,11 +10,11 @@ My contributions to the academic community through mentoring, volunteering, and 
 ---
 
 ## Mentor, Students Projects
-**Vanderbilt University** | Nashville, TN  
+**Vanderbilt University** | Nashville, TN
 **Aug 2021 - Present**
 
-- (2024–Present) Mentored master's student Yiling Liu and undergraduates Haowei Fu and Christin Ann Sanchez on "SmartSeg: A Non-Parametric Approach for Smart Glass Video Segmentation," an event segmentation project for a nursing training simulation.
-- (2024–Present) Mentored undergraduate Haoran (Max) Ma on an IMU-guided video classification project to improve model accuracy.
+- (2024–2025) Mentored master's student Yiling Liu and undergraduates Haowei Fu and Christin Ann Sanchez on "SmartSeg: A Non-Parametric Approach for Smart Glass Video Segmentation," an event segmentation project for a nursing training simulation.
+- (2024–2025) Mentored undergraduate Haoran (Max) Ma on an IMU-guided video classification project to improve model accuracy.
 - (2024–2025) Mentored undergraduate Siwoo Bae on "Learning with Preserving for Continual Multitask Learning," focused on preserving representational space in continual learning. The work was presented at the Vanderbilt Undergraduate Research Fair, earning a poster award.
 - (2022–2024) Mentored undergraduate Xutong (Helen) Sun and Yashvitha Thatigotla on "EXACT: A Meta-Learning Framework for Precise Exercise Segmentation in Physical Therapy."
 - (2022–2023) Mentored undergraduates Anna Chen on projects in iOS app development, Unity visualization, and data analysis for micro-level exercise explainability, notably "MicroXercise: A Micro-Level Comparative and Explainable System for Remote Physical Therapy."
@@ -26,7 +26,7 @@ My contributions to the academic community through mentoring, volunteering, and 
 ---
 
 ## Volunteer, NSF CPS PI Meeting
-**Vanderbilt University** | Nashville, TN  
+**Vanderbilt University** | Nashville, TN
 **Mar 2025**
 
 - Volunteered approximately 4-6 hours during the Principal Investigators meeting.
@@ -37,7 +37,7 @@ My contributions to the academic community through mentoring, volunteering, and 
 ---
 
 ## Graduate Honor Council Panelist
-**Vanderbilt University** | Nashville, TN  
+**Vanderbilt University** | Nashville, TN
 **Feb 2024 - Feb 2025**
 
 - Acted as a panelist to understand and justify the accused student and his/her innocence towards Vanderbilt School Honor Codes.
@@ -46,7 +46,7 @@ My contributions to the academic community through mentoring, volunteering, and 
 ---
 
 ## Volunteer, IEEE/ACM CHASE
-**IEEE/ACM** | Wilmington, DE  
+**IEEE/ACM** | Wilmington, DE
 **Jun 2024**
 
 - Worked around 10 hours in total for the period of 3 days at the conference; helped at the registration desk to guide conference participants and to distribute conference materials.
@@ -55,7 +55,7 @@ My contributions to the academic community through mentoring, volunteering, and 
 ---
 
 ## Volunteer, Graduate Student Recruitment Day
-**Vanderbilt University** | Nashville, TN  
+**Vanderbilt University** | Nashville, TN
 **Mar 2024**
 
 - Toured the new student body to different departments and building on campus at Vanderbilt University.
@@ -65,7 +65,7 @@ My contributions to the academic community through mentoring, volunteering, and 
 ---
 
 ## Volunteer, SmartComp 2023
-**IEEE** | Nashville, TN  
+**IEEE** | Nashville, TN
 **2023-06-26 - 2023-06-29**
 
 - Provided volunteer support during the SmartComp 2023 conference for four days.

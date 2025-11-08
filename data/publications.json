@@ -1,5 +1,14 @@
 [
   {
+    "authors": ["Wang, Hanchen David", "Cohn, Clayton", "Xu, Zifan", "Guo, Siyuan", "Biswas, Gautam", "Ma, Meiyi"],
+    "title": "BEAGLE: Behavioral Explanation via Agent Graph Learning",
+    "venue": "TBD",
+    "year": 2025,
+    "status": "In Preparation",
+    "type": "conference",
+    "tags": ["XAI", "Educational AI", "Graph Learning", "Formal Verification", "LLM"]
+  },
+  {
     "authors": ["Wang, Hanchen David", "Liu, Yilin", "Fu, Haowei", "Mason, Madison Lee", "Li, Fanjie", "Wise, Alyssa", "Levin, Daniel T", "Biswas, Gautam", "Ma, Meiyi"],
     "title": "SmartSeg: A Non-Parametric Approach for Smart Glass Video Segmentation",
     "venue": "Pervasive and Mobile Computing",

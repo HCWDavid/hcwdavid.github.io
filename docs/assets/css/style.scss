@@ -26,6 +26,47 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+/* Mobile Menu Toggle Button (hidden by default) */
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1001;
+}
+
+.mobile-menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.mobile-menu-toggle:hover span {
+  background: #e0e0e0;
+}
+
+/* Hamburger animation when active */
+.mobile-menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+.mobile-menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
 .main-nav ul {
   list-style: none;
   margin: 0;
@@ -624,71 +665,71 @@ footer p {
     font-size: 24px;
   }
   
-  /* Mobile Navigation - Horizontal Scroll */
+  /* Show hamburger menu on mobile */
+  .mobile-menu-toggle {
+    display: block;
+  }
+  
+  /* Mobile Navigation - Dropdown Menu */
   .main-nav ul {
-    flex-direction: row;
-    justify-content: flex-start;
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-    flex-wrap: nowrap;
-    padding: 0 10px;
-    scroll-behavior: smooth;
-  }
-  
-  /* Add scroll indicator shadow on the right */
-  .main-nav::after {
-    content: '';
+    flex-direction: column;
     position: absolute;
+    top: 100%;
+    left: 0;
     right: 0;
-    top: 0;
-    bottom: 0;
-    width: 30px;
-    background: linear-gradient(to left, rgba(26, 26, 26, 0.8), transparent);
-    pointer-events: none;
+    background: linear-gradient(135deg, #2c3e50 0%, #1a1a1a 100%);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
   
-  .main-nav ul::-webkit-scrollbar {
-    height: 3px;
-  }
-  
-  .main-nav ul::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.1);
-  }
-  
-  .main-nav ul::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 3px;
+  /* Show menu when active */
+  .main-nav ul.active {
+    max-height: 500px;
   }
   
   .main-nav li {
-    flex-shrink: 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .main-nav li:last-child {
+    border-bottom: none;
   }
   
   .main-nav a {
-    white-space: nowrap;
-    padding: 14px 16px;
-    font-size: 14px;
+    width: 100%;
+    text-align: left;
+    padding: 16px 20px;
+    font-size: 15px;
+    display: block;
+  }
+  
+  .main-nav a::after {
+    display: none;
   }
   
   .search-container {
-    flex-shrink: 0;
-    padding: 8px 10px;
-    margin-left: 10px;
+    width: 100%;
+    padding: 16px 20px;
+    margin-left: 0;
+    justify-content: stretch;
   }
   
   #search-input {
-    width: 120px;
-    padding: 8px 12px;
-    font-size: 13px;
+    flex: 1;
+    width: auto;
+    padding: 10px 16px;
+    font-size: 14px;
   }
   
   #search-input:focus {
-    width: 140px;
+    width: auto;
   }
   
   #search-button {
-    padding: 8px 12px;
+    padding: 10px 16px;
     font-size: 14px;
   }
   

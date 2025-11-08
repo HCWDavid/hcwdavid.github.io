@@ -1,0 +1,99 @@
+[
+  {
+    "title": "Explainable AI for First-Person Video Segmentation in Nursing Simulations",
+    "collaborators": ["Daniel Levin", "Gautam Biswas", "Alyssa White"],
+    "advisor": "Meiyi Ma",
+    "startDate": "2024-07",
+    "endDate": "Present",
+    "description": [
+      "Developing explainable AI methods to analyze video segments from Tobii Glasses' first-person perspective during nursing simulation training sessions",
+      "Designed an unsupervised segmentation method optimized for processing long videos efficiently",
+      "Focused on interpretable models to link gaze dynamics with task performance and learning outcomes"
+    ],
+    "tags": ["XAI", "Computer Vision", "Healthcare", "Video Analysis"]
+  },
+  {
+    "title": "IMU-Guided Segmentation and Sampling for Video Classification",
+    "collaborators": ["Meiyi Ma"],
+    "advisor": "Meiyi Ma",
+    "startDate": "2024-02",
+    "endDate": "Present",
+    "description": [
+      "Creating an IMU-guided method to enhance classification accuracy and efficiency in multimodal data",
+      "Improved Temporal Segment Networks by incorporating motion-based insights for better frame selection"
+    ],
+    "tags": ["Multimodal Learning", "Video Classification", "IMU"]
+  },
+  {
+    "title": "Continual Multitask Learning",
+    "collaborators": ["Meiyi Ma"],
+    "advisor": "Meiyi Ma",
+    "startDate": "2024-01",
+    "endDate": "2024-10",
+    "description": [
+      "Developed a Continual Multitask Learning framework, addressing challenges in continual multitask learning without requiring replay buffers"
+    ],
+    "tags": ["Continual Learning", "Multitask Learning", "Deep Learning"]
+  },
+  {
+    "title": "Star-based Reachability Verification for Targeted and Robust XAI",
+    "collaborators": ["Meiyi Ma", "Taylor Johnson", "Diego Manzanas Lopez"],
+    "advisor": "Meiyi Ma",
+    "startDate": "2023-09",
+    "endDate": "2024-05",
+    "description": [
+      "Led development of framework to evaluate comprehensiveness of attribution methods",
+      "Utilized Neural Network Verification (NNV) to analyze boundaries of sampling-based attribution methods",
+      "Designed experiments showcasing method's robustness in providing deterministic explainability"
+    ],
+    "tags": ["XAI", "Neural Network Verification", "Formal Methods"]
+  },
+  {
+    "title": "EXACT: A Meta-Learning Framework for Precise Exercise Segmentation in Physical Therapy",
+    "collaborators": ["Meiyi Ma"],
+    "advisor": "Meiyi Ma",
+    "startDate": "2023-05",
+    "endDate": "2024-06",
+    "description": [
+      "Led development of EXACT, a novel method for segmenting exercises within multivariate time series data using PyTorch",
+      "Designed U-Net architecture with temporal positional encoding for exercise phase identification",
+      "Conducted extensive experiments demonstrating superiority over traditional segmentation techniques",
+      "Developed modular Python framework for easy replication and experimentation"
+    ],
+    "tags": ["Time Series", "Deep Learning", "Healthcare", "PyTorch"]
+  },
+  {
+    "title": "MicroXercise: A Micro-Level Comparative and Explainable System for Remote Physical Therapy",
+    "collaborators": ["Meiyi Ma", "Pamela Wisniewski"],
+    "advisor": "Meiyi Ma",
+    "startDate": "2022-08",
+    "endDate": "2023-05",
+    "description": [
+      "Led development of MicroXercise integrating Siamese Neural Networks with saliency maps",
+      "Designed Siamese Neural Network for similarity determination and attribution scoring",
+      "Incorporated saliency map techniques for explainability across modalities",
+      "Conducted mixed-methods study with interviews, surveys, and quantitative analysis"
+    ],
+    "tags": ["XAI", "Healthcare", "Siamese Networks", "Human-Computer Interaction"]
+  },
+  {
+    "title": "PhysiQ: Off-Site Quality Assessment of Exercises in Physical Therapy",
+    "collaborators": ["Meiyi Ma"],
+    "advisor": "Meiyi Ma",
+    "startDate": "2021-08",
+    "endDate": "2022-05",
+    "description": [
+      "Led development of PhysiQ framework for continuous tracking of off-site exercise activity",
+      "Designed multi-task spatiotemporal Siamese Neural Network for quality assessment",
+      "Collected and annotated data for 31 participants with varying exercise quality levels",
+      "Achieved 89.67% detection accuracy and 0.949 R-squared correlation in similarity comparison"
+    ],
+    "tags": ["Healthcare", "Deep Learning", "Wearable Sensors"],
+    "links": [
+      {
+        "text": "Medium Article",
+        "url": "https://medium.com/ubicomp-iswc-2023/physiq-off-site-quality-assessment-of-exercise-in-physical-therapy-4666f0f9c70d"
+      }
+    ]
+  }
+]

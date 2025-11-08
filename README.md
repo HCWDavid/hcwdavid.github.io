@@ -6,22 +6,31 @@ This repository contains my personal website and CV automation system.
 
 ```
 ├── docs/                    # Website content (GitHub Pages)
-├── data/                    # Source data (JSON)
-│   └── cv-content.json     # Single source of truth
-├── scripts/                 # Generation scripts
-│   ├── generate-latex.py   # Generate CV LaTeX
-│   └── generate-website.py # Generate website content
-├── cv_template-main/        # CV build system
-├── generate-all.sh          # Generate everything from JSON
-└── build-cv-local.sh        # Build CV locally
+├── data/                    # Source data (JSON) - EDIT THESE!
+│   ├── personal.json       # Name, email, contact info
+│   ├── education.json      # Degrees and institutions
+│   ├── employment.json     # Work experience and internships
+│   ├── research.json       # Research projects
+│   ├── publications.json   # Papers and publications
+│   ├── projects.json       # Course projects
+│   └── skills.json         # Technical skills
+├── templates/
+│   ├── simple/             # t1: Clean, simple template
+│   └── moderncv/           # t2: ModernCV template (in cv_template-main/)
+├── scripts/                # Generation scripts
+└── run.sh                  # Main build script
 ```
 
 ## Workflow
 
-1. **Edit**: Update `data/cv-content.json`
-2. **Generate**: Run `./generate-all.sh`
-3. **Build**: Run `./build-cv-local.sh` (optional, to preview PDF)
-4. **Deploy**: Commit and push (GitHub Actions handles the rest)
+1. **Edit**: Update JSON files in `data/` folder
+2. **Generate**: Run `./run.sh` or `./run.sh t1` (for simple template)
+3. **Deploy**: Commit and push (GitHub Actions handles the rest)
+
+### Templates
+
+- `./run.sh` or `./run.sh t2` - ModernCV template (default, colorful)
+- `./run.sh t1` - Simple clean template (Word-like)
 
 ## GitHub Pages
 

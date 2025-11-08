@@ -1,0 +1,17 @@
+{
+  "firstName": "Hanchen David",
+  "lastName": "Wang",
+  "title": "PhD Student in Computer Science",
+  "email": "hanchen.wang@vanderbilt.edu",
+  "phone": "(626)461-2952",
+  "address": {
+    "line1": "Vanderbilt University",
+    "line2": "Nashville, TN, USA"
+  },
+  "social": {
+    "linkedin": "hanchendavidwang",
+    "github": "HCWDavid",
+    "website": "https://hcwdavid.github.io"
+  },
+  "bio": "I am passionate about advancing the fields of eXplainable AI (XAI), healthcare, and machine learning. My work focuses on leveraging cutting-edge machine learning techniques to improve physical therapy, nursing simulations, and formal verification in AI."
+}

@@ -132,10 +132,21 @@ _Categories_: {tech_str}
 
 
 def main():
-    # Load JSON data
-    json_path = Path(__file__).parent.parent / "data" / "cv-content.json"
-    with open(json_path, "r") as f:
-        data = json.load(f)
+    # Load JSON data from separate files
+    data_dir = Path(__file__).parent.parent / "data"
+
+    with open(data_dir / "personal.json") as f:
+        data = {
+            "personal": json.load(f)
+        }
+    with open(data_dir / "employment.json") as f:
+        data["experience"] = json.load(f)
+    with open(data_dir / "research.json") as f:
+        data["research"] = json.load(f)
+    with open(data_dir / "publications.json") as f:
+        data["publications"] = json.load(f)
+    with open(data_dir / "projects.json") as f:
+        data["projects"] = json.load(f)
 
     # Generate README
     content = generate_readme(data)
@@ -143,7 +154,7 @@ def main():
     # Write to docs/index.md (for GitHub Pages)
     docs_path = Path(__file__).parent.parent / "docs"
     docs_path.mkdir(exist_ok=True)
-    
+
     index_path = docs_path / "index.md"
     with open(index_path, "w") as f:
         f.write(content)

@@ -19,3 +19,24 @@ venv/
 
 # Resume PDF in root (only keep in docs/)
 /Resume.pdf
+
+# LaTeX temporary files
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.idx
+*.ilg
+*.ind
+
+# Generated CV files (keep only the PDFs we want)
+templates/simple/cv.tex
+templates/simple/cv.pdf
+cv_template-main/src/cv/lang/*/cv.pdf

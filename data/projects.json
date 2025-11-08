@@ -1,0 +1,54 @@
+[
+  {
+    "title": "Database Management System",
+    "date": "Fall 2020",
+    "organization": "UC Irvine",
+    "description": "End-to-end implementation of a database management system equivalent to graduate level coursework",
+    "technologies": ["C/C++", "Git"],
+    "links": [
+      {
+        "text": "Project Page",
+        "url": "./database-management-system.html"
+      }
+    ]
+  },
+  {
+    "title": "Single Sign On",
+    "date": "Winter 2020",
+    "organization": "St. Jude Research Hospital",
+    "description": "Developed SSO authentication system during Information Services internship",
+    "technologies": ["AngularCLI", "TypeScript", "Node.js"],
+    "links": [
+      {
+        "text": "Project Page",
+        "url": "./SSO.html"
+      }
+    ]
+  },
+  {
+    "title": "Online Movies Store Web Application",
+    "date": "Summer 2019",
+    "organization": "UC Irvine",
+    "description": "10-week project implementing full-stack web application for online movie store",
+    "technologies": ["Java", "MySQL", "HTML", "CSS", "Maven"],
+    "links": [
+      {
+        "text": "Project Page",
+        "url": "./Online-Movies-Store-Web-Application.html"
+      }
+    ]
+  },
+  {
+    "title": "Stay Together",
+    "date": "Fall 2018",
+    "organization": "Hackathon",
+    "description": "Healthcare application focused on improving treatment for opioid-addicted patients",
+    "technologies": ["Swift", "Storyboard"],
+    "links": [
+      {
+        "text": "Project Page",
+        "url": "./stay-together.html"
+      }
+    ]
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "programming": ["Python", "Java", "C/C++", "JavaScript", "TypeScript", "Swift"],
+  "frameworks": ["PyTorch", "TensorFlow", "Angular", "Node.js", "React"],
+  "tools": ["Git", "Docker", "LaTeX", "Unity"],
+  "domains": ["Machine Learning", "Deep Learning", "Computer Vision", "Healthcare AI", "Explainable AI"]
+}

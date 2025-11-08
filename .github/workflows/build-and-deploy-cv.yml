@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'data/cv-content.json'
+      - 'data/*.json'
       - 'scripts/**'
       - 'cv_template-main/**'
       - '.github/workflows/build-and-deploy-cv.yml'

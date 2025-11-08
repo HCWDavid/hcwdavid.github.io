@@ -1,0 +1,77 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+\usepackage{fontspec}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\setmainfont{Times New Roman}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=*, noitemsep, topsep=0pt, partopsep=0pt, parsep=0pt}
+
+% Custom list for education (tight spacing)
+\newlist{edulist}{itemize}{1}
+\setlist[edulist]{leftmargin=*, noitemsep, topsep=0pt, partopsep=0pt, parsep=0pt, before={\vspace{-\baselineskip}}, label=\textbullet}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
+% Custom section environment
+\newenvironment{cvsection}[1]{
+    \vspace{8pt}
+    \textbf{\large{#1}}
+    \vspace{2pt}
+    \hrule
+    \vspace{4pt}
+}{}
+
+% Custom subsection environment
+\newenvironment{cvsubsection}[3]{
+    \textbf{#1} \hfill \textbf{#3}\\
+    \textit{#2}
+}{\vspace{4pt}}
+
+\begin{document}
+
+% HEADER
+\noindent
+\begin{minipage}[t]{0.25\textwidth}
+\raggedright
+HEADER_LOCATION
+\end{minipage}%
+\begin{minipage}[t]{0.5\textwidth}
+\centering
+{\LARGE \textbf{HEADER_NAME}}
+\end{minipage}%
+\begin{minipage}[t]{0.25\textwidth}
+\raggedleft
+HEADER_EMAIL\\
+\href{https://linkedin.com/in/HEADER_LINKEDIN}{LinkedIn}\\
+\href{https://github.com/HEADER_GITHUB}{GitHub}
+\end{minipage}
+
+\vspace{-10pt}
+
+% EDUCATION
+EDUCATION_CONTENT
+
+% EXPERIENCE
+EXPERIENCE_CONTENT
+
+% RESEARCH
+RESEARCH_CONTENT
+
+% PUBLICATIONS
+PUBLICATIONS_CONTENT
+
+% SKILLS
+SKILLS_CONTENT
+
+\end{document}

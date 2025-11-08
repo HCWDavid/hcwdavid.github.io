@@ -7,6 +7,36 @@ from datetime import datetime
 from pathlib import Path
 
 
+def escape_latex(text):
+    """Escape special LaTeX characters"""
+    if not isinstance(text, str):
+        return text
+
+    # Order matters! Do backslash first, but we'll handle it differently
+    # First, temporarily replace backslashes
+    text = text.replace('\\', 'BACKSLASHTEMP')
+
+    replacements = {
+        '&': r'\&',
+        '%': r'\%',
+        '$': r'\$',
+        '#': r'\#',
+        '_': r'\_',
+        '{': r'\{',
+        '}': r'\}',
+        '~': r'\textasciitilde{}',
+        '^': r'\^{}',
+    }
+
+    for char, replacement in replacements.items():
+        text = text.replace(char, replacement)
+
+    # Now replace backslashes
+    text = text.replace('BACKSLASHTEMP', r'\textbackslash{}')
+
+    return text
+
+
 def format_date_range(start, end):
     """Format date range for CV"""
     if end.lower() == "present":
@@ -38,6 +68,11 @@ def generate_header(data):
 \\social[linkedin]{{{social["linkedin"]}}}
 \\social[github]{{{social["github"]}}}
 """
+
+    # Add phone number if it exists
+    if personal.get("phone"):
+        content += f"\\mobile{{{personal['phone']}}}\n"
+
     return content
 
 
@@ -47,13 +82,19 @@ def generate_education(data):
 
     for edu in data["education"]:
         date_range = format_date_range(edu["startDate"], edu["endDate"])
-        description = edu["description"]
+        description = edu["description"] if edu["description"] else ""
         if edu["advisor"]:
             description = f"Advisor: {edu['advisor']}. {description}" if description else f"Advisor: {edu['advisor']}"
 
-        content += f"""\\cventry{{{date_range}}}{{{edu["degree"]}}}{{{edu["institution"]}}}{{{edu["location"]}}}{{}}{{
-{description}
+        # Only output description if not empty
+        if description:
+            content += f"""\\cventry{{{date_range}}}{{{escape_latex(edu["degree"])}}}{{{escape_latex(edu["institution"])}}}{{{escape_latex(edu["location"])}}}{{}}{{
+{escape_latex(description)}
 }}
+
+"""
+        else:
+            content += f"""\\cventry{{{date_range}}}{{{escape_latex(edu["degree"])}}}{{{escape_latex(edu["institution"])}}}{{{escape_latex(edu["location"])}}}{{}}{{}}
 
 """
     return content
@@ -70,10 +111,10 @@ def generate_experience(data):
         if exp["highlights"]:
             highlights = "\\begin{itemize}\n"
             for highlight in exp["highlights"]:
-                highlights += f"  \\item {highlight}\n"
+                highlights += f"  \\item {escape_latex(highlight)}\n"
             highlights += "\\end{itemize}"
 
-        content += f"""\\cventry{{{date_range}}}{{{exp["title"]}}}{{{exp["organization"]}}}{{{exp["location"]}}}{{}}{{
+        content += f"""\\cventry{{{date_range}}}{{{escape_latex(exp["title"])}}}{{{escape_latex(exp["organization"])}}}{{{escape_latex(exp["location"])}}}{{}}{{
 {highlights}
 }}
 
@@ -100,10 +141,10 @@ def generate_research(data):
         if research["description"]:
             desc_items = "\\begin{itemize}\n"
             for desc in research["description"]:
-                desc_items += f"  \\item {desc}\n"
+                desc_items += f"  \\item {escape_latex(desc)}\n"
             desc_items += "\\end{itemize}"
 
-        content += f"""\\cventry{{{date_range}}}{{{research["title"]}}}{{{collab_text}}}{{}}{{}}{{
+        content += f"""\\cventry{{{date_range}}}{{{escape_latex(research["title"])}}}{{{collab_text}}}{{}}{{}}{{
 {desc_items}
 }}
 
@@ -154,10 +195,23 @@ def generate_miscellaneous(data):
 
 
 def main():
-    # Load JSON data
-    json_path = Path(__file__).parent.parent / "data" / "cv-content.json"
-    with open(json_path, "r") as f:
-        data = json.load(f)
+    # Load JSON data from separate files
+    data_dir = Path(__file__).parent.parent / "data"
+
+    with open(data_dir / "personal.json") as f:
+        data = {
+            "personal": json.load(f)
+        }
+    with open(data_dir / "education.json") as f:
+        data["education"] = json.load(f)
+    with open(data_dir / "employment.json") as f:
+        data["experience"] = json.load(f)
+    with open(data_dir / "research.json") as f:
+        data["research"] = json.load(f)
+    with open(data_dir / "publications.json") as f:
+        data["publications"] = json.load(f)
+    with open(data_dir / "skills.json") as f:
+        data["skills"] = json.load(f)
 
     # Output directory
     output_dir = Path(__file__).parent.parent / "cv_template-main" / "src"

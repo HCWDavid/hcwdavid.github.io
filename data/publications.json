@@ -1,0 +1,109 @@
+[
+  {
+    "authors": ["Wang, Hanchen David", "Liu, Yilin", "Fu, Haowei", "Mason, Madison Lee", "Li, Fanjie", "Wise, Alyssa", "Levin, Daniel T", "Biswas, Gautam", "Ma, Meiyi"],
+    "title": "SmartSeg: A Non-Parametric Approach for Smart Glass Video Segmentation",
+    "venue": "MobiSys",
+    "year": 2025,
+    "month": "March",
+    "status": "Prepare for Submission",
+    "type": "conference",
+    "tags": ["Video Segmentation", "Smart Glasses", "Computer Vision"]
+  },
+  {
+    "authors": ["Wang, Hanchen David", "Khan, Nibraas", "Ghosh, Ritam", "Tauseef, Mahrukh", "Mion, Lorraine", "Ma, Meiyi", "Sarkar, Nilanjan"],
+    "title": "Decoding Human Motion: A Scoping Review of Explainable AI Methods in Movement Analysis",
+    "venue": "IMWUT",
+    "year": 2025,
+    "month": "May",
+    "status": "Under Review",
+    "type": "journal",
+    "tags": ["XAI", "Human Motion", "Survey"]
+  },
+  {
+    "authors": ["Wang, Hanchen David", "Robinette, Preston K.", "Lopez, Diego Manzanas", "Oguz, Ipek", "Johnson, Taylor T.", "Ma, Meiyi"],
+    "title": "ReachX: Abstraction-based Reachability Verification for Targeted and Robust eXplainable AI",
+    "venue": "JAIR",
+    "year": 2025,
+    "month": "May",
+    "status": "Under Review",
+    "type": "journal",
+    "tags": ["XAI", "Neural Network Verification", "Formal Methods"]
+  },
+  {
+    "authors": ["Wang, Hanchen David", "Bae, Siwoo", "Chen, Zirong", "Ma, Meiyi"],
+    "title": "Learning with Preserving for Continual Multitask Learning",
+    "venue": "AAAI",
+    "year": 2025,
+    "month": "July",
+    "status": "Prepared for Submission",
+    "type": "conference",
+    "tags": ["Continual Learning", "Multitask Learning"]
+  },
+  {
+    "authors": ["Cohn, Clayton", "Davalos, Eduardo", "Vatral, Caleb", "Fonteles, Joyce", "Wang, Hanchen David", "Ma, Meiyi", "Biswas, Gautam"],
+    "title": "Multimodal Methods for Analyzing Learning and Training Environments: A Systematic Literature Review",
+    "venue": "ACM Computing Surveys",
+    "year": 2024,
+    "month": "August",
+    "status": "Under Review",
+    "type": "journal",
+    "doi": "10.48550/arXiv.2408.14491",
+    "tags": ["Multimodal Learning", "Survey"]
+  },
+  {
+    "authors": ["Wang, Hanchen David", "Bae, Siwoo", "Sun, Xutong", "Thatigotla, Yashvitha", "Ma, Meiyi"],
+    "title": "EXACT: A Meta-Learning Framework for Precise Exercise Segmentation in Physical Therapy",
+    "venue": "International Conference on Cyber-Physical Systems (ICCPS)",
+    "year": 2024,
+    "month": "November",
+    "status": "Accepted",
+    "type": "conference",
+    "doi": "10.1145/3716550.3722027",
+    "tags": ["Physical Therapy", "Time Series", "Deep Learning"]
+  },
+  {
+    "authors": ["Lopez, Diego Manzanas", "Liu, Han", "Wang, Hanchen David", "Moyer, Daniel", "Ma, Meiyi", "Johnson, Taylor T.", "Oguz, Ipek"],
+    "title": "Robustness Certification of Semantic Segmentation of Multiple Sclerosis Lesions",
+    "venue": "Medical Imaging",
+    "year": 2024,
+    "month": "August",
+    "status": "Under Revision",
+    "type": "journal",
+    "tags": ["Medical Imaging", "Robustness", "Semantic Segmentation"]
+  },
+  {
+    "authors": ["Wang, Hanchen David", "Khan, Nibraas", "Chen, Anna", "Sarkar, Nilanjan", "Wisniewski, Pamela", "Ma, Meiyi"],
+    "title": "MicroXercise: A Micro-Level Comparative and Explainable System for Remote Physical Therapy",
+    "venue": "Connected Health: Applications, Systems and Engineering Technologies (CHASE)",
+    "year": 2024,
+    "month": "March",
+    "status": "Published",
+    "type": "conference",
+    "doi": "10.1109/CHASE60773.2024.00017",
+    "tags": ["XAI", "Healthcare", "Siamese Networks"]
+  },
+  {
+    "authors": ["Robinette, Preston K.", "Wang, Hanchen David", "Shehadeh, Nishan", "Moyer, Daniel", "Johnson, Taylor T."],
+    "title": "SUDS: Sanitizing Universal and Dependent Steganography",
+    "venue": "Proceedings of the 26th European Conference on Artificial Intelligence (ECAI)",
+    "year": 2023,
+    "month": "September",
+    "status": "Published",
+    "type": "conference",
+    "doi": "10.48550/arXiv.2309.13467",
+    "tags": ["Steganography", "Security"]
+  },
+  {
+    "authors": ["Wang, Hanchen David", "Ma, Meiyi"],
+    "title": "PhysiQ: Off-Site Quality Assessment of Exercise in Physical Therapy",
+    "venue": "Proc. ACM Interact. Mob. Wearable Ubiquitous Technol.",
+    "year": 2022,
+    "month": "December",
+    "status": "Published",
+    "type": "journal",
+    "volume": "6",
+    "number": "4",
+    "doi": "10.1145/3570349",
+    "tags": ["Healthcare", "Deep Learning", "Wearable Sensors"]
+  }
+]

@@ -62,6 +62,10 @@ PhysiQ outperformed baseline methods by 47.67% on average in R-squared across al
 
 *Published in Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT), Volume 6, Issue 4, December 2022*
 
+## Code & Resources
+
+- **GitHub Repository**: [PhysiQ_IMWUT](https://github.com/HCWDavid/PhysiQ_IMWUT)
+
 ## Technology Stack
 
 - Deep Learning

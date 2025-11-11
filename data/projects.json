@@ -1,5 +1,31 @@
 [
   {
+    "title": "Learning with Preserving (LwP)",
+    "date": "August 2024",
+    "organization": "Vanderbilt University",
+    "description": "Novel continual multitask learning framework that prevents catastrophic forgetting through dynamic weighted distance preservation without replay buffers",
+    "technologies": ["PyTorch", "Continual Learning", "Meta-Learning", "Deep Learning", "Computer Vision"],
+    "links": [
+      {
+        "text": "Project Page",
+        "url": "./projects/LearningWithPreserving.html"
+      }
+    ]
+  },
+  {
+    "title": "EXACT",
+    "date": "November 2024",
+    "organization": "Vanderbilt University",
+    "description": "Meta-learning framework for precise exercise segmentation in physical therapy using few-shot learning with temporal positional encoding and ASPP",
+    "technologies": ["PyTorch", "Meta-Learning", "Deep Learning", "Time Series", "U-Net", "Transformer"],
+    "links": [
+      {
+        "text": "Project Page",
+        "url": "./projects/EXACT.html"
+      }
+    ]
+  },
+  {
     "title": "PhysiQ",
     "date": "December 2022",
     "organization": "Vanderbilt University",

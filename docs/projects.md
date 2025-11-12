@@ -9,6 +9,24 @@ A collection of my software engineering and development projects, showcasing wor
 
 ---
 
+## [Learning with Preserving (LwP)](./projects/LearningWithPreserving.html)
+**August 2024**
+
+Novel continual multitask learning framework that prevents catastrophic forgetting through dynamic weighted distance preservation without replay buffers
+
+**Technologies:** PyTorch, Continual Learning, Meta-Learning, Deep Learning, Computer Vision
+
+---
+
+## [EXACT](./projects/EXACT.html)
+**November 2024**
+
+Meta-learning framework for precise exercise segmentation in physical therapy using few-shot learning with temporal positional encoding and ASPP
+
+**Technologies:** PyTorch, Meta-Learning, Deep Learning, Time Series, U-Net, Transformer
+
+---
+
 ## [PhysiQ](./projects/PhysiQ.html)
 **December 2022**
 

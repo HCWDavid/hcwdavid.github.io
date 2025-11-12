@@ -6,7 +6,20 @@
 \usepackage{enumitem}
 \usepackage{hyperref}
 
-\setmainfont{Times New Roman}
+% Use TeX Gyre Termes (Times clone) with fallback to Liberation Serif
+\IfFontExistsTF{Times New Roman}{
+  \setmainfont{Times New Roman}
+}{
+  \IfFontExistsTF{TeX Gyre Termes}{
+    \setmainfont{TeX Gyre Termes}
+  }{
+    \IfFontExistsTF{Liberation Serif}{
+      \setmainfont{Liberation Serif}
+    }{
+      \setmainfont{Latin Modern Roman}
+    }
+  }
+}
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}

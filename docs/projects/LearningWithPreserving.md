@@ -146,7 +146,7 @@ python eval_v2.py --dataset celeba --job cl --model lwp --save_plots
 
 **Learning with Preserving for Continual Multitask Learning**
 *Hanchen David Wang\*, Siwoo Bae\*, Zirong Chen, Meiyi Ma*
-**AAAI Conference on Artificial Intelligence (AAAI), 2025** *(Accepted - Oral Presentation)*
+**AAAI Conference on Artificial Intelligence (AAAI), 2026* *(Accepted - Oral Presentation)*
 
 \*Equal contribution
 
@@ -157,11 +157,11 @@ Artificial intelligence systems in critical fields like autonomous driving and m
 ### Citation
 
 ```bibtex
-@inproceedings{wang2025lwp,
+@inproceedings{wang2026lwp,
   title={Learning with Preserving for Continual Multitask Learning},
   author={Wang, Hanchen David and Bae, Siwoo and Chen, Zirong and Ma, Meiyi},
   booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
-  year={2025},
+  year={2026},
   organization={AAAI}
 }
 ```

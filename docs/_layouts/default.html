@@ -18,10 +18,10 @@
       </button>
       <ul id="main-nav-list">
         <li><a href="{{ "/" | relative_url }}" {% if page.url == "/" %}class="active"{% endif %}>Home</a></li>
-        <li><a href="{{ "/about.html" | relative_url }}" {% if page.url contains "about" %}class="active"{% endif %}>About Me</a></li>
         <li><a href="{{ "/publications.html" | relative_url }}" {% if page.url contains "publications" %}class="active"{% endif %}>Publications</a></li>
         <li><a href="{{ "/projects.html" | relative_url }}" {% if page.url contains "project" %}class="active"{% endif %}>Projects</a></li>
-        <li><a href="{{ "/service.html" | relative_url }}" {% if page.url contains "service" %}class="active"{% endif %}>Leadership & Service</a></li>
+        <li><a href="{{ "/career.html" | relative_url }}" {% if page.url contains "career" %}class="active"{% endif %}>Career</a></li>
+        <li><a href="{{ "/service.html" | relative_url }}" {% if page.url contains "service" %}class="active"{% endif %}>Service</a></li>
         <li class="search-container">
           <input type="text" id="search-input" placeholder="Search...">
           <button id="search-button">🔍</button>

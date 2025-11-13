@@ -3,128 +3,179 @@ layout: default
 title: Projects
 ---
 
-# Projects
+<style>
+  /* Fancy section styling */
+  .project-item {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .project-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(74, 158, 255, 0.15);
+  }
+  
+  .project-item h2 {
+    font-family: 'Courier New', monospace;
+    color: #2c3e50;
+    border-left: 4px solid #4a9eff;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    background: linear-gradient(to right, rgba(74, 158, 255, 0.1) 0%, transparent 100%);
+    padding: 10px 15px;
+    border-radius: 4px;
+  }
+  
+  .project-item h2::before {
+    content: '>';
+    color: #4a9eff;
+    margin-right: 8px;
+    font-weight: bold;
+  }
+  
+  h1 {
+    font-family: 'Courier New', monospace;
+    color: #2c3e50;
+    border-left: 4px solid #4a9eff;
+    padding-left: 15px;
+    background: linear-gradient(to right, rgba(74, 158, 255, 0.1) 0%, transparent 100%);
+    padding: 10px 15px;
+    border-radius: 4px;
+  }
+  
+  h1::before {
+    content: '>';
+    color: #4a9eff;
+    margin-right: 8px;
+    font-weight: bold;
+  }
+</style>
 
-A collection of my software engineering and development projects, showcasing work across various technologies and domains.
+<h1>Projects</h1>
 
----
+<p>A collection of my software engineering and development projects, showcasing work across various technologies and domains.</p>
 
-## [Learning with Preserving (LwP)](./projects/LearningWithPreserving.html)
-**August 2024**
+<div class="project-item">
+<h2><a href="./projects/LearningWithPreserving.html" style="text-decoration: none; color: inherit;">Learning with Preserving (LwP)</a></h2>
+<p><strong>August 2024</strong></p>
 
-Novel continual multitask learning framework that prevents catastrophic forgetting through dynamic weighted distance preservation without replay buffers
+<p>Novel continual multitask learning framework that prevents catastrophic forgetting through dynamic weighted distance preservation without replay buffers</p>
 
-**Technologies:** PyTorch, Continual Learning, Meta-Learning, Deep Learning, Computer Vision
+<p><strong>Technologies:</strong> PyTorch, Continual Learning, Meta-Learning, Deep Learning, Computer Vision</p>
+</div>
 
----
+<div class="project-item">
+<h2><a href="./projects/EXACT.html" style="text-decoration: none; color: inherit;">EXACT</a></h2>
+<p><strong>November 2024</strong></p>
 
-## [EXACT](./projects/EXACT.html)
-**November 2024**
+<p>Meta-learning framework for precise exercise segmentation in physical therapy using few-shot learning with temporal positional encoding and ASPP</p>
 
-Meta-learning framework for precise exercise segmentation in physical therapy using few-shot learning with temporal positional encoding and ASPP
+<p><strong>Technologies:</strong> PyTorch, Meta-Learning, Deep Learning, Time Series, U-Net, Transformer</p>
+</div>
 
-**Technologies:** PyTorch, Meta-Learning, Deep Learning, Time Series, U-Net, Transformer
+<div class="project-item">
+<h2><a href="./projects/PhysiQ.html" style="text-decoration: none; color: inherit;">PhysiQ</a></h2>
+<p><strong>December 2022</strong></p>
 
----
+<p>Off-site quality assessment framework for physical therapy exercises using smartwatch and multi-task spatiotemporal Siamese Neural Network</p>
 
-## [PhysiQ](./projects/PhysiQ.html)
-**December 2022**
+<p><strong>Technologies:</strong> Deep Learning, Wearable Sensors, Python, Siamese Networks</p>
+</div>
 
-Off-site quality assessment framework for physical therapy exercises using smartwatch and multi-task spatiotemporal Siamese Neural Network
+<div class="project-item">
+<h2><a href="./projects/database-management-system.html" style="text-decoration: none; color: inherit;">Database Management System</a></h2>
+<p><strong>Fall 2020</strong></p>
 
-**Technologies:** Deep Learning, Wearable Sensors, Python, Siamese Networks
+<p>Implemented paged file (PF) and record-based file (RBF) management systems in C/C++. Upgraded relation manager (RM) designs to store catalog information by columns with hidden metadata</p>
 
----
+<p><strong>Technologies:</strong> C/C++, Git</p>
+</div>
 
-## [Database Management System](./projects/database-management-system.html)
-**Fall 2020**
+<div class="project-item">
+<h2>B+ Tree for Database Management</h2>
+<p><strong>2020</strong></p>
 
-Implemented paged file (PF) and record-based file (RBF) management systems in C/C++. Upgraded relation manager (RM) designs to store catalog information by columns with hidden metadata
+<p>Developed a B+ tree data structure for efficient database management with optimized insertion, deletion, and search operations, significantly improving database performance</p>
 
-**Technologies:** C/C++, Git
+<p><strong>Technologies:</strong> C/C++, Data Structures, Algorithm Optimization</p>
+</div>
 
----
+<div class="project-item">
+<h2>Process and Resource Manager</h2>
+<p><strong>2020</strong></p>
 
-## B+ Tree for Database Management
-**2020**
+<p>Implemented Python data structures to manage processes and resources, optimizing process states and supporting multi-unit resource usage</p>
 
-Developed a B+ tree data structure for efficient database management with optimized insertion, deletion, and search operations, significantly improving database performance
+<p><strong>Technologies:</strong> Python, Operating Systems</p>
+</div>
 
-**Technologies:** C/C++, Data Structures, Algorithm Optimization
+<div class="project-item">
+<h2>File System</h2>
+<p><strong>2020</strong></p>
 
----
+<p>Designed a Java file system using an emulated disk, optimized with a directory using fixed index structures as file descriptors</p>
 
-## Process and Resource Manager
-**2020**
+<p><strong>Technologies:</strong> Java, File Systems</p>
+</div>
 
-Implemented Python data structures to manage processes and resources, optimizing process states and supporting multi-unit resource usage
+<div class="project-item">
+<h2>Simple Bash-like Shell</h2>
+<p><strong>2020</strong></p>
 
-**Technologies:** Python, Operating Systems
+<p>Created a C-based shell capable of handling simple and complex commands, with multi-piping, redirection, background process, and signal handling functionalities</p>
 
----
+<p><strong>Technologies:</strong> C, Unix/Linux, System Programming</p>
+</div>
 
-## File System
-**2020**
+<div class="project-item">
+<h2>Search Engine</h2>
+<p><strong>2020</strong></p>
 
-Designed a Java file system using an emulated disk, optimized with a directory using fixed index structures as file descriptors
+<p>Implemented a search engine in Python that ranks HTML data's importance using term frequency-inverse document frequency (tf-idf) and cosine similarity for search functionality</p>
 
-**Technologies:** Java, File Systems
+<p><strong>Technologies:</strong> Python, Information Retrieval, NLP</p>
+</div>
 
----
+<div class="project-item">
+<h2><a href="./projects/SSO.html" style="text-decoration: none; color: inherit;">Single Sign On</a></h2>
+<p><strong>Winter 2020</strong></p>
 
-## Simple Bash-like Shell
-**2020**
+<p>Developed SSO authentication system during Information Services internship</p>
 
-Created a C-based shell capable of handling simple and complex commands, with multi-piping, redirection, background process, and signal handling functionalities
+<p><strong>Technologies:</strong> AngularCLI, TypeScript, Node.js</p>
+</div>
 
-**Technologies:** C, Unix/Linux, System Programming
+<div class="project-item">
+<h2><a href="./projects/Online-Movies-Store-Web-Application.html" style="text-decoration: none; color: inherit;">Online Movies Store Web Application</a></h2>
+<p><strong>Summer 2019</strong></p>
 
----
+<p>Collaborated on building a cloud-based server and web application using Java, MySQL, HTML, CSS, and Maven. Optimized usability with Tomcat and MySQL replication, connection pooling, and micro-services architecture</p>
 
-## Search Engine
-**2020**
+<p><strong>Technologies:</strong> Java, MySQL, HTML, CSS, Maven, Tomcat</p>
+</div>
 
-Implemented a search engine in Python that ranks HTML data's importance using term frequency-inverse document frequency (tf-idf) and cosine similarity for search functionality
+<div class="project-item">
+<h2>AI Stock Watch Bot</h2>
+<p><strong>2019</strong></p>
 
-**Technologies:** Python, Information Retrieval, NLP
+<p>Built an AI bot for monitoring stock market trends and making data-driven predictions using machine learning techniques to analyze historical stock data. Implemented machine learning algorithms, data preprocessing, and financial data APIs</p>
 
----
+<p><strong>Technologies:</strong> Python, Machine Learning, Financial APIs</p>
+</div>
 
-## [Single Sign On](./projects/SSO.html)
-**Winter 2020**
+<div class="project-item">
+<h2><a href="./projects/stay-together.html" style="text-decoration: none; color: inherit;">Stay Together (Opioid Hackathon - Final Nominee)</a></h2>
+<p><strong>Fall 2018</strong></p>
 
-Developed SSO authentication system during Information Services internship
+<p>Worked as iOS developer on a Swift-based social media application designed to treat opioid-addicted patients through a supportive community with strong interaction among patients, family members, and specialists</p>
 
-**Technologies:** AngularCLI, TypeScript, Node.js
-
----
-
-## [Online Movies Store Web Application](./projects/Online-Movies-Store-Web-Application.html)
-**Summer 2019**
-
-Collaborated on building a cloud-based server and web application using Java, MySQL, HTML, CSS, and Maven. Optimized usability with Tomcat and MySQL replication, connection pooling, and micro-services architecture
-
-**Technologies:** Java, MySQL, HTML, CSS, Maven, Tomcat
-
----
-
-## AI Stock Watch Bot
-**2019**
-
-Built an AI bot for monitoring stock market trends and making data-driven predictions using machine learning techniques to analyze historical stock data. Implemented machine learning algorithms, data preprocessing, and financial data APIs
-
-**Technologies:** Python, Machine Learning, Financial APIs
-
----
-
-## [Stay Together (Opioid Hackathon - Final Nominee)](./projects/stay-together.html)
-**Fall 2018**
-
-Worked as iOS developer on a Swift-based social media application designed to treat opioid-addicted patients through a supportive community with strong interaction among patients, family members, and specialists
-
-**Technologies:** Swift, iOS Development, Social Media
-
----
+<p><strong>Technologies:</strong> Swift, iOS Development, Social Media</p>
+</div>
 
 
 <div style="text-align: center; margin-top: 30px; padding: 20px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 8px; border: 1px solid #dee2e6;">

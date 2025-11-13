@@ -7,15 +7,90 @@
     "endDate": "Present",
     "type": "mentoring",
     "highlights": [
-      "(2024–2025) Mentored master's student Yiling Liu and undergraduates Haowei Fu and Christin Ann Sanchez on \"SmartSeg: A Non-Parametric Approach for Smart Glass Video Segmentation,\" an event segmentation project for a nursing training simulation.",
-      "(2024–2025) Mentored undergraduate Haoran (Max) Ma on an IMU-guided video classification project to improve model accuracy.",
-      "(2024–2025) Mentored undergraduate Siwoo Bae on \"Learning with Preserving for Continual Multitask Learning,\" focused on preserving representational space in continual learning. The work was presented at the Vanderbilt Undergraduate Research Fair, earning a poster award.",
-      "(2022–2024) Mentored undergraduate Xutong (Helen) Sun and Yashvitha Thatigotla on \"EXACT: A Meta-Learning Framework for Precise Exercise Segmentation in Physical Therapy.\"",
-      "(2022–2023) Mentored undergraduates Anna Chen on projects in iOS app development, Unity visualization, and data analysis for micro-level exercise explainability, notably \"MicroXercise: A Micro-Level Comparative and Explainable System for Remote Physical Therapy.\"",
-      "(2021–2022) Mentored undergraduates David Atwood and Melissa Wang on \"PhysiQ: Off-Site Quality Assessment of Exercise in Physical Therapy.\"",
-      "Provided guidance and support to students, helping them develop their technical skills and research abilities.",
-      "Facilitated project discussions and brainstorming sessions, fostering a collaborative and creative environment.",
-      "Monitored project progress, provided feedback, and encouraged independent thinking and problem-solving."
+      {
+        "date": "2025–Present",
+        "notes": "Mentoring undergraduate Daniel Park on extension work for ICCPS 2025.",
+        "mentees": [
+          {
+            "name": "Daniel Park",
+            "website": ""
+          }
+        ]
+      },
+      {
+        "date": "2025–Present",
+        "notes": "Mentoring undergraduate Selena Xu on GENIUS project for explainable and responsible AI.",
+        "mentees": [
+          {
+            "name": "Selena Xu",
+            "website": ""
+          }
+        ]
+      },
+      {
+        "date": "2024–2025",
+        "notes": "Mentored master's student Yiling Liu and undergraduates Haowei Fu and Christin Ann Sanchez on \"SmartSeg: A Non-Parametric Approach for Smart Glass Video Segmentation,\" an event segmentation project for a nursing training simulation.",
+        "mentees": [
+          {
+            "name": "Yiling Liu",
+            "website": ""
+          },
+          {
+            "name": "Haowei Fu",
+            "website": ""
+          },
+          {
+            "name": "Christin Ann Sanchez",
+            "website": ""
+          }
+        ]
+      },
+      {
+        "date": "2024–2025",
+        "notes": "Mentored undergraduate Haoran (Max) Ma on an IMU-guided video classification project to improve model accuracy."
+      },
+      {
+        "date": "2024–2025",
+        "notes": "Mentored undergraduate Siwoo Bae on \"Learning with Preserving for Continual Multitask Learning,\" focused on preserving representational space in continual learning. The work was presented at the Vanderbilt Undergraduate Research Fair, earning a poster award."
+      },
+      {
+        "date": "2022–2024",
+        "notes": "Mentored undergraduate Xutong (Helen) Sun and Yashvitha Thatigotla on \"EXACT: A Meta-Learning Framework for Precise Exercise Segmentation in Physical Therapy.\""
+      },
+      {
+        "date": "2022–2023",
+        "notes": "Mentored undergraduates Anna Chen on projects in iOS app development, Unity visualization, and data analysis for micro-level exercise explainability, notably \"MicroXercise: A Micro-Level Comparative and Explainable System for Remote Physical Therapy.\""
+      },
+      {
+        "date": "2021–2022",
+        "notes": "Mentored undergraduates David Atwood and Melissa Wang on \"PhysiQ: Off-Site Quality Assessment of Exercise in Physical Therapy.\""
+      }
+    ]
+  },
+  {
+    "title": "Volunteer, Mission Autonomy Hackathon",
+    "organization": "Vanderbilt University & AWS",
+    "location": "Nashville, TN",
+    "startDate": "2025-10",
+    "endDate": "2025-10",
+    "type": "volunteer",
+    "highlights": [
+      "Assisted with student organization and coordination for the Mission Autonomy Hackathon.",
+      "Helped manage logistics and location setup for the hackathon event.",
+      "Supported participants and organizers throughout the event."
+    ]
+  },
+  {
+    "title": "Volunteer, PhD Orientation Talk",
+    "organization": "Vanderbilt University",
+    "location": "Nashville, TN",
+    "startDate": "2025-08",
+    "endDate": "2025-08",
+    "type": "volunteer",
+    "highlights": [
+      "Delivered a talk sharing personal PhD experience and insights with incoming graduate students.",
+      "Provided guidance and advice to new students about navigating the PhD journey.",
+      "Answered questions about research, coursework, and academic life at Vanderbilt."
     ]
   },
   {

@@ -160,11 +160,13 @@ def generate_publications(data):
     for i, pub in enumerate(data["publications"], 1):
         authors = format_authors(pub["authors"])
         status = f", {pub['status']}" if pub.get("status") else ""
+        month = pub.get("month", "")
+        month_str = f"{month} " if month else ""
 
         content += f"""\\cvitem{{{pub["year"]}}}{{
 {authors}. 
 \\textit{{{pub["title"]}}}.
-{pub["venue"]}, {pub["month"]} {pub["year"]}{status}.
+{pub["venue"]}, {month_str}{pub["year"]}{status}.
 }}
 
 """
@@ -196,7 +198,13 @@ def generate_service(data):
         if service["highlights"]:
             highlights = "\\begin{itemize}\n"
             for highlight in service["highlights"]:
-                highlights += f"  \\item {escape_latex(highlight)}\n"
+                # Handle both string and dict formats
+                if isinstance(highlight, str):
+                    highlights += f"  \\item {escape_latex(highlight)}\n"
+                elif isinstance(highlight, dict):
+                    # New structured format with date, notes, mentees
+                    highlight_text = f"{highlight.get('date', '')}: {highlight.get('notes', '')}"
+                    highlights += f"  \\item {escape_latex(highlight_text)}\n"
             highlights += "\\end{itemize}"
 
         content += f"""\\cventry{{{date_range}}}{{{escape_latex(service["title"])}}}{{{escape_latex(service["organization"])}}}{{{escape_latex(service["location"])}}}{{}}{{

@@ -121,7 +121,7 @@ def generate_simple_cv(data):
         edu_content += "\\end{minipage}%\n"
         edu_content += f"\\begin{{minipage}}[t]{{0.33\\textwidth}}\n"
         edu_content += f"\\raggedleft\\textbf{{{date_range}}}\n"
-        edu_content += "\\end{minipage}\\\\\n"
+        edu_content += "\\end{minipage}\\\\[2pt]\n"
         edu_content += "\\begin{edulist}\n"
 
         # Add degree as first bullet
@@ -156,7 +156,7 @@ def generate_simple_cv(data):
         exp_content += "\\end{minipage}%\n"
         exp_content += f"\\begin{{minipage}}[t]{{0.33\\textwidth}}\n"
         exp_content += f"\\raggedleft\\textbf{{{date_range}}}\n"
-        exp_content += "\\end{minipage}\\\\\n"
+        exp_content += "\\end{minipage}\\\\[2pt]\n"
         exp_content += f"\\textit{{{escape_latex(exp['organization'])}}}\n"
         if exp.get('highlights'):
             exp_content += "\\begin{itemize}\n"
@@ -220,8 +220,10 @@ def generate_simple_cv(data):
     service_content = "\\cvsection{Leadership and Service}\n\n"
     for service in data['service']:
         date_range = format_date_range(service['startDate'], service['endDate'])
-        # Use three minipage boxes to control alignment
+        # Use three minipage boxes to control alignment with linespread
+        service_content += "\\vspace{3pt}\n"
         service_content += "\\noindent\n"
+        service_content += "{\\linespread{0.85}\\selectfont%\n"
         service_content += f"\\begin{{minipage}}[t]{{0.33\\textwidth}}\n"
         service_content += f"\\raggedright\\textbf{{{escape_latex(service['title'])}}}\n"
         service_content += "\\end{minipage}%\n"
@@ -230,12 +232,19 @@ def generate_simple_cv(data):
         service_content += "\\end{minipage}%\n"
         service_content += f"\\begin{{minipage}}[t]{{0.33\\textwidth}}\n"
         service_content += f"\\raggedleft\\textbf{{{date_range}}}\n"
-        service_content += "\\end{minipage}\\\\\n"
+        service_content += "\\end{minipage}\\par}%\n"
+        service_content += "\\vspace{1pt}\n"
         service_content += f"\\textit{{{escape_latex(service['organization'])}}}\n"
         if service.get('highlights'):
             service_content += "\\begin{itemize}\n"
             for highlight in service['highlights']:
-                service_content += f"    \\item {escape_latex(highlight)}\n"
+                # Handle both string and dict formats
+                if isinstance(highlight, str):
+                    service_content += f"    \\item {escape_latex(highlight)}\n"
+                elif isinstance(highlight, dict):
+                    # New structured format with date, notes, mentees
+                    highlight_text = f"{highlight.get('date', '')}: {highlight.get('notes', '')}"
+                    service_content += f"    \\item {escape_latex(highlight_text)}\n"
             service_content += "\\end{itemize}\n"
         service_content += "\n"
 

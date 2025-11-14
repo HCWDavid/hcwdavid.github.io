@@ -150,6 +150,8 @@ python eval_v2.py --dataset celeba --job cl --model lwp --save_plots
 
 \*Equal contribution
 
+📄 **[Download PDF](LwP_ARVIX.pdf)**
+
 ### Abstract
 
 Artificial intelligence systems in critical fields like autonomous driving and medical imaging must continually learn new tasks using shared input streams. This introduces Continual Multitask Learning (CMTL), where models sequentially learn tasks on an underlying data distribution without forgetting previous abilities. Existing continual learning methods often fail because they learn fragmented, task-specific features that interfere with one another. We introduce Learning with Preserving (LwP), a framework that shifts focus from preserving task outputs to maintaining the geometric structure of the shared representation space. The core innovation is a Dynamically Weighted Distance Preservation (DWDP) loss that prevents representation drift by regularizing pairwise distances between latent representations. This mechanism enables the model to retain implicit knowledge and support diverse tasks without replay buffers, making it suitable for privacy-conscious applications. Extensive evaluations on time-series and image benchmarks demonstrate that LwP consistently outperforms state-of-the-art methods and exceeds single-task learning performance.

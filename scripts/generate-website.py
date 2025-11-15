@@ -47,7 +47,7 @@ def make_author_bold(authors, name_to_bold):
     
     for variation in name_variations:
         if variation in authors_str:
-            authors_str = authors_str.replace(variation, f"**{variation}**")
+            authors_str = authors_str.replace(variation, f"<strong>{variation}</strong>")
             break
     
     return authors_str
@@ -528,8 +528,8 @@ title: Projects
     background: #ffffff;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    padding: 25px;
-    margin-bottom: 25px;
+    padding: 12px 20px 20px 20px;
+    margin-bottom: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
@@ -544,9 +544,10 @@ title: Projects
     color: #2c3e50;
     border-left: 4px solid #4a9eff;
     padding-left: 15px;
+    margin-top: 0;
     margin-bottom: 15px;
     background: linear-gradient(to right, rgba(74, 158, 255, 0.1) 0%, transparent 100%);
-    padding: 10px 15px;
+    padding: 8px 12px;
     border-radius: 4px;
   }
   
@@ -652,8 +653,8 @@ title: Leadership & Service
     background: #ffffff;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    padding: 25px;
-    margin-bottom: 25px;
+    padding: 12px 20px 20px 20px;
+    margin-bottom: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
@@ -668,9 +669,10 @@ title: Leadership & Service
     color: #2c3e50;
     border-left: 4px solid #4a9eff;
     padding-left: 15px;
+    margin-top: 0;
     margin-bottom: 15px;
     background: linear-gradient(to right, rgba(74, 158, 255, 0.1) 0%, transparent 100%);
-    padding: 10px 15px;
+    padding: 8px 12px;
     border-radius: 4px;
   }
   
@@ -870,8 +872,8 @@ title: Career
     background: #ffffff;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    padding: 25px;
-    margin-bottom: 25px;
+    padding: 12px 20px 20px 20px;
+    margin-bottom: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
@@ -886,9 +888,10 @@ title: Career
     color: #2c3e50;
     border-left: 4px solid #4a9eff;
     padding-left: 15px;
+    margin-top: 0;
     margin-bottom: 15px;
     background: linear-gradient(to right, rgba(74, 158, 255, 0.1) 0%, transparent 100%);
-    padding: 10px 15px;
+    padding: 8px 12px;
     border-radius: 4px;
   }
   

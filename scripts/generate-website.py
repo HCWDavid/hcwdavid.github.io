@@ -466,16 +466,16 @@ title: Publications
         
         # Start publication item
         content += f"""<div class="publication-item">
-{i}. <span style='font-size: 1.1em;'>"""
+{i}. """
         
         # Format the entry with title first (larger font, clickable if DOI available) then authors
         doi = pub.get('doi', '')
         if doi:
             # Add https://doi.org/ prefix if not already present
             doi_url = doi if doi.startswith('http') else f"https://doi.org/{doi}"
-            content += f"<a href='{doi_url}' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600;'>**{title}**</a></span>  \n"
+            content += f"<a href='{doi_url}' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600; font-size: 1.1em;'>{title}</a>  \n"
         else:
-            content += f"**{title}**</span>  \n"
+            content += f"<span style='font-weight: 600; font-size: 1.1em;'>{title}</span>  \n"
         
         content += f"   {authors}  \n"
         

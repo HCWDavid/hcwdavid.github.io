@@ -57,66 +57,77 @@ title: Publications
 
 <div class="publication-item">
 1. <span style='font-weight: 600; font-size: 1.1em;'>BEAGLE: Behavioral Explanation via Agent Graph Learning</span>  
+   <br>
    <strong>Wang, Hanchen David</strong>, Cohn, Clayton, Xu, Zifan, Guo, Siyuan, Biswas, Gautam, Ma, Meiyi  
    TBD, In Preparation.  
 </div>
 
 <div class="publication-item">
 2. <span style='font-weight: 600; font-size: 1.1em;'>SmartSeg: A Non-Parametric Approach for Smart Glass Video Segmentation</span>  
+   <br>
    <strong>Wang, Hanchen David</strong>, Liu, Yilin, Fu, Haowei, Mason, Madison Lee, Li, Fanjie, Wise, Alyssa, Levin, Daniel T, Biswas, Gautam, Ma, Meiyi  
    Pervasive and Mobile Computing, Under Review.  
 </div>
 
 <div class="publication-item">
 3. <span style='font-weight: 600; font-size: 1.1em;'>Decoding Human Motion: A Scoping Review of Explainable AI Methods in Movement Analysis</span>  
+   <br>
    <strong>Wang, Hanchen David</strong>, Khan, Nibraas, Ghosh, Ritam, Tauseef, Mahrukh, Mion, Lorraine, Ma, Meiyi, Sarkar, Nilanjan  
    Pervasive and Mobile Computing, Under Review.  
 </div>
 
 <div class="publication-item">
 4. <span style='font-weight: 600; font-size: 1.1em;'>Towards Verified and Targeted Explanations through Formal Methods</span>  
+   <br>
    <strong>Wang, Hanchen David</strong>, Robinette, Preston K., Lopez, Diego Manzanas, Oguz, Ipek, Johnson, Taylor T., Ma, Meiyi  
    JAIR, Major Revision.  
 </div>
 
 <div class="publication-item">
 5. <a href='https://doi.org/10.48550/arXiv.2511.11676' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600; font-size: 1.1em;'>Learning with Preserving for Continual Multitask Learning</a>  
+   <br>
    <strong>Wang, Hanchen David</strong>, Bae, Siwoo, Chen, Zirong, Ma, Meiyi  
    AAAI, Accepted (Oral).  
 </div>
 
 <div class="publication-item">
 6. <a href='https://doi.org/10.48550/arXiv.2408.14491' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600; font-size: 1.1em;'>Multimodal Methods for Analyzing Learning and Training Environments: A Systematic Literature Review</a>  
+   <br>
    Cohn, Clayton, Davalos, Eduardo, Vatral, Caleb, Fonteles, Joyce, <strong>Wang, Hanchen David</strong>, Ma, Meiyi, Biswas, Gautam  
    ACM Computing Surveys, Under Review.  
 </div>
 
 <div class="publication-item">
 7. <a href='https://doi.org/10.1145/3716550.3722027' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600; font-size: 1.1em;'>EXACT: A Meta-Learning Framework for Precise Exercise Segmentation in Physical Therapy</a>  
+   <br>
    <strong>Wang, Hanchen David</strong>, Bae, Siwoo, Sun, Xutong, Thatigotla, Yashvitha, Ma, Meiyi  
    International Conference on Cyber-Physical Systems (ICCPS), Published.  
 </div>
 
 <div class="publication-item">
 8. <span style='font-weight: 600; font-size: 1.1em;'>Robustness Certification of Semantic Segmentation of Multiple Sclerosis Lesions</span>  
+   <br>
    Lopez, Diego Manzanas, Liu, Han, <strong>Wang, Hanchen David</strong>, Moyer, Daniel, Ma, Meiyi, Johnson, Taylor T., Oguz, Ipek  
    Medical Imaging, Under Revision.  
 </div>
 
 <div class="publication-item">
 9. <a href='https://doi.org/10.1109/CHASE60773.2024.00017' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600; font-size: 1.1em;'>MicroXercise: A Micro-Level Comparative and Explainable System for Remote Physical Therapy</a>  
+   <br>
    <strong>Wang, Hanchen David</strong>, Khan, Nibraas, Chen, Anna, Sarkar, Nilanjan, Wisniewski, Pamela, Ma, Meiyi  
    Connected Health: Applications, Systems and Engineering Technologies (CHASE), Published.  
 </div>
 
 <div class="publication-item">
 10. <a href='https://doi.org/10.48550/arXiv.2309.13467' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600; font-size: 1.1em;'>SUDS: Sanitizing Universal and Dependent Steganography</a>  
+   <br>
    Robinette, Preston K., <strong>Wang, Hanchen David</strong>, Shehadeh, Nishan, Moyer, Daniel, Johnson, Taylor T.  
    Proceedings of the 26th European Conference on Artificial Intelligence (ECAI), Published.  
 </div>
 
 <div class="publication-item">
 11. <a href='https://doi.org/10.1145/3570349' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600; font-size: 1.1em;'>PhysiQ: Off-Site Quality Assessment of Exercise in Physical Therapy</a>  
+   <br>
    <strong>Wang, Hanchen David</strong>, Ma, Meiyi  
    Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., Published.  
 </div>

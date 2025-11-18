@@ -80,7 +80,7 @@ title: Publications
 </div>
 
 <div class="publication-item">
-5. <span style='font-weight: 600; font-size: 1.1em;'>Learning with Preserving for Continual Multitask Learning</span>  
+5. <a href='https://doi.org/10.48550/arXiv.2511.11676' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600; font-size: 1.1em;'>Learning with Preserving for Continual Multitask Learning</a>  
    <strong>Wang, Hanchen David</strong>, Bae, Siwoo, Chen, Zirong, Ma, Meiyi  
    AAAI, Accepted (Oral).  
 </div>

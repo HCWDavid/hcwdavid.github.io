@@ -468,7 +468,7 @@ title: Publications
         content += f"""<div class="publication-item">
 {i}. """
         
-        # Format the entry with title first (larger font, clickable if DOI available) then authors
+        # Format the entry with title first (larger font, clickable if DOI available) then authors on next line
         doi = pub.get('doi', '')
         if doi:
             # Add https://doi.org/ prefix if not already present
@@ -477,7 +477,7 @@ title: Publications
         else:
             content += f"<span style='font-weight: 600; font-size: 1.1em;'>{title}</span>  \n"
         
-        content += f"   {authors}  \n"
+        content += f"   <br>\n   {authors}  \n"
         
         if venue:
             content += f"   {venue}"

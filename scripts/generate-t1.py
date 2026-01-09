@@ -216,6 +216,13 @@ def generate_simple_cv(data):
     skills_content += f"\\textbf{{Tools:}} {escape_latex(', '.join(skills['tools']))}\\\\\n"
     skills_content += f"\\textbf{{Domains:}} {escape_latex(', '.join(skills['domains']))}\n"
 
+    # Generate Awards
+    awards_content = "\\cvsection{Awards}\n"
+    awards_content += "\\begin{itemize}\n"
+    for award in data['awards']:
+        awards_content += f"    \\item \\textbf{{{escape_latex(award['title'])}:}} {escape_latex(award['description'])}\n"
+    awards_content += "\\end{itemize}\n"
+
     # Generate Leadership and Service
     service_content = "\\cvsection{Leadership and Service}\n\n"
     for service in data['service']:
@@ -255,6 +262,7 @@ def generate_simple_cv(data):
     template = template.replace('PUBLICATIONS_CONTENT', pub_content)
     template = template.replace('SERVICE_CONTENT', service_content)
     template = template.replace('SKILLS_CONTENT', skills_content)
+    template = template.replace('AWARDS_CONTENT', awards_content)
 
     return template
 
@@ -279,6 +287,8 @@ def main():
         data["skills"] = json.load(f)
     with open(data_dir / "service.json") as f:
         data["service"] = json.load(f)
+    with open(data_dir / "awards.json") as f:
+        data["awards"] = json.load(f)
 
     # Generate simple CV
     cv_content = generate_simple_cv(data)

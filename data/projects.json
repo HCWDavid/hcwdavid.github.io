@@ -1,5 +1,22 @@
 [
   {
+    "title": "NOVA - Multi-Modal Video Annotation",
+    "date": "January 2026",
+    "organization": "Vanderbilt University",
+    "description": "Web-based multi-modal video annotation framework with synchronized playback for multiple video streams and integrated data overlays. Supports gaze tracking, heatmaps, and IMU sensor visualization with native Tobii Pro Glasses 3 support.",
+    "technologies": ["JavaScript", "CSS3", "HTML5", "Video Processing", "Pako.js"],
+    "links": [
+      {
+        "text": "Project Page",
+        "url": "./projects/NOVA.html"
+      },
+      {
+        "text": "🚀 Launch Tool",
+        "url": "./nova/index.html"
+      }
+    ]
+  },
+  {
     "title": "Learning with Preserving (LwP)",
     "date": "August 2025",
     "organization": "Vanderbilt University",

@@ -211,6 +211,12 @@ const searchData = {
     "type": "Project"
   },
   {
+    "title": "NOVA: Multi-Modal Video Annotation System",
+    "url": "./projects/NOVA.html",
+    "content": "NOVA: Multi-Modal Video Annotation System \ud83d\ude80 Launch NOVA Tool \u2192 Overview NOVA (Nursing Operational View of Actions) is a web-based video annotation framework designed for multi-modal data analysis. Version 0.2 implements a synchronized playback system for multiple high-fidelity video streams with integrated data overlays, supporting gaze tracking, heatmaps, and IMU sensor visualization. Key Features Multi-Modal Synchronization - Multiple Video Streams: Load and synchronize multiple video files simultaneously - Data Overlays: Overlay gaze tracking, heatmaps, and IMU data directly on video - Time-Synchronized Playback: Frame-accurate synchronization across all modalities Annotation System - Layer-Based Annotations: Organize annotations into customizable layers - Keyboard Shortcuts: Rapid annotation with keyboard-driven workflow - Export Support: Export annotations in standard formats Data Support - Gaze Tracking: Native support for Tobii Pro Glasses 3 data - IMU Visualization: 5-second ro",
+    "type": "Project"
+  },
+  {
     "title": "PhysiQ: Off-Site Quality Assessment of Exercise in Physical Therapy",
     "url": "./projects/PhysiQ.html",
     "content": "PhysiQ: Off-Site Quality Assessment of Exercise in Physical Therapy Overview Welcome to PhysiQ \u2014 a groundbreaking framework that revolutionizes physical therapy by enabling patients to effectively continue their therapy at home. PhysiQ addresses a critical challenge in physical therapy: providing quality assessment and feedback for exercises performed outside the clinic. Video Talk The Problem Traditional physical therapy relies heavily on in-person supervision to ensure correct exercise execution. However, patients spend most of their recovery time at home, where the lack of expert supervision often leads to inaccuracies in posture and performance. Existing solutions like Human Activity Recognition (HAR) in wearable devices recognize basic activities but don't cater to therapeutic rehabilitation needs. Vision-based tracking systems are cumbersome and not user-friendly for patients with limited mobility. Our Solution PhysiQ uses passive sensory detection through a smartwatch to track a",

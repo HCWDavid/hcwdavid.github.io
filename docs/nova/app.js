@@ -17,10 +17,9 @@ const DEFAULT_LAYERS = [
         shortcut: 'b',
         color: '#FF6B6B',
         types: [
-            { id: 1, name: 'Communication', color: '#FF6B6B' },
+            { id: 1, name: 'Introduction/Identification', color: '#FF6B6B' },
             { id: 2, name: 'Assessment', color: '#4ECDC4' },
-            { id: 3, name: 'IV Management', color: '#45B7D1' },
-            { id: 4, name: 'Safety', color: '#96CEB4' },
+            { id: 3, name: 'Administration', color: '#45B7D1' },
         ]
     },
     {
@@ -29,10 +28,23 @@ const DEFAULT_LAYERS = [
         shortcut: 'a',
         color: '#74b9ff',
         types: [
-            { id: 1, name: 'Verbal communication', color: '#74b9ff' },
-            { id: 2, name: 'Non-verbal communication', color: '#a29bfe' },
-            { id: 3, name: 'Visual assessment', color: '#fd79a8' },
-            { id: 4, name: 'Physical assessment', color: '#00b894' },
+            { id: 1, name: 'Introduce self to parents/patient', color: '#74b9ff' },
+            { id: 2, name: 'Perform hand hygiene (sanitizer)', color: '#a29bfe' },
+            { id: 3, name: 'Put on gloves', color: '#fd79a8' },
+            { id: 4, name: 'Verify patient/client identity', color: '#00b894' },
+            { id: 5, name: 'Check patient\'s wristband', color: '#e17055' },
+            { id: 6, name: 'Review document screen', color: '#00cec9' },
+            { id: 7, name: 'Check med name', color: '#6c5ce7' },
+            { id: 8, name: 'Review vital signs screen', color: '#fdcb6e' },
+            { id: 9, name: 'Assess vital signs (touch patient\'s wrist)', color: '#e84393' },
+            { id: 10, name: 'Measure apical pulse', color: '#0984e3' },
+            { id: 11, name: 'Measure temperature', color: '#d63031' },
+            { id: 12, name: 'Measure blood pressure (Click button on vital screen)', color: '#55a3ff' },
+            { id: 13, name: 'Calculating medication dosage (writing only)', color: '#81ecec' },
+            { id: 14, name: 'Use calculator/phone calculator', color: '#fab1a0' },
+            { id: 15, name: 'Prepare medication', color: '#74b9ff' },
+            { id: 16, name: 'Apply medication to patient', color: '#a29bfe' },
+            { id: 17, name: 'Writing', color: '#dfe6e9' },
         ]
     },
     {

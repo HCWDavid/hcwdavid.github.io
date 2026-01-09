@@ -264,6 +264,18 @@ body.resize-mode .horizontal-resizer {
     height: 8px;
     background: var(--primary);
     cursor: row-resize;
+    z-index: 100;
+}
+
+/* Extend hit area with padding */
+body.resize-mode .horizontal-resizer::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 0;
+    right: 0;
+    bottom: -8px;
+    cursor: row-resize;
 }
 
 body.resize-mode .horizontal-resizer::after {
@@ -276,6 +288,7 @@ body.resize-mode .horizontal-resizer::after {
     height: 2px;
     background: white;
     border-radius: 1px;
+    pointer-events: none;
 }
 
 /* Layout controls in settings */

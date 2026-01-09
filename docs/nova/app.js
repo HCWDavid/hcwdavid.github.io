@@ -4,6 +4,19 @@
  * 
  * Phase 1: Multi-Video Support
  * Phase 3: Overlay Modalities (Gaze, Heatmap)
+ * TODO: 
+ * - add mute
+ * - add volume control
+ * - add comments 
+ * - add editable timestamp tool = annotations 
+ * - add export annotations to csv
+ * - add import annotations from csv
+ * - unit test and consistent 
+ * - scoping into two minuates from 15 mins
+ * - change layers => tracks
+ * - mechanism: refresh page preventation while its not 'exported' 
+ * fantasy:
+ * - 
  */
 
 // ============================================

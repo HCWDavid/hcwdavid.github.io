@@ -73,7 +73,7 @@ title: Projects
 
 <div class="project-item">
 <h2><a href="./projects/LearningWithPreserving.html" style="text-decoration: none; color: inherit;">Learning with Preserving (LwP)</a></h2>
-<p><strong>August 2024</strong></p>
+<p><strong>August 2025</strong></p>
 
 <p>Novel continual multitask learning framework that prevents catastrophic forgetting through dynamic weighted distance preservation without replay buffers</p>
 

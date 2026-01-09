@@ -37,19 +37,21 @@ def make_author_bold(authors, name_to_bold):
         authors_str = ', '.join(authors)
     else:
         authors_str = authors
-    
+
     # Handle different name formats
     name_variations = [
         name_to_bold,
         name_to_bold.replace(',', ''),
         ' '.join(reversed(name_to_bold.split(', '))),
     ]
-    
+
     for variation in name_variations:
         if variation in authors_str:
-            authors_str = authors_str.replace(variation, f"<strong>{variation}</strong>")
+            authors_str = authors_str.replace(
+                variation, f"<strong>{variation}</strong>"
+            )
             break
-    
+
     return authors_str
 
 
@@ -59,10 +61,10 @@ def generate_homepage():
     publications_data = load_json('publications.json')
     employment_data = load_json('employment.json')
     education_data = load_json('education.json')
-    
+
     # Get latest items
     latest_research = research_data[0] if research_data else None
-    
+
     # Get latest publication with "Accepted" status
     latest_publication = None
     for pub in publications_data:
@@ -70,9 +72,9 @@ def generate_homepage():
         if status.startswith('Accepted'):
             latest_publication = pub
             break
-    
+
     latest_position = employment_data[0] if employment_data else None
-    
+
     content = """---
 layout: default
 ---
@@ -282,7 +284,7 @@ layout: default
   <section class="education">
     <h2>Education</h2>
 """
-    
+
     # Add education items from JSON
     for edu in education_data:
         degree = edu.get('degree', '')
@@ -291,37 +293,39 @@ layout: default
         end = format_date(edu.get('endDate', ''))
         advisor = edu.get('advisor', '')
         description = edu.get('description', '')
-        
+
         date_range = f"{start} - {end}"
-        
+
         content += f"""    <div class="education-item">
       <h3>{degree}</h3>
       <p class="institution">{institution}</p>
       <p class="date">{date_range}</p>
 """
-        
+
         if advisor:
             content += f"      <p>Advisor: Prof. {advisor}</p>\n"
-        
+
         if description:
             content += f"      <p>Focus: {description}</p>\n"
-        
+
         content += "    </div>\n"
-    
+
     content += """  </section>
 
   <section class="recent-highlights">
     <h2>Recent Highlights</h2>
     
 """
-    
+
     # Add latest research
     if latest_research:
         start = format_date(latest_research.get('startDate', ''))
         end = format_date(latest_research.get('endDate', 'Present'))
         title = latest_research.get('title', '')
-        description = latest_research.get('description', [''])[0] if latest_research.get('description') else ''
-        
+        description = latest_research.get('description', [
+            ''
+        ])[0] if latest_research.get('description') else ''
+
         content += f"""    <div class="highlight-item">
       <h3>Latest Research</h3>
       <p><strong>{title}</strong> ({start} - {end})</p>
@@ -329,13 +333,13 @@ layout: default
     </div>
 
 """
-    
+
     # Add recent publication
     if latest_publication:
         title = latest_publication.get('title', '')
         venue = latest_publication.get('venue', '')
         status = latest_publication.get('status', '')
-        
+
         status_text = f" - {status}" if status else ""
         content += f"""    <div class="highlight-item">
       <h3>Recent Publication</h3>
@@ -344,7 +348,7 @@ layout: default
     </div>
 
 """
-    
+
     # Add current position
     if latest_position:
         start = format_date(latest_position.get('startDate', ''))
@@ -353,7 +357,7 @@ layout: default
         position_title = latest_position.get('title', '')
         highlights = latest_position.get('highlights', [])
         description = highlights[0] if highlights else ''
-        
+
         content += f"""    <div class="highlight-item">
       <h3>Current Position</h3>
       <p><strong>{position_title} @ {org}</strong> ({start} - {end})</p>
@@ -361,7 +365,7 @@ layout: default
     </div>
 
 """
-    
+
     content += """  </section>
 
   <section class="quick-links">
@@ -380,7 +384,7 @@ layout: default
   </p>
 </div>
 """
-    
+
     return content
 
 
@@ -388,10 +392,12 @@ def generate_publications():
     """Generate the publications page."""
     publications_data = load_json('publications.json')
     personal_data = load_json('personal.json')
-    
+
     # Get Google Scholar link from personal data
-    google_scholar_url = personal_data.get('social', {}).get('google_scholar', 'https://scholar.google.com')
-    
+    google_scholar_url = personal_data.get('social', {}).get(
+        'google_scholar', 'https://scholar.google.com'
+    )
+
     content = """---
 layout: default
 title: Publications
@@ -450,7 +456,7 @@ title: Publications
 <div class="publication-list">
 
 """
-    
+
     for i, pub in enumerate(publications_data, 1):
         title = pub.get('title', '')
         authors = pub.get('authors', '')
@@ -459,26 +465,28 @@ title: Publications
         status = pub.get('status', '')
         doi = pub.get('doi', '')
         arxiv = pub.get('arxiv', '')
-        
+
         # Bold the user's name in authors
         authors = make_author_bold(authors, 'Wang, Hanchen David')
         authors = make_author_bold(authors, 'Hanchen David Wang')
-        
+
         # Start publication item
         content += f"""<div class="publication-item">
 {i}. """
-        
-        # Format the entry with title first (larger font, clickable if DOI available) then authors
+
+        # Format the entry with title first (larger font, clickable if DOI available) then authors on next line
         doi = pub.get('doi', '')
         if doi:
             # Add https://doi.org/ prefix if not already present
-            doi_url = doi if doi.startswith('http') else f"https://doi.org/{doi}"
+            doi_url = doi if doi.startswith(
+                'http'
+            ) else f"https://doi.org/{doi}"
             content += f"<a href='{doi_url}' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600; font-size: 1.1em;'>{title}</a>  \n"
         else:
             content += f"<span style='font-weight: 600; font-size: 1.1em;'>{title}</span>  \n"
-        
-        content += f"   {authors}  \n"
-        
+
+        content += f"   <br>\n   {authors}  \n"
+
         if venue:
             content += f"   {venue}"
             if date:
@@ -486,16 +494,18 @@ title: Publications
             if status:
                 content += f", {status}"
             content += ".  \n"
-        
+
         # Add arXiv link if available (but not DOI since it's in the title now)
         arxiv = pub.get('arxiv', '')
         if arxiv:
             # Add https://arxiv.org/abs/ prefix if not already present
-            arxiv_url = arxiv if arxiv.startswith('http') else f"https://arxiv.org/abs/{arxiv}"
+            arxiv_url = arxiv if arxiv.startswith(
+                'http'
+            ) else f"https://arxiv.org/abs/{arxiv}"
             content += f"   [arXiv]({arxiv_url})  \n"
-        
+
         content += "</div>\n\n"
-    
+
     content += """</div>
 
 ---
@@ -506,17 +516,17 @@ title: Publications
   </p>
 </div>
 """.format(google_scholar_url)
-    
+
     return content
 
 
 def generate_projects():
     """Generate the projects page."""
     projects_data = load_json('projects.json')
-    
+
     # Get the path to the projects folder
     docs_dir = Path(__file__).parent.parent / 'docs' / 'projects'
-    
+
     content = """---
 layout: default
 title: Projects
@@ -581,28 +591,29 @@ title: Projects
 <p>A collection of my software engineering and development projects, showcasing work across various technologies and domains.</p>
 
 """
-    
+
     for project in projects_data:
         title = project.get('title', '')
         date = project.get('date', '')
         description = project.get('description', '')
         technologies = ', '.join(project.get('technologies', []))
         links = project.get('links', [])
-        
+
         # Check if a project page exists in the /projects folder
         # Convert title to filename format (e.g., "Database Management System" -> "database-management-system.md")
         # Or check if the link points to an existing file
         has_detail_page = False
         link_url = '#'
-        
+
         if links:
             link_url = links[0].get('url', '#')
             # Extract filename from URL (e.g., "./projects/PhysiQ.html" -> "PhysiQ.md")
             if './projects/' in link_url:
-                filename = link_url.replace('./projects/', '').replace('.html', '.md')
+                filename = link_url.replace('./projects/',
+                                            '').replace('.html', '.md')
                 project_file = docs_dir / filename
                 has_detail_page = project_file.exists()
-        
+
         # If detail page exists, make title clickable; otherwise, just show as text
         if has_detail_page:
             content += f"""<div class="project-item">
@@ -626,7 +637,7 @@ title: Projects
 </div>
 
 """
-    
+
     content += """
 <div style="text-align: center; margin-top: 30px; padding: 20px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 8px; border: 1px solid #dee2e6;">
   <p style="color: #495057; margin: 0;">
@@ -634,14 +645,14 @@ title: Projects
   </p>
 </div>
 """
-    
+
     return content
 
 
 def generate_service():
     """Generate the leadership and service page."""
     service_data = load_json('service.json')
-    
+
     content = """---
 layout: default
 title: Leadership & Service
@@ -706,7 +717,7 @@ title: Leadership & Service
 <p>My contributions to the academic community through mentoring, volunteering, and service activities.</p>
 
 """
-    
+
     for i, service in enumerate(service_data, 1):
         title = service.get('title', '')
         organization = service.get('organization', '')
@@ -714,17 +725,17 @@ title: Leadership & Service
         start = format_date(service.get('startDate', ''))
         end = format_date(service.get('endDate', ''))
         highlights = service.get('highlights', [])
-        
+
         # Format date range
         date_range = f"{start} - {end}" if start != end else start
-        
+
         content += f"""<div class="service-item">
 <h2>{title}</h2>
 <p><strong>{organization}</strong> | {location}<br>
 <strong>{date_range}</strong></p>
 
 """
-        
+
         # Add highlights as bullet points
         if highlights:
             content += "<ul>\n"
@@ -734,7 +745,7 @@ title: Leadership & Service
                     date = highlight.get('date', '')
                     notes = highlight.get('notes', '')
                     mentees = highlight.get('mentees', [])
-                    
+
                     # If there are mentees with websites, append links to notes
                     if mentees:
                         mentee_links = []
@@ -743,18 +754,18 @@ title: Leadership & Service
                             website = mentee.get('website', '')
                             if name and website:
                                 mentee_links.append(f"[{name}]({website})")
-                        
+
                         if mentee_links:
                             notes += f" (Mentees: {', '.join(mentee_links)})"
-                    
+
                     content += f"<li><strong>{date}:</strong> {notes}</li>\n"
                 else:
                     # Old string format
                     content += f"<li>{highlight}</li>\n"
             content += "</ul>\n"
-        
+
         content += "</div>\n\n"
-    
+
     content += """
 <div style="text-align: center; margin-top: 30px; padding: 20px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 8px; border: 1px solid #dee2e6;">
   <p style="color: #495057; margin: 0;">
@@ -762,7 +773,7 @@ title: Leadership & Service
   </p>
 </div>
 """
-    
+
     return content
 
 
@@ -770,7 +781,7 @@ def generate_about():
     """Generate the about page."""
     education_data = load_json('education.json')
     personal_data = load_json('personal.json')
-    
+
     content = """---
 layout: default
 title: About Me
@@ -821,7 +832,7 @@ title: About Me
   <section class="education">
     <h2>🎓 Education</h2>
 """
-    
+
     # Generate education items from JSON
     for edu in education_data:
         degree = edu.get('degree', '')
@@ -831,36 +842,36 @@ title: About Me
         end = format_date(edu.get('endDate', ''))
         advisor = edu.get('advisor', '')
         description = edu.get('description', '')
-        
+
         # Format date range
         date_range = f"{start} - {end}"
-        
+
         content += f"""    <div class="education-item">
       <h3>{degree}</h3>
       <p class="institution">{institution}</p>
       <p class="date">{date_range}</p>
 """
-        
+
         if advisor:
             content += f"      <p>Advisor: Prof. {advisor}</p>\n"
-        
+
         if description:
             content += f"      <p>Focus: {description}</p>\n"
-        
+
         content += "    </div>\n"
-    
+
     content += """  </section>
 </div>
 
 """
-    
+
     return content
 
 
 def generate_career():
     """Generate the career page."""
     employment_data = load_json('employment.json')
-    
+
     content = """---
 layout: default
 title: Career
@@ -925,7 +936,7 @@ title: Career
 <p>My professional experience spanning research, teaching, and industry internships.</p>
 
 """
-    
+
     for i, job in enumerate(employment_data, 1):
         title = job.get('title', '')
         organization = job.get('organization', '')
@@ -933,26 +944,26 @@ title: Career
         start = format_date(job.get('startDate', ''))
         end = format_date(job.get('endDate', ''))
         highlights = job.get('highlights', [])
-        
+
         # Format date range
         date_range = f"{start} - {end}" if start != end else start
-        
+
         content += f"""<div class="career-item">
 <h2>{title}</h2>
 <p><strong>{organization}</strong> | {location}<br>
 <strong>{date_range}</strong></p>
 
 """
-        
+
         # Add highlights as bullet points
         if highlights:
             content += "<ul>\n"
             for highlight in highlights:
                 content += f"<li>{highlight}</li>\n"
             content += "</ul>\n"
-        
+
         content += "</div>\n\n"
-    
+
     content += """
 <div style="text-align: center; margin-top: 30px; padding: 20px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 8px; border: 1px solid #dee2e6;">
   <p style="color: #495057; margin: 0;">
@@ -960,7 +971,7 @@ title: Career
   </p>
 </div>
 """
-    
+
     return content
 
 
@@ -968,49 +979,49 @@ def main():
     """Generate all website pages."""
     docs_dir = Path(__file__).parent.parent / 'docs'
     docs_dir.mkdir(exist_ok=True)
-    
+
     # Generate homepage
     homepage_content = generate_homepage()
     homepage_path = docs_dir / 'index.md'
     with open(homepage_path, 'w') as f:
         f.write(homepage_content)
     print(f"✅ Homepage generated: {homepage_path}")
-    
+
     # Generate about page
     about_content = generate_about()
     about_path = docs_dir / 'about.md'
     with open(about_path, 'w') as f:
         f.write(about_content)
     print(f"✅ About page generated: {about_path}")
-    
+
     # Generate publications page
     publications_content = generate_publications()
     publications_path = docs_dir / 'publications.md'
     with open(publications_path, 'w') as f:
         f.write(publications_content)
     print(f"✅ Publications page generated: {publications_path}")
-    
+
     # Generate projects page
     projects_content = generate_projects()
     projects_path = docs_dir / 'projects.md'
     with open(projects_path, 'w') as f:
         f.write(projects_content)
     print(f"✅ Projects page generated: {projects_path}")
-    
+
     # Generate career page
     career_content = generate_career()
     career_path = docs_dir / 'career.md'
     with open(career_path, 'w') as f:
         f.write(career_content)
     print(f"✅ Career page generated: {career_path}")
-    
+
     # Generate service page
     service_content = generate_service()
     service_path = docs_dir / 'service.md'
     with open(service_path, 'w') as f:
         f.write(service_content)
     print(f"✅ Leadership & Service page generated: {service_path}")
-    
+
     print("\n🎉 All website pages generated successfully!")
 
 

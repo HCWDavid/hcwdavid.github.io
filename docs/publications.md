@@ -56,10 +56,10 @@ title: Publications
 <div class="publication-list">
 
 <div class="publication-item">
-1. <span style='font-weight: 600; font-size: 1.1em;'>BEAGLE: Behavioral Explanation via Agent Graph Learning</span>  
+1. <span style='font-weight: 600; font-size: 1.1em;'>Neuro-Symbolic Framework for Realistic Student Behavior Simulation</span>  
    <br>
    <strong>Wang, Hanchen David</strong>, Cohn, Clayton, Xu, Zifan, Guo, Siyuan, Biswas, Gautam, Ma, Meiyi  
-   TBD, In Preparation.  
+   IJCAI, Under Submission.  
 </div>
 
 <div class="publication-item">

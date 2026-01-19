@@ -225,7 +225,7 @@ layout: default
     
     <div class="highlight-item">
       <h3>Latest Research</h3>
-      <p><strong>BEAGLE: Behavioral Explanation via Agent Graph Learning</strong> (Aug 2025 - Present)</p>
+      <p><strong>Neuro-Symbolic Framework for Realistic Student Behavior Simulation</strong> (Aug 2025 - Present)</p>
       <p>Developing a novel framework to make AI tutors both interpretable and verifiable through behavioral explanation</p>
     </div>
 

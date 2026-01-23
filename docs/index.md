@@ -225,8 +225,8 @@ layout: default
     
     <div class="highlight-item">
       <h3>Latest Research</h3>
-      <p><strong>Neuro-Symbolic Framework for Realistic Student Behavior Simulation</strong> (Aug 2025 - Present)</p>
-      <p>Developing a novel framework to make AI tutors both interpretable and verifiable through behavioral explanation</p>
+      <p><strong>BEAGLE: Behavior-Enforced Agent for Grounded Learner Emulation</strong> (Aug 2025 - Jan 2026)</p>
+      <p>Developed BEAGLE, a neuro-symbolic framework addressing LLM competency bias in student simulation for open-ended problem-solving environments</p>
     </div>
 
     <div class="highlight-item">

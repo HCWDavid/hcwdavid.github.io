@@ -66,7 +66,7 @@ title: Publications
 2. <span style='font-weight: 600; font-size: 1.1em;'>Every Rep Counts: An Adaptive Framework for Personalized and Fine-Grained Exercise and Rest Segmentation in Physical Therapy</span>  
    <br>
    <strong>Wang, Hanchen David</strong>, Bae, Siwoo, Sun, Xutong, Thatigotla, Yashvitha, Ma, Meiyi  
-   ACM Transactions on Computing for Healthcare, Under Submission.  
+   ACM Transactions on Cyber-Physical Systems, Under Submission.  
 </div>
 
 <div class="publication-item">

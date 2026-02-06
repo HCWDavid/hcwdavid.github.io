@@ -4,9 +4,17 @@ title: NOVA - Multi-Modal Video Annotation System
 ---
 # NOVA: Multi-Modal Video Annotation System
 
-<div style="margin-bottom: 20px; padding: 15px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 10px; color: white; text-align: center;">
-  <a href="../nova/index.html" target="_blank" style="color: white; text-decoration: none; font-size: 1.2em; font-weight: 600;">
-    🚀 Launch NOVA Tool →
+<!-- Embedded NOVA App from separate repository -->
+<div style="width: 100%; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+  <iframe src="https://hcwdavid.github.io/nova/" 
+          style="width: 100%; height: 800px; border: none;"
+          title="NOVA Video Annotation Tool">
+  </iframe>
+</div>
+
+<div style="margin: 15px 0; text-align: center;">
+  <a href="https://hcwdavid.github.io/nova/" target="_blank" style="color: #667eea; font-weight: 500;">
+    🔗 Open in Full Window
   </a>
 </div>
 

@@ -1,5 +1,6 @@
 [
   {
+    "id": "beagle",
     "authors": [
       "Wang, Hanchen David",
       "Cohn, Clayton",
@@ -22,6 +23,7 @@
     ]
   },
   {
+    "id": "exact-journal",
     "authors": [
       "Wang, Hanchen David",
       "Bae, Siwoo",
@@ -44,6 +46,7 @@
     ]
   },
   {
+    "id": "smartseg",
     "authors": [
       "Wang, Hanchen David",
       "Liu, Yilin",
@@ -68,6 +71,7 @@
     ]
   },
   {
+    "id": "decoding-motion",
     "authors": [
       "Wang, Hanchen David",
       "Khan, Nibraas",
@@ -90,6 +94,7 @@
     ]
   },
   {
+    "id": "reachx",
     "authors": [
       "Wang, Hanchen David",
       "Robinette, Preston K.",
@@ -111,6 +116,7 @@
     ]
   },
   {
+    "id": "lwp",
     "authors": [
       "Wang, Hanchen David",
       "Bae, Siwoo",
@@ -130,6 +136,7 @@
     ]
   },
   {
+    "id": "multimodal-survey",
     "authors": [
       "Cohn, Clayton",
       "Davalos, Eduardo",
@@ -152,6 +159,7 @@
     ]
   },
   {
+    "id": "exact",
     "authors": [
       "Wang, Hanchen David",
       "Bae, Siwoo",
@@ -173,6 +181,7 @@
     ]
   },
   {
+    "id": "ms-lesion",
     "authors": [
       "Lopez, Diego Manzanas",
       "Liu, Han",
@@ -195,6 +204,7 @@
     ]
   },
   {
+    "id": "microxercise",
     "authors": [
       "Wang, Hanchen David",
       "Khan, Nibraas",
@@ -217,6 +227,7 @@
     ]
   },
   {
+    "id": "suds",
     "authors": [
       "Robinette, Preston K.",
       "Wang, Hanchen David",
@@ -237,6 +248,7 @@
     ]
   },
   {
+    "id": "physiq",
     "authors": [
       "Wang, Hanchen David",
       "Ma, Meiyi"

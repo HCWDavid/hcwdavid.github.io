@@ -77,12 +77,15 @@
       "Ma, Meiyi"
     ],
     "title": "Learning with Preserving for Continual Multitask Learning",
-    "venue": "AAAI",
+    "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
     "year": 2026,
-    "month": "February",
-    "status": "Accepted (Oral)",
+    "month": "March",
+    "status": "Published",
     "type": "conference",
-    "doi": "10.48550/arXiv.2511.11676",
+    "volume": "40",
+    "number": "31",
+    "pages": "26178-26186",
+    "doi": "10.1609/aaai.v40i31.39821",
     "tags": [
       "Continual Learning",
       "Multitask Learning"

@@ -72,11 +72,11 @@ title: Publications
 </div>
 
 <div class="publication-item">
-3. <a href='https://doi.org/10.48550/arXiv.2511.11676' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600; font-size: 1.1em;'>Learning with Preserving for Continual Multitask Learning</a>  
+3. <a href='https://doi.org/10.1609/aaai.v40i31.39821' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600; font-size: 1.1em;'>Learning with Preserving for Continual Multitask Learning</a>  
    <br>
    <strong>Wang, Hanchen David</strong>, Bae, Siwoo, Chen, Zirong, Ma, Meiyi.  
    <br>
-   <em>AAAI, Accepted (Oral).</em>  
+   <em>Proceedings of the AAAI Conference on Artificial Intelligence, Published.</em>  
 </div>
 
 <div class="publication-item">

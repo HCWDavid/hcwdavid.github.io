@@ -272,7 +272,7 @@ layout: default
 
   <section class="bio">
     <h2>About Me</h2>
-    <p>Welcome! My name is David. I am currently a PhD student at Vanderbilt University working with Prof. <a href="https://meiyima.github.io" target="_blank">Meiyi Ma</a> on <strong>eXplainable AI in Healthcare</strong> and <strong>Deep Learning research</strong>. Outside of research, I love staying active through workouts, expressing creativity through drawing, and exploring the outdoors. I'm also a big cat lover! Whether it's grabbing boba or coffee, I'm always up for a good conversation. ☕🧋</p>
+    <p>Welcome! My name is David. I recently defended my PhD at Vanderbilt University, advised by Prof. <a href="https://meiyima.github.io" target="_blank">Meiyi Ma</a>, with a thesis titled <em>Explanation-Guided Adaptive Learning for Human-Centered Cyber-Physical Systems</em>. My research focuses on <strong>eXplainable AI in Healthcare</strong> and <strong>Deep Learning</strong>. Outside of research, I love staying active through workouts, expressing creativity through drawing, and exploring the outdoors. I'm also a big cat lover! Whether it's grabbing boba or coffee, I'm always up for a good conversation. ☕🧋</p>
   </section>
 
   <section class="interests">
@@ -829,7 +829,7 @@ title: About Me
 
   <section class="bio">
     <h2>👋 About Me</h2>
-    <p>Welcome! My name is David. I am currently a PhD student at <strong>Vanderbilt University</strong> working with Prof. <a href="https://meiyima.github.io" target="_blank">Meiyi Ma</a> on <strong>eXplainable AI in Healthcare</strong> and <strong>Deep Learning research</strong>.</p>
+    <p>Welcome! My name is David. I recently defended my PhD at <strong>Vanderbilt University</strong>, advised by Prof. <a href="https://meiyima.github.io" target="_blank">Meiyi Ma</a>, with a thesis titled <em>Explanation-Guided Adaptive Learning for Human-Centered Cyber-Physical Systems</em>. My research focuses on <strong>eXplainable AI in Healthcare</strong> and <strong>Deep Learning</strong>.</p>
     
     <p>I am passionate about advancing the fields of eXplainable AI (XAI), healthcare, and machine learning. My work focuses on leveraging cutting-edge machine learning techniques to improve physical therapy, nursing simulations, and formal verification in AI.</p>
   </section>

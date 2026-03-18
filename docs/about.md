@@ -34,7 +34,7 @@ title: About Me
 
   <section class="bio">
     <h2>👋 About Me</h2>
-    <p>Welcome! My name is David. I am currently a PhD student at <strong>Vanderbilt University</strong> working with Prof. <a href="https://meiyima.github.io" target="_blank">Meiyi Ma</a> on <strong>eXplainable AI in Healthcare</strong> and <strong>Deep Learning research</strong>.</p>
+    <p>Welcome! My name is David. I recently defended my PhD at <strong>Vanderbilt University</strong>, advised by Prof. <a href="https://meiyima.github.io" target="_blank">Meiyi Ma</a>, with a thesis titled <em>Explanation-Guided Adaptive Learning for Human-Centered Cyber-Physical Systems</em>. My research focuses on <strong>eXplainable AI in Healthcare</strong> and <strong>Deep Learning</strong>.</p>
     
     <p>I am passionate about advancing the fields of eXplainable AI (XAI), healthcare, and machine learning. My work focuses on leveraging cutting-edge machine learning techniques to improve physical therapy, nursing simulations, and formal verification in AI.</p>
   </section>

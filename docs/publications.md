@@ -56,31 +56,31 @@ title: Publications
 <div class="publication-list">
 
 <div class="publication-item">
-1. <a href='https://doi.org/10.48550/arXiv.2511.11676' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600; font-size: 1.1em;'>Learning with Preserving for Continual Multitask Learning</a>  
+1. <a href='https://doi.org/10.48550/arXiv.2602.13280' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600; font-size: 1.1em;'>BEAGLE: Behavior-Enforced Agent for Grounded Learner Emulation</a>  
    <br>
-   <strong>Wang, Hanchen David</strong>, Bae, Siwoo, Chen, Zirong, Ma, Meiyi  
-   AAAI, Accepted (Oral).  
+   <strong>Wang, Hanchen David</strong>, Cohn, Clayton, Xu, Zifan, Guo, Siyuan, Biswas, Gautam, Ma, Meiyi  
+   IJCAI, Under Submission.  
 </div>
 
 <div class="publication-item">
-2. <span style='font-weight: 600; font-size: 1.1em;'>Every Rep Counts: An Adaptive Framework for Personalized and Fine-Grained Exercise and Rest Segmentation in Physical Therapy</span>  
-   <br>
-   <strong>Wang, Hanchen David</strong>, Bae, Siwoo, Sun, Xutong, Thatigotla, Yashvitha, Ma, Meiyi  
-   ACM Transactions on Cyber-Physical Systems, Under Submission.  
-</div>
-
-<div class="publication-item">
-3. <span style='font-weight: 600; font-size: 1.1em;'>KineticChain: A Whole-Body Wearable Sensing Platform for Boxing Biomechanics</span>  
+2. <span style='font-weight: 600; font-size: 1.1em;'>KineticChain: A Whole-Body Wearable Sensing Platform for Boxing Biomechanics</span>  
    <br>
    Khan, Nibraas, Agrawal, Aarav, <strong>Wang, Hanchen David</strong>, Ma, Meiyi, Sarkar, Nilanjan  
    HCI International (HCII), Accepted.  
 </div>
 
 <div class="publication-item">
-4. <a href='https://doi.org/10.48550/arXiv.2602.13280' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600; font-size: 1.1em;'>BEAGLE: Behavior-Enforced Agent for Grounded Learner Emulation</a>  
+3. <a href='https://doi.org/10.48550/arXiv.2511.11676' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600; font-size: 1.1em;'>Learning with Preserving for Continual Multitask Learning</a>  
    <br>
-   <strong>Wang, Hanchen David</strong>, Cohn, Clayton, Xu, Zifan, Guo, Siyuan, Biswas, Gautam, Ma, Meiyi  
-   IJCAI, Under Submission.  
+   <strong>Wang, Hanchen David</strong>, Bae, Siwoo, Chen, Zirong, Ma, Meiyi  
+   AAAI, Accepted (Oral).  
+</div>
+
+<div class="publication-item">
+4. <span style='font-weight: 600; font-size: 1.1em;'>Every Rep Counts: An Adaptive Framework for Personalized and Fine-Grained Exercise and Rest Segmentation in Physical Therapy</span>  
+   <br>
+   <strong>Wang, Hanchen David</strong>, Bae, Siwoo, Sun, Xutong, Thatigotla, Yashvitha, Ma, Meiyi  
+   ACM Transactions on Cyber-Physical Systems, Under Submission.  
 </div>
 
 <div class="publication-item">

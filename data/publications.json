@@ -1,6 +1,6 @@
 [
   {
-    "id": "beagle",
+    "id": "kineticchain",
     "authors": [
       "Khan, Nibraas",
       "Agrawal, Aarav",
@@ -11,6 +11,7 @@
     "title": "KineticChain: A Whole-Body Wearable Sensing Platform for Boxing Biomechanics",
     "venue": "HCI International (HCII)",
     "year": 2026,
+    "month": "July",
     "status": "Accepted",
     "type": "conference",
     "tags": [
@@ -20,6 +21,7 @@
     ]
   },
   {
+    "id": "beagle",
     "authors": [
       "Wang, Hanchen David",
       "Cohn, Clayton",
@@ -31,6 +33,7 @@
     "title": "BEAGLE: Behavior-Enforced Agent for Grounded Learner Emulation",
     "venue": "IJCAI",
     "year": 2026,
+    "month": "August",
     "status": "Under Submission",
     "type": "conference",
     "doi": "10.48550/arXiv.2602.13280",
@@ -66,7 +69,7 @@
     ]
   },
   {
-    "id": "smartseg",
+    "id": "lwp",
     "authors": [
       "Wang, Hanchen David",
       "Bae, Siwoo",
@@ -86,6 +89,7 @@
     ]
   },
   {
+    "id": "smartseg",
     "authors": [
       "Wang, Hanchen David",
       "Liu, Yilin",

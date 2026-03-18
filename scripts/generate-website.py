@@ -496,15 +496,15 @@ title: Publications
         else:
             content += f"<span style='font-weight: 600; font-size: 1.1em;'>{title}</span>  \n"
 
-        content += f"   <br>\n   {authors}  \n"
+        content += f"   <br>\n   {authors}.  \n"
 
         if venue:
-            content += f"   {venue}"
+            content += f"   <br>\n   <em>{venue}"
             if date:
                 content += f", {date}"
             if status:
                 content += f", {status}"
-            content += ".  \n"
+            content += ".</em>  \n"
 
         # Add arXiv link if available (but not DOI since it's in the title now)
         arxiv = pub.get('arxiv', '')

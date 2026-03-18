@@ -2,6 +2,25 @@
   {
     "id": "beagle",
     "authors": [
+      "Khan, Nibraas",
+      "Agrawal, Aarav",
+      "Wang, Hanchen David",
+      "Ma, Meiyi",
+      "Sarkar, Nilanjan"
+    ],
+    "title": "KineticChain: A Whole-Body Wearable Sensing Platform for Boxing Biomechanics",
+    "venue": "HCI International (HCII)",
+    "year": 2026,
+    "status": "Accepted",
+    "type": "conference",
+    "tags": [
+      "Wearable Sensors",
+      "Biomechanics",
+      "Boxing"
+    ]
+  },
+  {
+    "authors": [
       "Wang, Hanchen David",
       "Cohn, Clayton",
       "Xu, Zifan",
@@ -14,6 +33,7 @@
     "year": 2026,
     "status": "Under Submission",
     "type": "conference",
+    "doi": "10.48550/arXiv.2602.13280",
     "tags": [
       "XAI",
       "Educational AI",
@@ -49,6 +69,25 @@
     "id": "smartseg",
     "authors": [
       "Wang, Hanchen David",
+      "Bae, Siwoo",
+      "Chen, Zirong",
+      "Ma, Meiyi"
+    ],
+    "title": "Learning with Preserving for Continual Multitask Learning",
+    "venue": "AAAI",
+    "year": 2026,
+    "month": "February",
+    "status": "Accepted (Oral)",
+    "type": "conference",
+    "doi": "10.48550/arXiv.2511.11676",
+    "tags": [
+      "Continual Learning",
+      "Multitask Learning"
+    ]
+  },
+  {
+    "authors": [
+      "Wang, Hanchen David",
       "Liu, Yilin",
       "Fu, Haowei",
       "Mason, Madison Lee",
@@ -62,7 +101,7 @@
     "venue": "Pervasive and Mobile Computing",
     "year": 2025,
     "month": "June",
-    "status": "Under Review",
+    "status": "Minor Revision",
     "type": "journal",
     "tags": [
       "Video Segmentation",
@@ -105,34 +144,14 @@
     ],
     "title": "Towards Verified and Targeted Explanations through Formal Methods",
     "venue": "JAIR",
-    "year": 2024,
+    "year": 2025,
     "month": "August",
-    "status": "Major Revision",
+    "status": "Accepted",
     "type": "journal",
     "tags": [
       "XAI",
       "Neural Network Verification",
       "Formal Methods"
-    ]
-  },
-  {
-    "id": "lwp",
-    "authors": [
-      "Wang, Hanchen David",
-      "Bae, Siwoo",
-      "Chen, Zirong",
-      "Ma, Meiyi"
-    ],
-    "title": "Learning with Preserving for Continual Multitask Learning",
-    "venue": "AAAI",
-    "year": 2025,
-    "month": "August",
-    "status": "Accepted (Oral)",
-    "type": "conference",
-    "doi": "10.48550/arXiv.2511.11676",
-    "tags": [
-      "Continual Learning",
-      "Multitask Learning"
     ]
   },
   {
@@ -148,8 +167,8 @@
     ],
     "title": "Multimodal Methods for Analyzing Learning and Training Environments: A Systematic Literature Review",
     "venue": "ACM Computing Surveys",
-    "year": 2024,
-    "month": "August",
+    "year": 2025,
+    "month": "December",
     "status": "Under Review",
     "type": "journal",
     "doi": "10.48550/arXiv.2408.14491",

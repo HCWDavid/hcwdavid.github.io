@@ -182,10 +182,20 @@ def generate_simple_cv(data):
             research_content += "\\end{itemize}\n"
         research_content += "\n"
 
-    # Generate Publications
+    # Generate Publications (sorted reverse chronologically)
+    MONTH_ORDER = {
+        'January': 1, 'February': 2, 'March': 3, 'April': 4,
+        'May': 5, 'June': 6, 'July': 7, 'August': 8,
+        'September': 9, 'October': 10, 'November': 11, 'December': 12
+    }
+    sorted_pubs = sorted(
+        data['publications'],
+        key=lambda p: (p.get('year', 0), MONTH_ORDER.get(p.get('month', ''), 0)),
+        reverse=True
+    )
     pub_content = "\\cvsection{Publications}\n"
     pub_content += "\\begin{enumerate}\n"
-    for pub in data['publications']:
+    for pub in sorted_pubs:
         # Escape authors first, then apply bold
         authors = ', '.join(pub['authors'])
         authors_escaped = escape_latex(authors)

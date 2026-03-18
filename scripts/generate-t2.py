@@ -157,7 +157,18 @@ def generate_publications(data):
     """Generate publications section"""
     content = "\\section{Publications}\n\n"
 
-    for i, pub in enumerate(data["publications"], 1):
+    MONTH_ORDER = {
+        'January': 1, 'February': 2, 'March': 3, 'April': 4,
+        'May': 5, 'June': 6, 'July': 7, 'August': 8,
+        'September': 9, 'October': 10, 'November': 11, 'December': 12
+    }
+    sorted_pubs = sorted(
+        data["publications"],
+        key=lambda p: (p.get('year', 0), MONTH_ORDER.get(p.get('month', ''), 0)),
+        reverse=True
+    )
+
+    for i, pub in enumerate(sorted_pubs, 1):
         authors = format_authors(pub["authors"])
         status = f", {pub['status']}" if pub.get("status") else ""
         month = pub.get("month", "")

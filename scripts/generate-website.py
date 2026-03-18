@@ -457,7 +457,18 @@ title: Publications
 
 """
 
-    for i, pub in enumerate(publications_data, 1):
+    MONTH_ORDER = {
+        'January': 1, 'February': 2, 'March': 3, 'April': 4,
+        'May': 5, 'June': 6, 'July': 7, 'August': 8,
+        'September': 9, 'October': 10, 'November': 11, 'December': 12
+    }
+    sorted_pubs = sorted(
+        publications_data,
+        key=lambda p: (p.get('year', 0), MONTH_ORDER.get(p.get('month', ''), 0)),
+        reverse=True
+    )
+
+    for i, pub in enumerate(sorted_pubs, 1):
         title = pub.get('title', '')
         authors = pub.get('authors', '')
         venue = pub.get('venue', '')

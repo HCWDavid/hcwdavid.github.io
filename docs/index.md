@@ -231,8 +231,8 @@ layout: default
 
     <div class="highlight-item">
       <h3>Recent Publication</h3>
-      <p><strong>Learning with Preserving for Continual Multitask Learning</strong></p>
-      <p>AAAI - Accepted (Oral)</p>
+      <p><strong>KineticChain: A Whole-Body Wearable Sensing Platform for Boxing Biomechanics</strong></p>
+      <p>HCI International (HCII) - Accepted</p>
     </div>
 
     <div class="highlight-item">

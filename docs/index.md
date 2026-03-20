@@ -243,8 +243,8 @@ layout: default
 
     <div class="highlight-item">
       <h3>Current Position</h3>
-      <p><strong>PhD Software Engineering Intern @ Google</strong> (May 2025 - Aug 2025)</p>
-      <p>Architected an end-to-end autonomous agent to accelerate debugging by automating the root cause analysis of internal server failures. The agent intelligently triages issues by processing complex performance and reliability logs from large-scale benchmarking systems, significantly reducing manual effort for engineering teams.</p>
+      <p><strong>Research Assistant @ Vanderbilt University</strong> (May 2022 - Present)</p>
+      <p>Researched activity recognition using deep learning methodologies, focusing on enhancing the quality assessment of exercises through Explainable Artificial Intelligence (XAI) techniques.</p>
     </div>
 
   </section>

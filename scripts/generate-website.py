@@ -73,7 +73,14 @@ def generate_homepage():
             latest_publication = pub
             break
 
-    latest_position = employment_data[0] if employment_data else None
+    # Get current position (endDate == "Present"), fallback to first entry
+    latest_position = None
+    for emp in employment_data:
+        if emp.get('endDate', '').lower() == 'present':
+            latest_position = emp
+            break
+    if not latest_position and employment_data:
+        latest_position = employment_data[0]
 
     content = """---
 layout: default

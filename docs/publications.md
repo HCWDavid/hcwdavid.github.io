@@ -64,15 +64,7 @@ title: Publications
 </div>
 
 <div class="publication-item">
-2. <span style='font-weight: 600; font-size: 1.1em;'>KineticChain: A Whole-Body Wearable Sensing Platform for Boxing Biomechanics</span>  
-   <br>
-   Khan, Nibraas, Agrawal, Aarav, <strong>Wang, Hanchen David</strong>, Ma, Meiyi, Sarkar, Nilanjan.  
-   <br>
-   <em>HCI International (HCII), Accepted.</em>  
-</div>
-
-<div class="publication-item">
-3. <a href='https://doi.org/10.1609/aaai.v40i31.39821' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600; font-size: 1.1em;'>Learning with Preserving for Continual Multitask Learning</a>  
+2. <a href='https://doi.org/10.1609/aaai.v40i31.39821' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600; font-size: 1.1em;'>Learning with Preserving for Continual Multitask Learning</a>  
    <br>
    <strong>Wang, Hanchen David</strong>, Bae, Siwoo, Chen, Zirong, Ma, Meiyi.  
    <br>
@@ -80,7 +72,23 @@ title: Publications
 </div>
 
 <div class="publication-item">
-4. <a href='https://doi.org/10.48550/arXiv.2602.13280' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600; font-size: 1.1em;'>BEAGLE: Behavior-Enforced Agent for Grounded Learner Emulation</a>  
+3. <span style='font-weight: 600; font-size: 1.1em;'>Towards Verified and Targeted Explanations through Formal Methods</span>  
+   <br>
+   <strong>Wang, Hanchen David</strong>, Robinette, Preston K., Lopez, Diego Manzanas, Oguz, Ipek, Johnson, Taylor T., Ma, Meiyi.  
+   <br>
+   <em>Journal of Artificial Intelligence Research (JAIR), Special Track: Integration of Logical Constraints in Deep Learning, Accepted.</em>  
+</div>
+
+<div class="publication-item">
+4. <span style='font-weight: 600; font-size: 1.1em;'>KineticChain: A Whole-Body Wearable Sensing Platform for Boxing Biomechanics</span>  
+   <br>
+   Khan, Nibraas, Agrawal, Aarav, <strong>Wang, Hanchen David</strong>, Ma, Meiyi, Sarkar, Nilanjan.  
+   <br>
+   <em>HCI International (HCII), Accepted.</em>  
+</div>
+
+<div class="publication-item">
+5. <a href='https://doi.org/10.48550/arXiv.2602.13280' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600; font-size: 1.1em;'>BEAGLE: Behavior-Enforced Agent for Grounded Learner Emulation</a>  
    <br>
    <strong>Wang, Hanchen David</strong>, Cohn, Clayton, Xu, Zifan, Guo, Siyuan, Biswas, Gautam, Ma, Meiyi.  
    <br>
@@ -88,7 +96,7 @@ title: Publications
 </div>
 
 <div class="publication-item">
-5. <span style='font-weight: 600; font-size: 1.1em;'>Every Rep Counts: An Adaptive Framework for Personalized and Fine-Grained Exercise and Rest Segmentation in Physical Therapy</span>  
+6. <span style='font-weight: 600; font-size: 1.1em;'>Every Rep Counts: An Adaptive Framework for Personalized and Fine-Grained Exercise and Rest Segmentation in Physical Therapy</span>  
    <br>
    <strong>Wang, Hanchen David</strong>, Bae, Siwoo, Sun, Xutong, Thatigotla, Yashvitha, Ma, Meiyi.  
    <br>
@@ -96,7 +104,7 @@ title: Publications
 </div>
 
 <div class="publication-item">
-6. <a href='https://doi.org/10.48550/arXiv.2408.14491' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600; font-size: 1.1em;'>Multimodal Methods for Analyzing Learning and Training Environments: A Systematic Literature Review</a>  
+7. <a href='https://doi.org/10.48550/arXiv.2408.14491' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600; font-size: 1.1em;'>Multimodal Methods for Analyzing Learning and Training Environments: A Systematic Literature Review</a>  
    <br>
    Cohn, Clayton, Davalos, Eduardo, Vatral, Caleb, Fonteles, Joyce, <strong>Wang, Hanchen David</strong>, Ma, Meiyi, Biswas, Gautam.  
    <br>
@@ -104,19 +112,11 @@ title: Publications
 </div>
 
 <div class="publication-item">
-7. <span style='font-weight: 600; font-size: 1.1em;'>Decoding Human Motion: A Scoping Review of Explainable AI Methods in Movement Analysis</span>  
+8. <span style='font-weight: 600; font-size: 1.1em;'>Decoding Human Motion: A Scoping Review of Explainable AI Methods in Movement Analysis</span>  
    <br>
    <strong>Wang, Hanchen David</strong>, Khan, Nibraas, Ghosh, Ritam, Tauseef, Mahrukh, Mion, Lorraine, Ma, Meiyi, Sarkar, Nilanjan.  
    <br>
    <em>Pervasive and Mobile Computing, Under Review.</em>  
-</div>
-
-<div class="publication-item">
-8. <span style='font-weight: 600; font-size: 1.1em;'>Towards Verified and Targeted Explanations through Formal Methods</span>  
-   <br>
-   <strong>Wang, Hanchen David</strong>, Robinette, Preston K., Lopez, Diego Manzanas, Oguz, Ipek, Johnson, Taylor T., Ma, Meiyi.  
-   <br>
-   <em>Journal of Artificial Intelligence Research (JAIR), Special Track: Integration of Logical Constraints in Deep Learning, Accepted.</em>  
 </div>
 
 <div class="publication-item">

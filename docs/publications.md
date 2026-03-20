@@ -116,7 +116,7 @@ title: Publications
    <br>
    <strong>Wang, Hanchen David</strong>, Robinette, Preston K., Lopez, Diego Manzanas, Oguz, Ipek, Johnson, Taylor T., Ma, Meiyi.  
    <br>
-   <em>JAIR, Accepted.</em>  
+   <em>Journal of Artificial Intelligence Research (JAIR), Special Track: Integration of Logical Constraints in Deep Learning, Accepted.</em>  
 </div>
 
 <div class="publication-item">

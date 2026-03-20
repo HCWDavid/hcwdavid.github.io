@@ -1,5 +1,29 @@
 [
   {
+    "id": "cv4edu-nursing",
+    "authors": [
+      "Wang, Hanchen David",
+      "Liu, Yilin",
+      "Mason, Madison",
+      "Rayala, Surya",
+      "Biswas, Gautam",
+      "Levin, Daniel",
+      "Ma, Meiyi"
+    ],
+    "title": "AI-Assisted Competency Assessment from Egocentric Video in Simulation-Based Nursing Education",
+    "venue": "CVPR Workshop on Computer Vision for Education (CV4EDU)",
+    "year": 2026,
+    "month": "June",
+    "status": "Under Submission",
+    "type": "workshop",
+    "tags": [
+      "Computer Vision",
+      "Healthcare",
+      "Nursing Education",
+      "Egocentric Video"
+    ]
+  },
+  {
     "id": "kineticchain",
     "authors": [
       "Khan, Nibraas",

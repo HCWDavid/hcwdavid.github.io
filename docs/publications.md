@@ -56,11 +56,11 @@ title: Publications
 <div class="publication-list">
 
 <div class="publication-item">
-1. <a href='https://doi.org/10.48550/arXiv.2602.13280' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600; font-size: 1.1em;'>BEAGLE: Behavior-Enforced Agent for Grounded Learner Emulation</a>  
+1. <span style='font-weight: 600; font-size: 1.1em;'>AI-Assisted Competency Assessment from Egocentric Video in Simulation-Based Nursing Education</span>  
    <br>
-   <strong>Wang, Hanchen David</strong>, Cohn, Clayton, Xu, Zifan, Guo, Siyuan, Biswas, Gautam, Ma, Meiyi.  
+   <strong>Wang, Hanchen David</strong>, Liu, Yilin, Mason, Madison, Rayala, Surya, Biswas, Gautam, Levin, Daniel, Ma, Meiyi.  
    <br>
-   <em>IJCAI, Under Submission.</em>  
+   <em>CVPR Workshop on Computer Vision for Education (CV4EDU), Under Submission.</em>  
 </div>
 
 <div class="publication-item">
@@ -72,19 +72,19 @@ title: Publications
 </div>
 
 <div class="publication-item">
-3. <span style='font-weight: 600; font-size: 1.1em;'>AI-Assisted Competency Assessment from Egocentric Video in Simulation-Based Nursing Education</span>  
-   <br>
-   <strong>Wang, Hanchen David</strong>, Liu, Yilin, Mason, Madison, Rayala, Surya, Biswas, Gautam, Levin, Daniel, Ma, Meiyi.  
-   <br>
-   <em>CVPR Workshop on Computer Vision for Education (CV4EDU), Under Submission.</em>  
-</div>
-
-<div class="publication-item">
-4. <a href='https://doi.org/10.1609/aaai.v40i31.39821' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600; font-size: 1.1em;'>Learning with Preserving for Continual Multitask Learning</a>  
+3. <a href='https://doi.org/10.1609/aaai.v40i31.39821' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600; font-size: 1.1em;'>Learning with Preserving for Continual Multitask Learning</a>  
    <br>
    <strong>Wang, Hanchen David</strong>, Bae, Siwoo, Chen, Zirong, Ma, Meiyi.  
    <br>
    <em>Proceedings of the AAAI Conference on Artificial Intelligence, Published.</em>  
+</div>
+
+<div class="publication-item">
+4. <a href='https://doi.org/10.48550/arXiv.2602.13280' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600; font-size: 1.1em;'>BEAGLE: Behavior-Enforced Agent for Grounded Learner Emulation</a>  
+   <br>
+   <strong>Wang, Hanchen David</strong>, Cohn, Clayton, Xu, Zifan, Guo, Siyuan, Biswas, Gautam, Ma, Meiyi.  
+   <br>
+   <em>IJCAI, Under Submission.</em>  
 </div>
 
 <div class="publication-item">

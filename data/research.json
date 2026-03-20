@@ -1,5 +1,32 @@
 [
   {
+    "title": "AI-Assisted Competency Assessment from Egocentric Video in Simulation-Based Nursing Education",
+    "collaborators": [
+      "Yilin Liu",
+      "Madison Mason",
+      "Surya Rayala",
+      "Gautam Biswas",
+      "Daniel Levin",
+      "Meiyi Ma"
+    ],
+    "advisor": "Meiyi Ma",
+    "startDate": "2024-07",
+    "endDate": "2026-03",
+    "description": [
+      "Proposed a three-stage framework for automated competency assessment from egocentric nursing simulation video using frozen visual encoders and few-shot learning",
+      "Achieved 57.4% MOF in leave-one-out 1-shot recognition using frozen DINOv2 backbone with HMM Viterbi decoding across 22 densely annotated sessions (3.8 hours, 493 actions)",
+      "Discovered a negative correlation between recognition accuracy and instructor-rated competency: more competent students produce diverse, harder-to-classify workflows",
+      "Identified patient safety protocols and team communication as key behaviors reflected in the competency-complexity pattern through per-item analysis and process model comparisons"
+    ],
+    "tags": [
+      "Computer Vision",
+      "Egocentric Video",
+      "Healthcare",
+      "Nursing Education",
+      "Few-Shot Learning"
+    ]
+  },
+  {
     "title": "BEAGLE: Behavior-Enforced Agent for Grounded Learner Emulation",
     "collaborators": [
       "Clayton Cohn",

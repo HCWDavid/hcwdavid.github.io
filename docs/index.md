@@ -231,8 +231,8 @@ layout: default
     
     <div class="highlight-item">
       <h3>Latest Research</h3>
-      <p><strong>BEAGLE: Behavior-Enforced Agent for Grounded Learner Emulation</strong> (Aug 2025 - Jan 2026)</p>
-      <p>Developed BEAGLE, a neuro-symbolic framework addressing LLM competency bias in student simulation for open-ended problem-solving environments</p>
+      <p><strong>AI-Assisted Competency Assessment from Egocentric Video in Simulation-Based Nursing Education</strong> (Jul 2024 - Mar 2026)</p>
+      <p>Proposed a three-stage framework for automated competency assessment from egocentric nursing simulation video using frozen visual encoders and few-shot learning</p>
     </div>
 
     <div class="highlight-item">

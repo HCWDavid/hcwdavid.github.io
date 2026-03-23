@@ -158,11 +158,7 @@ python eval_v2.py --dataset celeba --job cl --model lwp --save_plots
 
 ### Presentation Video
 
-<div style="margin: 15px 0; padding: 15px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 10px; text-align: center;">
-  <a href="https://underline.io/lecture/142411-learning-with-preserving-for-continual-multitask-learning" target="_blank" style="color: white; text-decoration: none; font-size: 1.1em; font-weight: 600;">
-    🎬 Watch Presentation on Underline.io →
-  </a>
-</div>
+<iframe width="100%" style="aspect-ratio: 16/9;border:0" src="https://underline.io/embed/142411-learning-with-preserving-for-continual-multitask-learning?t=1" title="Learning with Preserving for Continual Multitask Learning" allowfullscreen></iframe>
 
 ### Abstract
 

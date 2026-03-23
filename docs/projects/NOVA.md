@@ -1,6 +1,6 @@
 ---
 layout: default
-title: NOVA - Multi-Modal Video Annotation System
+title: NOVA Multi-Modal Video Annotation System
 ---
 # NOVA: Multi-Modal Video Annotation System
 
@@ -13,6 +13,8 @@ title: NOVA - Multi-Modal Video Annotation System
 ## Overview
 
 NOVA (Nursing Operational View of Actions) is a web-based video annotation framework designed for multi-modal data analysis. Version 0.2 implements a synchronized playback system for multiple high-fidelity video streams with integrated data overlays, supporting gaze tracking, heatmaps, and IMU sensor visualization.
+
+NOVA was utilized as the core annotation tool in our research paper [**AI-Assisted Competency Assessment from Egocentric Video in Simulation-Based Nursing Education**](https://hanchendavidwang.com/projects/LearningWithPreserving.html) (CVPR 2026 Workshop CV4EDU), where it enabled dense annotation of 22 nursing simulation sessions (3.8 hours, 493 actions) for training and evaluating few-shot action recognition models.
 
 ## Key Features
 
@@ -104,6 +106,5 @@ Planned enhancements include:
 
 - **Hanchen David Wang** - Vanderbilt University
 
----
 
 [← Back to Projects](../projects.html)

@@ -62,7 +62,7 @@ title: Projects
 <p>A collection of my software engineering and development projects, showcasing work across various technologies and domains.</p>
 
 <div class="project-item">
-<h2><a href="./projects/NOVA.html" style="text-decoration: none; color: inherit;">NOVA - Multi-Modal Video Annotation</a></h2>
+<h2><a href="./projects/NOVA.html" style="text-decoration: none; color: inherit;">NOVA Multi-Modal Video Annotation</a></h2>
 <p><strong>January 2026</strong></p>
 
 <p>Web-based multi-modal video annotation framework with synchronized playback for multiple video streams and integrated data overlays. Supports gaze tracking, heatmaps, and IMU sensor visualization with native Tobii Pro Glasses 3 support.</p>

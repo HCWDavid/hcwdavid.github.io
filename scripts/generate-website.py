@@ -386,7 +386,7 @@ layout: default
     <div class="highlight-item">
       <h3>Learning with Preserving for Continual Multitask Learning</h3>
       <p><strong>AAAI 2026</strong> (Oral Presentation)</p>
-      <iframe width="100%" style="aspect-ratio: 16/9; border:0; border-radius: 8px; margin-top: 10px;" src="https://underline.io/embed/142411-learning-with-preserving-for-continual-multitask-learning?t=1" title="Learning with Preserving for Continual Multitask Learning" allowfullscreen></iframe>
+      <iframe width="70%" style="aspect-ratio: 16/9; border:0; border-radius: 8px; margin-top: 10px; display: block; margin-left: auto; margin-right: auto;" src="https://underline.io/embed/142411-learning-with-preserving-for-continual-multitask-learning?t=1" title="Learning with Preserving for Continual Multitask Learning" allowfullscreen></iframe>
     </div>
   </section>
 

@@ -108,7 +108,7 @@ def generate_simple_cv(data):
     template = template.replace('HEADER_GITHUB', personal['social']['github'])
 
     # Generate Education
-    edu_content = "\\cvsection{EDUCATION}\n\n"
+    edu_content = "\\cvsection{Education}\n\n"
     for edu in data['education']:
         date_range = format_date_range(edu['startDate'], edu['endDate'])
         # Use three minipage boxes to control alignment
@@ -131,7 +131,11 @@ def generate_simple_cv(data):
         else:
             edu_content += "\n"
 
-        # Add description/coursework as second bullet if exists
+        # Add thesis title if exists
+        if edu.get('thesis'):
+            edu_content += f"    \\item PhD Thesis: \\textit{{{escape_latex(edu['thesis'])}}}\n"
+
+        # Add description/coursework as bullet if exists
         if edu.get('description'):
             edu_content += f"    \\item \\textbf{{Highlighted Coursework:}} {escape_latex(edu['description'])}\n"
 

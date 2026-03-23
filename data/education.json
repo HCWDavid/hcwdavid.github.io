@@ -1,13 +1,24 @@
 [
   {
-    "degree": "Dual Program of Master's and Ph.D. in Computer Science (Ongoing)",
+    "degree": "Ph.D. in Computer Science (Defended)",
     "institution": "Vanderbilt University",
     "location": "Nashville, TN",
     "startDate": "2021-08",
-    "endDate": "2026-05 (Expected)",
+    "endDate": "2026-05",
     "advisor": "Meiyi Ma",
     "gpa": "",
-    "description": "Representation Learning in DL, Open Source Imaging, HCI, Internet of Medical Things"
+    "thesis": "Explanation-Guided Adaptive Learning for Human-Centered Cyber-Physical Systems",
+    "description": ""
+  },
+  {
+    "degree": "Master of Science in Computer Science",
+    "institution": "Vanderbilt University",
+    "location": "Nashville, TN",
+    "startDate": "2021-08",
+    "endDate": "2023-05",
+    "advisor": "",
+    "gpa": "",
+    "description": ""
   },
   {
     "degree": "Bachelor of Science in Computer Science, Magna cum Laude (top 6%) GPA: 3.89",

@@ -26,6 +26,14 @@
       {
         "text": "Project Page",
         "url": "./projects/LearningWithPreserving.html"
+      },
+      {
+        "text": "GitHub",
+        "url": "https://github.com/AICPS-Lab/lwp"
+      },
+      {
+        "text": "AAAI Proceedings",
+        "url": "https://ojs.aaai.org/index.php/AAAI/article/view/39821"
       }
     ]
   },

@@ -1,3 +1,7 @@
+---
+layout: default
+title: Learning with Preserving (LwP)
+---
 # Learning with Preserving (LwP)
 
 ## Overview
@@ -146,11 +150,17 @@ python eval_v2.py --dataset celeba --job cl --model lwp --save_plots
 
 **Learning with Preserving for Continual Multitask Learning**
 *Hanchen David Wang\*, Siwoo Bae\*, Zirong Chen, Meiyi Ma*
-**AAAI Conference on Artificial Intelligence (AAAI), 2026* *(Accepted - Oral Presentation)*
+**Proceedings of the AAAI Conference on Artificial Intelligence**, Vol. 40, No. 31, pp. 26178-26186, 2026 (Oral Presentation)
 
 \*Equal contribution
 
-📄 **[Download PDF](LwP_ARVIX.pdf)**
+📄 **[AAAI Proceedings](https://ojs.aaai.org/index.php/AAAI/article/view/39821)** &nbsp;|&nbsp; 📄 **[Download PDF](LwP_ARVIX.pdf)** &nbsp;|&nbsp; 💻 **[GitHub](https://github.com/AICPS-Lab/lwp)**
+
+### Presentation Video
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px; margin: 15px 0;">
+  <iframe src="https://underline.io/lecture/142411-learning-with-preserving-for-continual-multitask-learning" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 8px;" allowfullscreen></iframe>
+</div>
 
 ### Abstract
 
@@ -159,12 +169,15 @@ Artificial intelligence systems in critical fields like autonomous driving and m
 ### Citation
 
 ```bibtex
-@inproceedings{wang2026lwp,
+@article{wang2026lwp,
   title={Learning with Preserving for Continual Multitask Learning},
   author={Wang, Hanchen David and Bae, Siwoo and Chen, Zirong and Ma, Meiyi},
-  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  journal={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={40},
+  number={31},
+  pages={26178--26186},
   year={2026},
-  organization={AAAI}
+  doi={10.1609/aaai.v40i31.39821}
 }
 ```
 
@@ -193,7 +206,7 @@ The LwP framework opens several promising research directions:
 - **Few-Shot Adaptation**: Combining with meta-learning for rapid task adaptation
 - **Lifelong Learning**: Scaling to hundreds or thousands of sequential tasks
 
----
+
 
 ## Contact
 

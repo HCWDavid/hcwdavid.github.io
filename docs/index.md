@@ -241,8 +241,8 @@ layout: default
 
     <div class="highlight-item">
       <h3>Recent Publication</h3>
-      <p><strong>KineticChain: A Whole-Body Wearable Sensing Platform for Boxing Biomechanics</strong></p>
-      <p>HCI International (HCII) - Accepted</p>
+      <p><strong>AI-Assisted Competency Assessment from Egocentric Video in Simulation-Based Nursing Education</strong></p>
+      <p>CVPR Workshop on Computer Vision for Education (CV4EDU) - Accepted</p>
     </div>
 
     <div class="highlight-item">

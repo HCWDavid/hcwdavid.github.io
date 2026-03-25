@@ -14,13 +14,43 @@
     "venue": "CVPR Workshop on Computer Vision for Education (CV4EDU)",
     "year": 2026,
     "month": "June",
-    "status": "Under Submission",
+    "status": "Accepted",
     "type": "workshop",
     "tags": [
       "Computer Vision",
       "Healthcare",
       "Nursing Education",
       "Egocentric Video"
+    ]
+  },
+  {
+    "id": "edf-aied",
+    "authors": [
+      "Cohn, Clayton",
+      "Guo, Siyuan",
+      "Rayala, Surya",
+      "Wang, Hanchen David",
+      "Mohammed, Naveeduddin",
+      "Timalsina, Umesh",
+      "Jain, Shruti",
+      "Eeds, Angela",
+      "Deweese, Menton",
+      "Osborn Popp, Pamela J.",
+      "Stanton, Rebekah",
+      "Walker, Shakeera",
+      "Ma, Meiyi",
+      "Biswas, Gautam"
+    ],
+    "title": "Evidence-Decision-Feedback: Theory-Driven Adaptive Scaffolding for LLM Agents",
+    "venue": "International Conference on Artificial Intelligence in Education (AIED)",
+    "year": 2026,
+    "month": "June",
+    "status": "Accepted",
+    "type": "conference",
+    "tags": [
+      "Educational AI",
+      "LLM",
+      "Adaptive Scaffolding"
     ]
   },
   {

@@ -48,7 +48,7 @@ def generate_search_index():
     search_data = []
     
     # Find all markdown files recursively, excluding search.md and special files
-    exclude_files = {'search.md', 'VISITOR_MAP_SETUP.md', 'another-page.md'}
+    exclude_files = {'search.md', 'VISITOR_MAP_SETUP.md'}
     
     for md_file in docs_dir.rglob('*.md'):
         # Skip excluded files

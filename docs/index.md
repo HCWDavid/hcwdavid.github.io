@@ -262,14 +262,6 @@ layout: default
     </div>
   </section>
 
-  <section class="quick-links">
-    <h2>Quick Links</h2>
-    <ul>
-      <li><a href="./publications.html">View my Publications</a></li>
-      <li><a href="./projects.html">Check out my Projects</a></li>
-      <li><a href="./service.html">Service</a></li>
-    </ul>
-  </section>
 </div>
 
 <div style="text-align: center; margin-top: 30px; padding: 20px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 8px; border: 1px solid #dee2e6;">

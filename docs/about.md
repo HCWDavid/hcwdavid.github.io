@@ -34,7 +34,7 @@ title: About Me
 
   <section class="bio">
     <h2>👋 About Me</h2>
-    <p>Welcome! My name is David. I recently defended my PhD at <strong>Vanderbilt University</strong>, advised by Prof. <a href="https://meiyima.github.io" target="_blank">Meiyi Ma</a>, with a thesis titled <em>Explanation-Guided Adaptive Learning for Human-Centered Cyber-Physical Systems</em>. My research focuses on <strong>eXplainable AI in Healthcare</strong> and <strong>Deep Learning</strong>.</p>
+    <p>Welcome! My name is David. I recently defended my PhD at <strong>Vanderbilt University</strong>, advised by Prof. <a href="https://meiyima.github.io" target="_blank">Meiyi Ma</a>, with a thesis titled <em><a href="https://ir.vanderbilt.edu/handle/1803/20670" target="_blank">Explanation-Guided Adaptive Learning for Human-Centered Cyber-Physical Systems</a></em>. My research focuses on <strong>eXplainable AI in Healthcare</strong> and <strong>Deep Learning</strong>.</p>
     
     <p>I am passionate about advancing the fields of eXplainable AI (XAI), healthcare, and machine learning. My work focuses on leveraging cutting-edge machine learning techniques to improve physical therapy, nursing simulations, and formal verification in AI.</p>
   </section>
@@ -52,6 +52,7 @@ title: About Me
       <p class="institution">Vanderbilt University</p>
       <p class="date">Aug 2021 - May 2026</p>
       <p>Advisor: Prof. Meiyi Ma</p>
+      <p>Thesis: <a href="https://ir.vanderbilt.edu/handle/1803/20670" target="_blank">Explanation-Guided Adaptive Learning for Human-Centered Cyber-Physical Systems</a></p>
     </div>
     <div class="education-item">
       <h3>Master of Science in Computer Science</h3>

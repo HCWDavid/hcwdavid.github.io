@@ -285,7 +285,7 @@ layout: default
 
   <section class="bio">
     <h2>About Me</h2>
-    <p>Welcome! My name is David. I recently defended my PhD at Vanderbilt University, advised by Prof. <a href="https://meiyima.github.io" target="_blank">Meiyi Ma</a>, with a thesis titled <em>Explanation-Guided Adaptive Learning for Human-Centered Cyber-Physical Systems</em>. My research focuses on <strong>eXplainable AI in Healthcare</strong> and <strong>Deep Learning</strong>. Outside of research, I love staying active through workouts, expressing creativity through drawing, and exploring the outdoors. I'm also a big cat lover! Whether it's grabbing boba or coffee, I'm always up for a good conversation. ☕🧋</p>
+    <p>Welcome! My name is David. I recently defended my PhD at Vanderbilt University, advised by Prof. <a href="https://meiyima.github.io" target="_blank">Meiyi Ma</a>, with a thesis titled <em><a href="https://ir.vanderbilt.edu/handle/1803/20670" target="_blank">Explanation-Guided Adaptive Learning for Human-Centered Cyber-Physical Systems</a></em>. My research focuses on <strong>eXplainable AI in Healthcare</strong> and <strong>Deep Learning</strong>. Outside of research, I love staying active through workouts, expressing creativity through drawing, and exploring the outdoors. I'm also a big cat lover! Whether it's grabbing boba or coffee, I'm always up for a good conversation. ☕🧋</p>
   </section>
 
   <section class="interests">
@@ -306,6 +306,8 @@ layout: default
         end = format_date(edu.get('endDate', ''))
         advisor = edu.get('advisor', '')
         description = edu.get('description', '')
+        thesis = edu.get('thesis', '')
+        thesis_url = edu.get('thesisUrl', '')
 
         date_range = f"{start} - {end}"
 
@@ -317,6 +319,12 @@ layout: default
 
         if advisor:
             content += f"      <p>Advisor: Prof. {advisor}</p>\n"
+
+        if thesis:
+            if thesis_url:
+                content += f'      <p>Thesis: <a href="{thesis_url}" target="_blank">{thesis}</a></p>\n'
+            else:
+                content += f"      <p>Thesis: {thesis}</p>\n"
 
         if description:
             content += f"      <p>Focus: {description}</p>\n"
@@ -388,15 +396,6 @@ layout: default
       <p><strong>AAAI 2026</strong> (Oral Presentation)</p>
       <iframe width="70%" style="aspect-ratio: 16/9; border:0; border-radius: 8px; margin-top: 10px; display: block; margin-left: auto; margin-right: auto;" src="https://underline.io/embed/142411-learning-with-preserving-for-continual-multitask-learning?t=1" title="Learning with Preserving for Continual Multitask Learning" allowfullscreen></iframe>
     </div>
-  </section>
-
-  <section class="quick-links">
-    <h2>Quick Links</h2>
-    <ul>
-      <li><a href="./publications.html">View my Publications</a></li>
-      <li><a href="./projects.html">Check out my Projects</a></li>
-      <li><a href="./service.html">Service</a></li>
-    </ul>
   </section>
 </div>
 
@@ -851,7 +850,7 @@ title: About Me
 
   <section class="bio">
     <h2>👋 About Me</h2>
-    <p>Welcome! My name is David. I recently defended my PhD at <strong>Vanderbilt University</strong>, advised by Prof. <a href="https://meiyima.github.io" target="_blank">Meiyi Ma</a>, with a thesis titled <em>Explanation-Guided Adaptive Learning for Human-Centered Cyber-Physical Systems</em>. My research focuses on <strong>eXplainable AI in Healthcare</strong> and <strong>Deep Learning</strong>.</p>
+    <p>Welcome! My name is David. I recently defended my PhD at <strong>Vanderbilt University</strong>, advised by Prof. <a href="https://meiyima.github.io" target="_blank">Meiyi Ma</a>, with a thesis titled <em><a href="https://ir.vanderbilt.edu/handle/1803/20670" target="_blank">Explanation-Guided Adaptive Learning for Human-Centered Cyber-Physical Systems</a></em>. My research focuses on <strong>eXplainable AI in Healthcare</strong> and <strong>Deep Learning</strong>.</p>
     
     <p>I am passionate about advancing the fields of eXplainable AI (XAI), healthcare, and machine learning. My work focuses on leveraging cutting-edge machine learning techniques to improve physical therapy, nursing simulations, and formal verification in AI.</p>
   </section>
@@ -875,6 +874,8 @@ title: About Me
         end = format_date(edu.get('endDate', ''))
         advisor = edu.get('advisor', '')
         description = edu.get('description', '')
+        thesis = edu.get('thesis', '')
+        thesis_url = edu.get('thesisUrl', '')
 
         # Format date range
         date_range = f"{start} - {end}"
@@ -887,6 +888,12 @@ title: About Me
 
         if advisor:
             content += f"      <p>Advisor: Prof. {advisor}</p>\n"
+
+        if thesis:
+            if thesis_url:
+                content += f'      <p>Thesis: <a href="{thesis_url}" target="_blank">{thesis}</a></p>\n'
+            else:
+                content += f"      <p>Thesis: {thesis}</p>\n"
 
         if description:
             content += f"      <p>Focus: {description}</p>\n"

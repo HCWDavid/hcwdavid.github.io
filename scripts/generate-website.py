@@ -285,7 +285,7 @@ layout: default
 
   <section class="bio">
     <h2>About Me</h2>
-    <p>Welcome! My name is David. I recently defended my PhD at Vanderbilt University, advised by Prof. <a href="https://meiyima.github.io" target="_blank">Meiyi Ma</a>, with a thesis titled <em><a href="https://ir.vanderbilt.edu/handle/1803/20670" target="_blank">Explanation-Guided Adaptive Learning for Human-Centered Cyber-Physical Systems</a></em>. My research focuses on <strong>eXplainable AI in Healthcare</strong> and <strong>Deep Learning</strong>. Outside of research, I love staying active through workouts, expressing creativity through drawing, and exploring the outdoors. I'm also a big cat lover! Whether it's grabbing boba or coffee, I'm always up for a good conversation. ☕🧋</p>
+    <p>Welcome! My name is David. I recently defended my PhD at Vanderbilt University, advised by Prof. <a href="https://meiyima.github.io" target="_blank">Meiyi Ma</a>, with a thesis titled <em><a href="https://ir.vanderbilt.edu/handle/1803/20670" target="_blank" style="color:#4a9eff; text-decoration:underline;">Explanation-Guided Adaptive Learning for Human-Centered Cyber-Physical Systems</a></em>. My research focuses on <strong>eXplainable AI in Healthcare</strong> and <strong>Deep Learning</strong>. Outside of research, I love staying active through workouts, expressing creativity through drawing, and exploring the outdoors. I'm also a big cat lover! Whether it's grabbing boba or coffee, I'm always up for a good conversation. ☕🧋</p>
   </section>
 
   <section class="interests">
@@ -322,7 +322,7 @@ layout: default
 
         if thesis:
             if thesis_url:
-                content += f'      <p>Thesis: <a href="{thesis_url}" target="_blank">{thesis}</a></p>\n'
+                content += f'      <p>Thesis: <a href="{thesis_url}" target="_blank" style="color:#4a9eff; text-decoration:underline;">{thesis}</a></p>\n'
             else:
                 content += f"      <p>Thesis: {thesis}</p>\n"
 
@@ -850,7 +850,7 @@ title: About Me
 
   <section class="bio">
     <h2>👋 About Me</h2>
-    <p>Welcome! My name is David. I recently defended my PhD at <strong>Vanderbilt University</strong>, advised by Prof. <a href="https://meiyima.github.io" target="_blank">Meiyi Ma</a>, with a thesis titled <em><a href="https://ir.vanderbilt.edu/handle/1803/20670" target="_blank">Explanation-Guided Adaptive Learning for Human-Centered Cyber-Physical Systems</a></em>. My research focuses on <strong>eXplainable AI in Healthcare</strong> and <strong>Deep Learning</strong>.</p>
+    <p>Welcome! My name is David. I recently defended my PhD at <strong>Vanderbilt University</strong>, advised by Prof. <a href="https://meiyima.github.io" target="_blank">Meiyi Ma</a>, with a thesis titled <em><a href="https://ir.vanderbilt.edu/handle/1803/20670" target="_blank" style="color:#4a9eff; text-decoration:underline;">Explanation-Guided Adaptive Learning for Human-Centered Cyber-Physical Systems</a></em>. My research focuses on <strong>eXplainable AI in Healthcare</strong> and <strong>Deep Learning</strong>.</p>
     
     <p>I am passionate about advancing the fields of eXplainable AI (XAI), healthcare, and machine learning. My work focuses on leveraging cutting-edge machine learning techniques to improve physical therapy, nursing simulations, and formal verification in AI.</p>
   </section>
@@ -891,7 +891,7 @@ title: About Me
 
         if thesis:
             if thesis_url:
-                content += f'      <p>Thesis: <a href="{thesis_url}" target="_blank">{thesis}</a></p>\n'
+                content += f'      <p>Thesis: <a href="{thesis_url}" target="_blank" style="color:#4a9eff; text-decoration:underline;">{thesis}</a></p>\n'
             else:
                 content += f"      <p>Thesis: {thesis}</p>\n"
 

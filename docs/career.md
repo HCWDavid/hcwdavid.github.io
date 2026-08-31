@@ -62,8 +62,15 @@ title: Career
 <p>My professional experience spanning research, teaching, and industry internships.</p>
 
 <div class="career-item">
+<h2>Software Engineer III</h2>
+<p><strong>Google</strong> | Sunnyvale, CA<br>
+<strong>Jul 2026 - Present</strong></p>
+
+</div>
+
+<div class="career-item">
 <h2>PhD Software Engineering Intern</h2>
-<p><strong>Google</strong> | Mountain View, CA<br>
+<p><strong>Google</strong> | Sunnyvale, CA<br>
 <strong>May 2025 - Aug 2025</strong></p>
 
 <ul>

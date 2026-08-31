@@ -1,8 +1,17 @@
 [
   {
+    "title": "Software Engineer III",
+    "organization": "Google",
+    "location": "Sunnyvale, CA",
+    "startDate": "2026-07",
+    "endDate": "Present",
+    "type": "full-time",
+    "highlights": []
+  },
+  {
     "title": "PhD Software Engineering Intern",
     "organization": "Google",
-    "location": "Mountain View, CA",
+    "location": "Sunnyvale, CA",
     "startDate": "2025-05",
     "endDate": "2025-08",
     "type": "internship",

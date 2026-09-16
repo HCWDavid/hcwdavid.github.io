@@ -100,7 +100,7 @@ python main_meta_v2.py --dataset physiq --model ex --n_shot 1 --n_epochs 200
 
 ## Publications
 
-**Wang, Hanchen David**, Bae, Siwoo, Sun, Xutong, Thatigotla, Yashvitha, and Ma, Meiyi. "EXACT: A Meta-Learning Framework for Precise Exercise Segmentation in Physical Therapy." *Proceedings of the ACM/IEEE 16th International Conference on Cyber-Physical Systems (ICCPS)*, 2024.
+**Wang, Hanchen David**, Bae, Siwoo, Sun, Xutong, Thatigotla, Yashvitha, and Ma, Meiyi. "EXACT: A Meta-Learning Framework for Precise Exercise Segmentation in Physical Therapy." *Proceedings of the ACM/IEEE 16th International Conference on Cyber-Physical Systems (ICCPS)*, 2025.
 
 ### Citation
 

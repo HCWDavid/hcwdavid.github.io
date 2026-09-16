@@ -69,7 +69,7 @@ title: Leadership & Service
 <ul>
 <li><strong>2025–Present:</strong> Mentoring undergraduate Daniel Park on extension work for ICCPS 2025.</li>
 <li><strong>2025–Present:</strong> Mentoring undergraduate Selena Xu on GENIUS project for explainable and responsible AI.</li>
-<li><strong>2024–2025:</strong> Mentored master's student Yiling Liu and undergraduates Haowei Fu and Christin Ann Sanchez on "SmartSeg: A Non-Parametric Approach for Smart Glass Video Segmentation," an event segmentation project for a nursing training simulation.</li>
+<li><strong>2024–2025:</strong> Mentored master's student Yilin Liu and undergraduates Haowei Fu and Christin Ann Sanchez on "SmartSeg: A Non-Parametric Approach for Wearable Camera Video Temporal Segmentation," an event segmentation project for a nursing training simulation.</li>
 <li><strong>2024–2025:</strong> Mentored undergraduate Haoran (Max) Ma on an IMU-guided video classification project to improve model accuracy.</li>
 <li><strong>2024–2025:</strong> Mentored undergraduate Siwoo Bae on "Learning with Preserving for Continual Multitask Learning," focused on preserving representational space in continual learning. The work was presented at the Vanderbilt Undergraduate Research Fair, earning a poster award.</li>
 <li><strong>2022–2024:</strong> Mentored undergraduate Xutong (Helen) Sun and Yashvitha Thatigotla on "EXACT: A Meta-Learning Framework for Precise Exercise Segmentation in Physical Therapy."</li>

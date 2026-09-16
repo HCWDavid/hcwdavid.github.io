@@ -1,5 +1,76 @@
 [
   {
+    "id": "smartseg",
+    "authors": [
+      "Liu, Yilin",
+      "Wang, Hanchen David",
+      "Fu, Haowei",
+      "Mason, Madison Lee",
+      "Li, Fanjie",
+      "Wise, Alyssa",
+      "Levin, Daniel T",
+      "Biswas, Gautam",
+      "Ma, Meiyi"
+    ],
+    "title": "SmartSeg: A Non-Parametric Approach for Wearable Camera Video Temporal Segmentation",
+    "venue": "Pervasive and Mobile Computing",
+    "year": 2026,
+    "month": "September",
+    "status": "Published",
+    "type": "journal",
+    "tags": [
+      "Video Segmentation",
+      "Wearable Cameras",
+      "Computer Vision"
+    ]
+  },
+  {
+    "id": "kineticchain",
+    "authors": [
+      "Khan, Nibraas",
+      "Agrawal, Aarav",
+      "Wang, Hanchen David",
+      "Ma, Meiyi",
+      "Sarkar, Nilanjan"
+    ],
+    "title": "KineticChain: A Whole-Body Wearable Sensing Platform for Boxing Biomechanics",
+    "venue": "HCI International (HCII), Digital Human Modeling and Applications in Health, Safety, Ergonomics and Risk Management (DHM)",
+    "year": 2026,
+    "month": "July",
+    "status": "Published",
+    "type": "conference",
+    "tags": [
+      "Wearable Sensors",
+      "Biomechanics",
+      "Boxing"
+    ]
+  },
+  {
+    "id": "reachx",
+    "authors": [
+      "Wang, Hanchen David",
+      "Lopez, Diego Manzanas",
+      "Robinette, Preston K.",
+      "Oguz, Ipek",
+      "Johnson, Taylor T.",
+      "Ma, Meiyi"
+    ],
+    "title": "Towards Verified and Targeted Explanations through Formal Methods",
+    "venue": "Journal of Artificial Intelligence Research (JAIR), Special Track: Integration of Logical Constraints in Deep Learning",
+    "year": 2026,
+    "month": "July",
+    "status": "Published",
+    "type": "journal",
+    "volume": "86",
+    "doi": "10.1613/jair.1.20924",
+    "arxiv": "2604.14209",
+    "tags": [
+      "XAI",
+      "Neural Network Verification",
+      "Formal Methods"
+    ]
+  },
+  {
     "id": "cv4edu-nursing",
     "authors": [
       "Wang, Hanchen David",
@@ -11,11 +82,13 @@
       "Ma, Meiyi"
     ],
     "title": "AI-Assisted Competency Assessment from Egocentric Video in Simulation-Based Nursing Education",
-    "venue": "CVPR Workshop on Computer Vision for Education (CV4EDU)",
+    "venue": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, Computer Vision for Education (CV4EDU)",
     "year": 2026,
     "month": "June",
-    "status": "Accepted",
+    "status": "Published",
     "type": "workshop",
+    "pages": "10912-10921",
+    "arxiv": "2605.20233",
     "tags": [
       "Computer Vision",
       "Healthcare",
@@ -45,7 +118,7 @@
     "venue": "International Conference on Artificial Intelligence in Education (AIED)",
     "year": 2026,
     "month": "June",
-    "status": "Accepted",
+    "status": "Published",
     "type": "conference",
     "tags": [
       "Educational AI",
@@ -54,24 +127,59 @@
     ]
   },
   {
-    "id": "kineticchain",
+    "id": "stemc-pedagogical-agent",
     "authors": [
-      "Khan, Nibraas",
-      "Agrawal, Aarav",
+      "Cohn, Clayton",
+      "Rayala, Surya",
+      "Guo, Siyuan",
       "Wang, Hanchen David",
+      "Mohammed, Naveeduddin",
+      "Timalsina, Umesh",
+      "Jain, Shruti",
+      "Li, Ryan",
+      "Eeds, Angela",
+      "Deweese, Menton",
+      "Osborn Popp, Pamela J.",
+      "Stanton, Rebekah",
+      "Walker, Shakeera",
+      "T S, Ashwin",
       "Ma, Meiyi",
-      "Sarkar, Nilanjan"
+      "Biswas, Gautam"
     ],
-    "title": "KineticChain: A Whole-Body Wearable Sensing Platform for Boxing Biomechanics",
-    "venue": "HCI International (HCII)",
+    "title": "A Theory-Guided LLM Pedagogical Agent for STEM+C Scaffolding Without Over-Reliance",
+    "venue": "Computers & Education",
     "year": 2026,
-    "month": "February",
-    "status": "Accepted",
-    "type": "conference",
+    "month": "May",
+    "status": "Under Review",
+    "type": "journal",
+    "arxiv": "2605.30539",
     "tags": [
-      "Wearable Sensors",
-      "Biomechanics",
-      "Boxing"
+      "Educational AI",
+      "LLM",
+      "Pedagogical Agents"
+    ]
+  },
+  {
+    "id": "lwp",
+    "authors": [
+      "Wang, Hanchen David",
+      "Bae, Siwoo",
+      "Chen, Zirong",
+      "Ma, Meiyi"
+    ],
+    "title": "Learning with Preserving for Continual Multitask Learning",
+    "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+    "year": 2026,
+    "month": "March",
+    "status": "Published",
+    "type": "conference",
+    "volume": "40",
+    "number": "31",
+    "pages": "26178-26186",
+    "doi": "10.1609/aaai.v40i31.39821",
+    "tags": [
+      "Continual Learning",
+      "Multitask Learning"
     ]
   },
   {
@@ -123,51 +231,29 @@
     ]
   },
   {
-    "id": "lwp",
+    "id": "multimodal-survey",
     "authors": [
+      "Cohn, Clayton",
+      "Davalos, Eduardo",
+      "Vatral, Caleb",
+      "Fonteles, Joyce Horn",
       "Wang, Hanchen David",
-      "Bae, Siwoo",
-      "Chen, Zirong",
-      "Ma, Meiyi"
+      "Coursey, Austin",
+      "Rayala, Surya",
+      "T S, Ashwin",
+      "Ma, Meiyi",
+      "Biswas, Gautam"
     ],
-    "title": "Learning with Preserving for Continual Multitask Learning",
-    "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
-    "year": 2026,
-    "month": "March",
-    "status": "Published",
-    "type": "conference",
-    "volume": "40",
-    "number": "31",
-    "pages": "26178-26186",
-    "doi": "10.1609/aaai.v40i31.39821",
-    "tags": [
-      "Continual Learning",
-      "Multitask Learning"
-    ]
-  },
-  {
-    "id": "smartseg",
-    "authors": [
-      "Wang, Hanchen David",
-      "Liu, Yilin",
-      "Fu, Haowei",
-      "Mason, Madison Lee",
-      "Li, Fanjie",
-      "Wise, Alyssa",
-      "Levin, Daniel T",
-      "Biswas, Gautam",
-      "Ma, Meiyi"
-    ],
-    "title": "SmartSeg: A Non-Parametric Approach for Smart Glass Video Segmentation",
-    "venue": "Pervasive and Mobile Computing",
+    "title": "Multimodal Methods for Analyzing Learning and Training Environments: A Systematic Literature Review",
+    "venue": "ACM Computing Surveys",
     "year": 2025,
-    "month": "June",
-    "status": "Minor Revision",
+    "month": "December",
+    "status": "Under Review",
     "type": "journal",
+    "doi": "10.48550/arXiv.2408.14491",
     "tags": [
-      "Video Segmentation",
-      "Smart Glasses",
-      "Computer Vision"
+      "Multimodal Learning",
+      "Survey"
     ]
   },
   {
@@ -194,51 +280,6 @@
     ]
   },
   {
-    "id": "reachx",
-    "authors": [
-      "Wang, Hanchen David",
-      "Robinette, Preston K.",
-      "Lopez, Diego Manzanas",
-      "Oguz, Ipek",
-      "Johnson, Taylor T.",
-      "Ma, Meiyi"
-    ],
-    "title": "Towards Verified and Targeted Explanations through Formal Methods",
-    "venue": "Journal of Artificial Intelligence Research (JAIR), Special Track: Integration of Logical Constraints in Deep Learning",
-    "year": 2026,
-    "month": "March",
-    "status": "Accepted",
-    "type": "journal",
-    "tags": [
-      "XAI",
-      "Neural Network Verification",
-      "Formal Methods"
-    ]
-  },
-  {
-    "id": "multimodal-survey",
-    "authors": [
-      "Cohn, Clayton",
-      "Davalos, Eduardo",
-      "Vatral, Caleb",
-      "Fonteles, Joyce",
-      "Wang, Hanchen David",
-      "Ma, Meiyi",
-      "Biswas, Gautam"
-    ],
-    "title": "Multimodal Methods for Analyzing Learning and Training Environments: A Systematic Literature Review",
-    "venue": "ACM Computing Surveys",
-    "year": 2025,
-    "month": "December",
-    "status": "Under Review",
-    "type": "journal",
-    "doi": "10.48550/arXiv.2408.14491",
-    "tags": [
-      "Multimodal Learning",
-      "Survey"
-    ]
-  },
-  {
     "id": "exact",
     "authors": [
       "Wang, Hanchen David",
@@ -248,9 +289,9 @@
       "Ma, Meiyi"
     ],
     "title": "EXACT: A Meta-Learning Framework for Precise Exercise Segmentation in Physical Therapy",
-    "venue": "International Conference on Cyber-Physical Systems (ICCPS)",
-    "year": 2024,
-    "month": "November",
+    "venue": "Proceedings of the ACM/IEEE 16th International Conference on Cyber-Physical Systems (ICCPS)",
+    "year": 2025,
+    "month": "May",
     "status": "Published",
     "type": "conference",
     "doi": "10.1145/3716550.3722027",

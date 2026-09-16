@@ -242,8 +242,8 @@ layout: default
 
     <div class="highlight-item">
       <h3>Recent Publication</h3>
-      <p><strong>AI-Assisted Competency Assessment from Egocentric Video in Simulation-Based Nursing Education</strong></p>
-      <p>CVPR Workshop on Computer Vision for Education (CV4EDU) - Accepted</p>
+      <p><strong>SmartSeg: A Non-Parametric Approach for Wearable Camera Video Temporal Segmentation</strong></p>
+      <p>Pervasive and Mobile Computing - Published</p>
     </div>
 
     <div class="highlight-item">

@@ -12,6 +12,18 @@ from datetime import datetime
 from pathlib import Path
 
 
+MONTH_ORDER = {
+    'January': 1, 'February': 2, 'March': 3, 'April': 4,
+    'May': 5, 'June': 6, 'July': 7, 'August': 8,
+    'September': 9, 'October': 10, 'November': 11, 'December': 12
+}
+
+
+def pub_sort_key(pub):
+    """Sort key placing the newest publication first when reversed."""
+    return (pub.get('year', 0), MONTH_ORDER.get(pub.get('month', ''), 0))
+
+
 def load_json(filename):
     """Load JSON data from the data directory."""
     data_dir = Path(__file__).parent.parent / 'data'
@@ -65,13 +77,14 @@ def generate_homepage():
     # Get latest items
     latest_research = research_data[0] if research_data else None
 
-    # Get latest publication with "Accepted" status
-    latest_publication = None
-    for pub in publications_data:
-        status = pub.get('status', '')
-        if status.startswith('Accepted'):
-            latest_publication = pub
-            break
+    # Get the newest publication that has cleared peer review
+    accepted_pubs = [
+        p for p in publications_data
+        if p.get('status', '').startswith(('Accepted', 'Published', 'In Press'))
+    ]
+    latest_publication = max(
+        accepted_pubs, key=pub_sort_key
+    ) if accepted_pubs else None
 
     # Get current position (endDate == "Present"), fallback to first entry
     latest_position = None
@@ -478,22 +491,15 @@ title: Publications
 
 """
 
-    MONTH_ORDER = {
-        'January': 1, 'February': 2, 'March': 3, 'April': 4,
-        'May': 5, 'June': 6, 'July': 7, 'August': 8,
-        'September': 9, 'October': 10, 'November': 11, 'December': 12
-    }
-    sorted_pubs = sorted(
-        publications_data,
-        key=lambda p: (p.get('year', 0), MONTH_ORDER.get(p.get('month', ''), 0)),
-        reverse=True
-    )
+    sorted_pubs = sorted(publications_data, key=pub_sort_key, reverse=True)
 
     for i, pub in enumerate(sorted_pubs, 1):
         title = pub.get('title', '')
         authors = pub.get('authors', '')
         venue = pub.get('venue', '')
-        date = pub.get('date', '')
+        date = pub.get('date') or ' '.join(
+            str(v) for v in (pub.get('month'), pub.get('year')) if v
+        )
         status = pub.get('status', '')
         doi = pub.get('doi', '')
         arxiv = pub.get('arxiv', '')

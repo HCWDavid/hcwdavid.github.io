@@ -248,8 +248,8 @@ layout: default
 
     <div class="highlight-item">
       <h3>Current Position</h3>
-      <p><strong>Research Assistant @ Vanderbilt University</strong> (May 2022 - Present)</p>
-      <p>Researched activity recognition using deep learning methodologies, focusing on enhancing the quality assessment of exercises through Explainable Artificial Intelligence (XAI) techniques.</p>
+      <p><strong>Software Engineer III @ Google</strong> (Jul 2026 - Present)</p>
+      <p></p>
     </div>
 
   </section>

@@ -24,6 +24,16 @@ def pub_sort_key(pub):
     return (pub.get('year', 0), MONTH_ORDER.get(pub.get('month', ''), 0))
 
 
+def status_class(status):
+    """Map a free-text status to a badge modifier: done / pending / preprint."""
+    s = status.lower()
+    if s.startswith(('published', 'accepted', 'in press')):
+        return 'done'
+    if s.startswith('preprint'):
+        return 'preprint'
+    return 'pending'
+
+
 def load_json(filename):
     """Load JSON data from the data directory."""
     data_dir = Path(__file__).parent.parent / 'data'
@@ -351,6 +361,21 @@ layout: default
     
 """
 
+    # Add recent publication (shown first)
+    if latest_publication:
+        title = latest_publication.get('title', '')
+        venue = latest_publication.get('venue', '')
+        status = latest_publication.get('status', '')
+
+        status_text = f" - {status}" if status else ""
+        content += f"""    <div class="highlight-item">
+      <h3>Recent Publication</h3>
+      <p><strong>{title}</strong></p>
+      <p>{venue}{status_text}</p>
+    </div>
+
+"""
+
     # Add latest research
     if latest_research:
         start = format_date(latest_research.get('startDate', ''))
@@ -364,21 +389,6 @@ layout: default
       <h3>Latest Research</h3>
       <p><strong>{title}</strong> ({start} - {end})</p>
       <p>{description}</p>
-    </div>
-
-"""
-
-    # Add recent publication
-    if latest_publication:
-        title = latest_publication.get('title', '')
-        venue = latest_publication.get('venue', '')
-        status = latest_publication.get('status', '')
-
-        status_text = f" - {status}" if status else ""
-        content += f"""    <div class="highlight-item">
-      <h3>Recent Publication</h3>
-      <p><strong>{title}</strong></p>
-      <p>{venue}{status_text}</p>
     </div>
 
 """
@@ -499,6 +509,7 @@ title: Publications
 
     sorted_pubs = sorted(publications_data, key=pub_sort_key, reverse=True)
 
+    current_year = None
     for i, pub in enumerate(sorted_pubs, 1):
         title = pub.get('title', '')
         authors = pub.get('authors', '')
@@ -516,12 +527,18 @@ title: Publications
         # Use an entity so kramdown never reads "*" as emphasis
         authors = authors.replace('*', '&#42;')
 
+        # Year group heading so the list is scannable
+        year = pub.get('year')
+        if year != current_year:
+            current_year = year
+            content += f'<h2 class="pub-year">{year}</h2>\n\n'
+
         # Start publication item
         content += f"""<div class="publication-item">
 {i}. """
 
-        # Format the entry with title first (larger font, clickable if DOI available) then authors on next line
-        doi = pub.get('doi', '')
+        # Title first (clickable if DOI available), then authors on the next line
+        doi_url = ''
         if doi:
             # Add https://doi.org/ prefix if not already present
             doi_url = doi if doi.startswith(
@@ -533,22 +550,29 @@ title: Publications
 
         content += f"   <br>\n   {authors}.  \n"
 
+        # Venue and date in italics, status as a colored badge
         if venue:
             content += f"   <br>\n   <em>{venue}"
             if date:
                 content += f", {date}"
+            content += ".</em>"
             if status:
-                content += f", {status}"
-            content += ".</em>  \n"
+                content += f' <span class="pub-status pub-status--{status_class(status)}">{status}</span>'
+            content += "  \n"
 
-        # Add arXiv link if available (but not DOI since it's in the title now)
-        arxiv = pub.get('arxiv', '')
-        if arxiv:
+        # Link pills: DOI (labelled arXiv when the DOI is an arXiv one) and arXiv
+        links = []
+        if doi_url:
+            label = 'arXiv' if 'arxiv' in doi.lower() else 'DOI'
+            links.append(f'<a href="{doi_url}" target="_blank" rel="noopener">{label}</a>')
+        if arxiv and not any('>arXiv<' in l for l in links):
             # Add https://arxiv.org/abs/ prefix if not already present
             arxiv_url = arxiv if arxiv.startswith(
                 'http'
             ) else f"https://arxiv.org/abs/{arxiv}"
-            content += f"   [arXiv]({arxiv_url})  \n"
+            links.append(f'<a href="{arxiv_url}" target="_blank" rel="noopener">arXiv</a>')
+        if links:
+            content += '   <br>\n   <span class="pub-links">' + ' '.join(links) + '</span>  \n'
 
         content += "</div>\n\n"
 

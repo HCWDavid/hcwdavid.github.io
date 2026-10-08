@@ -235,15 +235,15 @@ layout: default
     <h2>Recent Highlights</h2>
     
     <div class="highlight-item">
-      <h3>Latest Research</h3>
-      <p><strong>AI-Assisted Competency Assessment from Egocentric Video in Simulation-Based Nursing Education</strong> (Jul 2024 - Mar 2026)</p>
-      <p>Proposed a three-stage framework for automated competency assessment from egocentric nursing simulation video using frozen visual encoders and few-shot learning</p>
-    </div>
-
-    <div class="highlight-item">
       <h3>Recent Publication</h3>
       <p><strong>BEAGLE: Behavior-Enforced Agent for Grounded Learner Emulation</strong></p>
       <p>Advances in Neural Information Processing Systems (NeurIPS) - Accepted</p>
+    </div>
+
+    <div class="highlight-item">
+      <h3>Latest Research</h3>
+      <p><strong>AI-Assisted Competency Assessment from Egocentric Video in Simulation-Based Nursing Education</strong> (Jul 2024 - Mar 2026)</p>
+      <p>Proposed a three-stage framework for automated competency assessment from egocentric nursing simulation video using frozen visual encoders and few-shot learning</p>
     </div>
 
     <div class="highlight-item">

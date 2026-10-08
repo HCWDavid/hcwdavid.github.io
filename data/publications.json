@@ -1,5 +1,30 @@
 [
   {
+    "id": "beagle",
+    "authors": [
+      "Wang, Hanchen David",
+      "Cohn, Clayton",
+      "Xu, Zifan",
+      "Guo, Siyuan",
+      "Biswas, Gautam",
+      "Ma, Meiyi"
+    ],
+    "title": "BEAGLE: Behavior-Enforced Agent for Grounded Learner Emulation",
+    "venue": "Advances in Neural Information Processing Systems (NeurIPS)",
+    "year": 2026,
+    "month": "September",
+    "status": "Accepted",
+    "type": "conference",
+    "doi": "10.48550/arXiv.2602.13280",
+    "tags": [
+      "XAI",
+      "Educational AI",
+      "Graph Learning",
+      "Formal Verification",
+      "LLM"
+    ]
+  },
+  {
     "id": "spar",
     "authors": [
       "Khan, Nibraas",
@@ -232,31 +257,6 @@
     "tags": [
       "Continual Learning",
       "Multitask Learning"
-    ]
-  },
-  {
-    "id": "beagle",
-    "authors": [
-      "Wang, Hanchen David",
-      "Cohn, Clayton",
-      "Xu, Zifan",
-      "Guo, Siyuan",
-      "Biswas, Gautam",
-      "Ma, Meiyi"
-    ],
-    "title": "BEAGLE: Behavior-Enforced Agent for Grounded Learner Emulation",
-    "venue": "Advances in Neural Information Processing Systems (NeurIPS)",
-    "year": 2026,
-    "month": "December",
-    "status": "Accepted",
-    "type": "conference",
-    "doi": "10.48550/arXiv.2602.13280",
-    "tags": [
-      "XAI",
-      "Educational AI",
-      "Graph Learning",
-      "Formal Verification",
-      "LLM"
     ]
   },
   {

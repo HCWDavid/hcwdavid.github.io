@@ -57,12 +57,16 @@ title: Publications
 
 <div class="publication-list">
 
+<h2 class="pub-year">2026</h2>
+
 <div class="publication-item">
 1. <a href='https://doi.org/10.48550/arXiv.2602.13280' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600; font-size: 1.1em;'>BEAGLE: Behavior-Enforced Agent for Grounded Learner Emulation</a>  
    <br>
    <strong>Wang, Hanchen David</strong>, Cohn, Clayton, Xu, Zifan, Guo, Siyuan, Biswas, Gautam, Ma, Meiyi.  
    <br>
-   <em>Advances in Neural Information Processing Systems (NeurIPS), December 2026, Accepted.</em>  
+   <em>Advances in Neural Information Processing Systems (NeurIPS), September 2026.</em> <span class="pub-status pub-status--done">Accepted</span>  
+   <br>
+   <span class="pub-links"><a href="https://doi.org/10.48550/arXiv.2602.13280" target="_blank" rel="noopener">arXiv</a></span>  
 </div>
 
 <div class="publication-item">
@@ -70,8 +74,9 @@ title: Publications
    <br>
    Khan, Nibraas, <strong>Wang, Hanchen David</strong>, Bullard, Enya, Ghosh, Ritam, Haan, Ruj, Agrawal, Aarav, Ma, Meiyi, Sarkar, Nilanjan.  
    <br>
-   <em>arXiv, September 2026, Preprint.</em>  
-   [arXiv](https://arxiv.org/abs/2609.30753)  
+   <em>arXiv, September 2026.</em> <span class="pub-status pub-status--preprint">Preprint</span>  
+   <br>
+   <span class="pub-links"><a href="https://arxiv.org/abs/2609.30753" target="_blank" rel="noopener">arXiv</a></span>  
 </div>
 
 <div class="publication-item">
@@ -79,7 +84,9 @@ title: Publications
    <br>
    <strong>Wang, Hanchen David</strong>&#42;, Liu, Yilin&#42;, Fu, Haowei, Mason, Madison Lee, Li, Fanjie, Wise, Alyssa, Levin, Daniel T, Biswas, Gautam, Ma, Meiyi.  
    <br>
-   <em>Pervasive and Mobile Computing, September 2026, Published.</em>  
+   <em>Pervasive and Mobile Computing, September 2026.</em> <span class="pub-status pub-status--done">Published</span>  
+   <br>
+   <span class="pub-links"><a href="https://doi.org/10.1016/j.pmcj.2026.102223" target="_blank" rel="noopener">DOI</a></span>  
 </div>
 
 <div class="publication-item">
@@ -87,7 +94,7 @@ title: Publications
    <br>
    Khan, Nibraas, Agrawal, Aarav, <strong>Wang, Hanchen David</strong>, Ma, Meiyi, Sarkar, Nilanjan.  
    <br>
-   <em>HCI International (HCII), Digital Human Modeling and Applications in Health, Safety, Ergonomics and Risk Management (DHM), July 2026, Published.</em>  
+   <em>HCI International (HCII), Digital Human Modeling and Applications in Health, Safety, Ergonomics and Risk Management (DHM), July 2026.</em> <span class="pub-status pub-status--done">Published</span>  
 </div>
 
 <div class="publication-item">
@@ -95,8 +102,9 @@ title: Publications
    <br>
    <strong>Wang, Hanchen David</strong>, Lopez, Diego Manzanas, Robinette, Preston K., Oguz, Ipek, Johnson, Taylor T., Ma, Meiyi.  
    <br>
-   <em>Journal of Artificial Intelligence Research (JAIR), Special Track: Integration of Logical Constraints in Deep Learning, July 2026, Published.</em>  
-   [arXiv](https://arxiv.org/abs/2604.14209)  
+   <em>Journal of Artificial Intelligence Research (JAIR), Special Track: Integration of Logical Constraints in Deep Learning, July 2026.</em> <span class="pub-status pub-status--done">Published</span>  
+   <br>
+   <span class="pub-links"><a href="https://doi.org/10.1613/jair.1.20924" target="_blank" rel="noopener">DOI</a> <a href="https://arxiv.org/abs/2604.14209" target="_blank" rel="noopener">arXiv</a></span>  
 </div>
 
 <div class="publication-item">
@@ -104,7 +112,9 @@ title: Publications
    <br>
    Sasaki, Samuel, Wooding, Ben, <strong>Wang, Hanchen David</strong>, Tumlin, Anne M., Ma, Meiyi, Johnson, Taylor T..  
    <br>
-   <em>International Symposium on AI Verification (SAIV), Lecture Notes in Computer Science, July 2026, Published.</em>  
+   <em>International Symposium on AI Verification (SAIV), Lecture Notes in Computer Science, July 2026.</em> <span class="pub-status pub-status--done">Published</span>  
+   <br>
+   <span class="pub-links"><a href="https://doi.org/10.1007/978-3-032-32357-6_21" target="_blank" rel="noopener">DOI</a></span>  
 </div>
 
 <div class="publication-item">
@@ -112,8 +122,9 @@ title: Publications
    <br>
    <strong>Wang, Hanchen David</strong>, Liu, Yilin, Mason, Madison, Rayala, Surya, Biswas, Gautam, Levin, Daniel, Ma, Meiyi.  
    <br>
-   <em>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, Computer Vision for Education (CV4EDU), June 2026, Published.</em>  
-   [arXiv](https://arxiv.org/abs/2605.20233)  
+   <em>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, Computer Vision for Education (CV4EDU), June 2026.</em> <span class="pub-status pub-status--done">Published</span>  
+   <br>
+   <span class="pub-links"><a href="https://arxiv.org/abs/2605.20233" target="_blank" rel="noopener">arXiv</a></span>  
 </div>
 
 <div class="publication-item">
@@ -121,7 +132,7 @@ title: Publications
    <br>
    Cohn, Clayton, Guo, Siyuan, Rayala, Surya, <strong>Wang, Hanchen David</strong>, Mohammed, Naveeduddin, Timalsina, Umesh, Jain, Shruti, Eeds, Angela, Deweese, Menton, Osborn Popp, Pamela J., Stanton, Rebekah, Walker, Shakeera, Ma, Meiyi, Biswas, Gautam.  
    <br>
-   <em>International Conference on Artificial Intelligence in Education (AIED), June 2026, Published.</em>  
+   <em>International Conference on Artificial Intelligence in Education (AIED), June 2026.</em> <span class="pub-status pub-status--done">Published</span>  
 </div>
 
 <div class="publication-item">
@@ -129,8 +140,9 @@ title: Publications
    <br>
    Cohn, Clayton, Rayala, Surya, Guo, Siyuan, <strong>Wang, Hanchen David</strong>, Mohammed, Naveeduddin, Timalsina, Umesh, Jain, Shruti, Li, Ryan, Eeds, Angela, Deweese, Menton, Osborn Popp, Pamela J., Stanton, Rebekah, Walker, Shakeera, T S, Ashwin, Ma, Meiyi, Biswas, Gautam.  
    <br>
-   <em>Computers & Education, May 2026, Under Review.</em>  
-   [arXiv](https://arxiv.org/abs/2605.30539)  
+   <em>Computers & Education, May 2026.</em> <span class="pub-status pub-status--pending">Under Review</span>  
+   <br>
+   <span class="pub-links"><a href="https://arxiv.org/abs/2605.30539" target="_blank" rel="noopener">arXiv</a></span>  
 </div>
 
 <div class="publication-item">
@@ -138,7 +150,9 @@ title: Publications
    <br>
    <strong>Wang, Hanchen David</strong>, Bae, Siwoo, Chen, Zirong, Ma, Meiyi.  
    <br>
-   <em>Proceedings of the AAAI Conference on Artificial Intelligence, March 2026, Published.</em>  
+   <em>Proceedings of the AAAI Conference on Artificial Intelligence, March 2026.</em> <span class="pub-status pub-status--done">Published</span>  
+   <br>
+   <span class="pub-links"><a href="https://doi.org/10.1609/aaai.v40i31.39821" target="_blank" rel="noopener">DOI</a></span>  
 </div>
 
 <div class="publication-item">
@@ -146,15 +160,19 @@ title: Publications
    <br>
    <strong>Wang, Hanchen David</strong>, Bae, Siwoo, Sun, Xutong, Thatigotla, Yashvitha, Ma, Meiyi.  
    <br>
-   <em>ACM Transactions on Cyber-Physical Systems, January 2026, Under Submission.</em>  
+   <em>ACM Transactions on Cyber-Physical Systems, January 2026.</em> <span class="pub-status pub-status--pending">Under Submission</span>  
 </div>
+
+<h2 class="pub-year">2025</h2>
 
 <div class="publication-item">
 12. <a href='https://doi.org/10.48550/arXiv.2408.14491' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600; font-size: 1.1em;'>Multimodal Methods for Analyzing Learning and Training Environments: A Systematic Literature Review</a>  
    <br>
    Cohn, Clayton, Davalos, Eduardo, Vatral, Caleb, Fonteles, Joyce Horn, <strong>Wang, Hanchen David</strong>, Coursey, Austin, Rayala, Surya, T S, Ashwin, Ma, Meiyi, Biswas, Gautam.  
    <br>
-   <em>ACM Computing Surveys, December 2025, Under Review.</em>  
+   <em>ACM Computing Surveys, December 2025.</em> <span class="pub-status pub-status--pending">Under Review</span>  
+   <br>
+   <span class="pub-links"><a href="https://doi.org/10.48550/arXiv.2408.14491" target="_blank" rel="noopener">arXiv</a></span>  
 </div>
 
 <div class="publication-item">
@@ -162,7 +180,7 @@ title: Publications
    <br>
    <strong>Wang, Hanchen David</strong>, Khan, Nibraas, Ghosh, Ritam, Tauseef, Mahrukh, Mion, Lorraine, Ma, Meiyi, Sarkar, Nilanjan.  
    <br>
-   <em>Pervasive and Mobile Computing, October 2025, Under Review.</em>  
+   <em>Pervasive and Mobile Computing, October 2025.</em> <span class="pub-status pub-status--pending">Under Review</span>  
 </div>
 
 <div class="publication-item">
@@ -170,15 +188,19 @@ title: Publications
    <br>
    <strong>Wang, Hanchen David</strong>, Bae, Siwoo, Sun, Xutong, Thatigotla, Yashvitha, Ma, Meiyi.  
    <br>
-   <em>Proceedings of the ACM/IEEE 16th International Conference on Cyber-Physical Systems (ICCPS), May 2025, Published.</em>  
+   <em>Proceedings of the ACM/IEEE 16th International Conference on Cyber-Physical Systems (ICCPS), May 2025.</em> <span class="pub-status pub-status--done">Published</span>  
+   <br>
+   <span class="pub-links"><a href="https://doi.org/10.1145/3716550.3722027" target="_blank" rel="noopener">DOI</a></span>  
 </div>
+
+<h2 class="pub-year">2024</h2>
 
 <div class="publication-item">
 15. <span style='font-weight: 600; font-size: 1.1em;'>Robustness Certification of Semantic Segmentation of Multiple Sclerosis Lesions</span>  
    <br>
    Lopez, Diego Manzanas, Liu, Han, <strong>Wang, Hanchen David</strong>, Moyer, Daniel, Ma, Meiyi, Johnson, Taylor T., Oguz, Ipek.  
    <br>
-   <em>Medical Imaging, August 2024, Under Revision.</em>  
+   <em>Medical Imaging, August 2024.</em> <span class="pub-status pub-status--pending">Under Revision</span>  
 </div>
 
 <div class="publication-item">
@@ -186,23 +208,33 @@ title: Publications
    <br>
    <strong>Wang, Hanchen David</strong>, Khan, Nibraas, Chen, Anna, Sarkar, Nilanjan, Wisniewski, Pamela, Ma, Meiyi.  
    <br>
-   <em>Connected Health: Applications, Systems and Engineering Technologies (CHASE), March 2024, Published.</em>  
+   <em>Connected Health: Applications, Systems and Engineering Technologies (CHASE), March 2024.</em> <span class="pub-status pub-status--done">Published</span>  
+   <br>
+   <span class="pub-links"><a href="https://doi.org/10.1109/CHASE60773.2024.00017" target="_blank" rel="noopener">DOI</a></span>  
 </div>
+
+<h2 class="pub-year">2023</h2>
 
 <div class="publication-item">
 17. <a href='https://doi.org/10.48550/arXiv.2309.13467' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600; font-size: 1.1em;'>SUDS: Sanitizing Universal and Dependent Steganography</a>  
    <br>
    Robinette, Preston K., <strong>Wang, Hanchen David</strong>, Shehadeh, Nishan, Moyer, Daniel, Johnson, Taylor T..  
    <br>
-   <em>Proceedings of the 26th European Conference on Artificial Intelligence (ECAI), September 2023, Published.</em>  
+   <em>Proceedings of the 26th European Conference on Artificial Intelligence (ECAI), September 2023.</em> <span class="pub-status pub-status--done">Published</span>  
+   <br>
+   <span class="pub-links"><a href="https://doi.org/10.48550/arXiv.2309.13467" target="_blank" rel="noopener">arXiv</a></span>  
 </div>
+
+<h2 class="pub-year">2022</h2>
 
 <div class="publication-item">
 18. <a href='https://doi.org/10.1145/3570349' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600; font-size: 1.1em;'>PhysiQ: Off-Site Quality Assessment of Exercise in Physical Therapy</a>  
    <br>
    <strong>Wang, Hanchen David</strong>, Ma, Meiyi.  
    <br>
-   <em>Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., December 2022, Published.</em>  
+   <em>Proc. ACM Interact. Mob. Wearable Ubiquitous Technol., December 2022.</em> <span class="pub-status pub-status--done">Published</span>  
+   <br>
+   <span class="pub-links"><a href="https://doi.org/10.1145/3570349" target="_blank" rel="noopener">DOI</a></span>  
 </div>
 
 </div>

@@ -53,6 +53,8 @@ title: Publications
 
 <p>A comprehensive list of my research publications in artificial intelligence, machine learning, and healthcare applications.</p>
 
+<p style="font-size: 0.9em; color: #6c757d;">&#42; Equal contribution</p>
+
 <div class="publication-list">
 
 <div class="publication-item">
@@ -75,7 +77,7 @@ title: Publications
 <div class="publication-item">
 3. <a href='https://doi.org/10.1016/j.pmcj.2026.102223' target='_blank' style='text-decoration: underline; color: #333; font-weight: 600; font-size: 1.1em;'>SmartSeg: A Non-Parametric Approach for Wearable Camera Video Temporal Segmentation</a>  
    <br>
-   Liu, Yilin, <strong>Wang, Hanchen David</strong>, Fu, Haowei, Mason, Madison Lee, Li, Fanjie, Wise, Alyssa, Levin, Daniel T, Biswas, Gautam, Ma, Meiyi.  
+   <strong>Wang, Hanchen David</strong>&#42;, Liu, Yilin&#42;, Fu, Haowei, Mason, Madison Lee, Li, Fanjie, Wise, Alyssa, Levin, Daniel T, Biswas, Gautam, Ma, Meiyi.  
    <br>
    <em>Pervasive and Mobile Computing, September 2026, Published.</em>  
 </div>

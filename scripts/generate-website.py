@@ -487,7 +487,13 @@ title: Publications
 
 <p>A comprehensive list of my research publications in artificial intelligence, machine learning, and healthcare applications.</p>
 
-<div class="publication-list">
+"""
+
+    # A trailing "*" on an author name marks equal contribution
+    if any('*' in a for p in publications_data for a in p.get('authors', [])):
+        content += '<p style="font-size: 0.9em; color: #6c757d;">&#42; Equal contribution</p>\n\n'
+
+    content += """<div class="publication-list">
 
 """
 
@@ -507,6 +513,8 @@ title: Publications
         # Bold the user's name in authors
         authors = make_author_bold(authors, 'Wang, Hanchen David')
         authors = make_author_bold(authors, 'Hanchen David Wang')
+        # Use an entity so kramdown never reads "*" as emphasis
+        authors = authors.replace('*', '&#42;')
 
         # Start publication item
         content += f"""<div class="publication-item">

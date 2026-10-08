@@ -217,6 +217,8 @@ def generate_simple_cv(data):
         status = f" ({pub['status']})" if pub.get('status') else ""
         pub_content += f"    \\item {authors_escaped}. \\textit{{{escape_latex(pub['title'])}}}. {escape_latex(pub['venue'])}, {pub['year']}{escape_latex(status)}.\n"
     pub_content += "\\end{enumerate}\n"
+    if any('*' in a for p in sorted_pubs for a in p.get('authors', [])):
+        pub_content += "{\\small * Equal contribution}\n"
 
     # Generate Skills
     skills = data['skills']

@@ -242,8 +242,8 @@ layout: default
 
     <div class="highlight-item">
       <h3>Recent Publication</h3>
-      <p><strong>SmartSeg: A Non-Parametric Approach for Wearable Camera Video Temporal Segmentation</strong></p>
-      <p>Pervasive and Mobile Computing - Published</p>
+      <p><strong>BEAGLE: Behavior-Enforced Agent for Grounded Learner Emulation</strong></p>
+      <p>Advances in Neural Information Processing Systems (NeurIPS) - Accepted</p>
     </div>
 
     <div class="highlight-item">

@@ -1,5 +1,31 @@
 [
   {
+    "id": "spar",
+    "authors": [
+      "Khan, Nibraas",
+      "Wang, Hanchen David",
+      "Bullard, Enya",
+      "Ghosh, Ritam",
+      "Haan, Ruj",
+      "Agrawal, Aarav",
+      "Ma, Meiyi",
+      "Sarkar, Nilanjan"
+    ],
+    "title": "Skill Profiling with Attributable Reasoning (SPAR): A Wearable Analysis System for Boxing",
+    "venue": "arXiv",
+    "year": 2026,
+    "month": "September",
+    "status": "Preprint",
+    "type": "preprint",
+    "arxiv": "2609.30753",
+    "tags": [
+      "Wearable Sensors",
+      "XAI",
+      "Biomechanics",
+      "Boxing"
+    ]
+  },
+  {
     "id": "smartseg",
     "authors": [
       "Liu, Yilin",
@@ -18,6 +44,8 @@
     "month": "September",
     "status": "Published",
     "type": "journal",
+    "volume": "121",
+    "doi": "10.1016/j.pmcj.2026.102223",
     "tags": [
       "Video Segmentation",
       "Wearable Cameras",
@@ -68,6 +96,30 @@
       "XAI",
       "Neural Network Verification",
       "Formal Methods"
+    ]
+  },
+  {
+    "id": "n2v",
+    "authors": [
+      "Sasaki, Samuel",
+      "Wooding, Ben",
+      "Wang, Hanchen David",
+      "Tumlin, Anne M.",
+      "Ma, Meiyi",
+      "Johnson, Taylor T."
+    ],
+    "title": "n2v: Neural Network Verification in Python (Competition Contribution)",
+    "venue": "International Symposium on AI Verification (SAIV), Lecture Notes in Computer Science",
+    "year": 2026,
+    "month": "July",
+    "status": "Published",
+    "type": "conference",
+    "pages": "394-400",
+    "doi": "10.1007/978-3-032-32357-6_21",
+    "tags": [
+      "Neural Network Verification",
+      "Formal Methods",
+      "Open-Source Tools"
     ]
   },
   {
@@ -193,10 +245,10 @@
       "Ma, Meiyi"
     ],
     "title": "BEAGLE: Behavior-Enforced Agent for Grounded Learner Emulation",
-    "venue": "IJCAI",
+    "venue": "Advances in Neural Information Processing Systems (NeurIPS)",
     "year": 2026,
-    "month": "February",
-    "status": "Under Submission",
+    "month": "December",
+    "status": "Accepted",
     "type": "conference",
     "doi": "10.48550/arXiv.2602.13280",
     "tags": [
